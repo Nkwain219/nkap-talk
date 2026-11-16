@@ -154,6 +154,52 @@ Under **Page language** you can show the page in **Fulfulde, Ewondo, Bulu, Duala
   ```
   Corrections always win over Gemini. Lines with mistakes in the value slots are refused with a message.
 
+### Recorded Pidgin voice
+
+Chrome's English voice reads Pidgin *spelling*, which is only close enough. A real Pidgin
+speaker reading the same words is better, and for amounts it removes the last doubt about
+what the customer heard. The clips are played from the computer, so nothing leaves it and it
+works offline.
+
+- **The recordings never change what is said.** Text reaching the clip layer has already
+  been through `toSpeech()`, so every amount is words produced by code. The layer only picks
+  which recording says a word that is already decided.
+- **Clips alone cannot carry the whole voice.** NkapTalk reads text off the screen, Gemini
+  translates text the phrasebook does not know, and the jury injects new messages on purpose.
+  So a sentence is played from recordings only if every word in it is recorded. If one word is
+  missing, that whole sentence goes to the browser voice instead.
+- **Clips and the browser voice are never mixed inside one sentence.** Half a sentence in a
+  real voice and half in a robot voice sounds worse than either on its own. This also means a
+  part-finished set of recordings is safe to install: it speaks more of the replies as it grows.
+
+The recording script is generated from `assistant.js` and `phrasebook.js`, so it stays in step
+with what NkapTalk actually says:
+
+```bash
+node tools/build-clips.js script   # -> nkaptalk-extension/audio/pcm/SCRIPT.md
+```
+
+It comes out in three tiers, 217 clips in all:
+
+| Tier | Clips | Covers |
+|---|---|---|
+| 1 — numbers, units, letters | 63 | Every amount, fee, total, percentage, phone number and reference, for any value up to a billion. This vocabulary is closed, so 63 files cover all of them. |
+| 2 — NkapTalk's own sentences | 87 | Its greeting, questions, confirmations and errors. |
+| 3 — page text read aloud | 67 | The SAFINUM screens as the phrasebook renders them. |
+
+Record Tier 1 first. It is the shortest list, and it is where a mispronounced word would
+matter most in a bank.
+
+Put the files in `nkaptalk-extension/audio/pcm/`, named with the id from the script
+(`.webm`, `.ogg`, `.mp3`, `.m4a`, `.wav` or `.flac`), then:
+
+```bash
+node tools/build-clips.js index    # -> audio/pcm/index.json, and a coverage report
+```
+
+The settings page shows how many recordings are installed, and **Use the recorded Pidgin
+voice** turns them on. With none installed, the voice behaves exactly as before.
+
 ## 5. Practise offline
 
 The `practice-bank` folder holds an offline copy of the SAFINUM test page, with the same structure, texts (French and English), fee rules and errors. It also has a box to **inject a new message** the way the jury will.

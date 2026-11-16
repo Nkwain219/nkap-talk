@@ -116,6 +116,7 @@
   function stop() {
     try { speechSynthesis.cancel(); } catch (e) {}
     try { if (currentSource) currentSource.stop(); } catch (e) {}
+    try { if (P.clipvoice && P.clipvoice.stop) P.clipvoice.stop(); } catch (e) {}
     currentSource = null;
   }
 
@@ -161,11 +162,23 @@
     stop();
     const spoken = toSpeech(text);
     const rate = (P.env.settings.rate || 0.95) * (opts.slow ? 0.75 : 1);
+    // Recorded native-speaker Pidgin first: best quality, offline, nothing leaves the
+    // computer. It only plays sentences whose every word is recorded; the rest fall
+    // through to the voices below, so a half-recorded set still speaks every reply.
+    let rest = spoken;
+    if (P.env.settings.useClipVoice && P.clipvoice && P.clipvoice.speak) {
+      try {
+        const missed = await P.clipvoice.speak(spoken, rate);
+        if (!missed.length) return;
+        rest = missed.map((m) => m.text).join(' ');
+      } catch (e) { rest = spoken; }
+    }
+    if (!rest.trim()) return;
     if (P.env.online() && P.env.settings.useGeminiTTS) {
-      const ok = await speakGemini(spoken);
+      const ok = await speakGemini(rest);
       if (ok) return;
     }
-    await speakBrowser(spoken, rate);
+    await speakBrowser(rest, rate);
   }
 
   // ---------- Listening ----------

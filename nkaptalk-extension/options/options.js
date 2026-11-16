@@ -1,11 +1,27 @@
 const DEFAULTS = {
   apiKey: '', model: 'gemini-2.5-flash', ttsModel: 'gemini-2.5-flash-preview-tts',
-  useGeminiNLU: true, useGeminiTranslate: true, useGeminiTTS: false,
+  useGeminiNLU: true, useGeminiTranslate: true, useGeminiTTS: false, useClipVoice: true,
   autoTranslate: true, rate: 0.95, voiceName: '', pageLanguage: 'pcm',
 };
 const LOC = globalThis.NkapTalk.localize;
 const $ = (id) => document.getElementById(id);
-const BOOLS = ['useGeminiNLU', 'useGeminiTranslate', 'useGeminiTTS', 'autoTranslate'];
+const BOOLS = ['useGeminiNLU', 'useGeminiTranslate', 'useGeminiTTS', 'useClipVoice', 'autoTranslate'];
+
+/** Say how many recordings are installed, so it is obvious when the voice is only partly real. */
+async function showClipCount() {
+  const note = $('clipNote');
+  if (!note) return;
+  try {
+    const res = await fetch(chrome.runtime.getURL('audio/pcm/index.json'));
+    const idx = res.ok ? await res.json() : {};
+    const n = Object.keys(idx).length;
+    note.textContent = n
+      ? `${n} recordings installed. Anything not recorded is read by the browser voice instead.`
+      : 'No recordings installed yet, so the browser voice reads every reply. See audio/pcm/SCRIPT.md.';
+  } catch (e) {
+    note.textContent = 'No recordings installed yet, so the browser voice reads every reply.';
+  }
+}
 const TEXTS = ['apiKey', 'model', 'ttsModel'];
 
 function fillVoices(selected) {
@@ -85,3 +101,6 @@ $('save').addEventListener('click', () => {
     setTimeout(() => ($('saved').textContent = ''), 2000);
   });
 });
+
+// show how many recordings are installed next to the toggle
+showClipCount();

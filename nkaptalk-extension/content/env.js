@@ -13,6 +13,7 @@
     useGeminiNLU: true, // understand the user's voice with Gemini (audio of the user only)
     useGeminiTranslate: true, // translate NEW unknown text with Gemini (values masked out)
     useGeminiTTS: false, // Gemini voice for replies (sends reply text, which contains values)
+    useClipVoice: true, // play recorded native-speaker Pidgin clips when they exist (offline)
     autoTranslate: true, // translate the page as soon as it loads
     pageLanguage: 'pcm', // what the page shows: Pidgin or a local language. The voice is always Pidgin.
     rate: 0.95,

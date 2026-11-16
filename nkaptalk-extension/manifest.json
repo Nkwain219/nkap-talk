@@ -4,24 +4,45 @@
   "short_name": "NkapTalk",
   "version": "0.2.0",
   "description": "Use your bank in Pidgin by voice, with the page in Pidgin or a Cameroonian language. Amounts, names and references never change.",
-  "permissions": ["storage"],
-  "host_permissions": ["https://generativelanguage.googleapis.com/*"],
-  "background": { "service_worker": "background.js" },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://generativelanguage.googleapis.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
   "action": {
     "default_title": "NkapTalk (Alt+Shift+P)",
-    "default_icon": { "16": "icons/icon16.png", "32": "icons/icon32.png", "48": "icons/icon48.png" }
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png"
+    }
   },
   "options_page": "options/options.html",
-  "icons": { "16": "icons/icon16.png", "32": "icons/icon32.png", "48": "icons/icon48.png", "128": "icons/icon128.png" },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
   "content_scripts": [
     {
-      "matches": ["https://safinum.cm/hackathon-test*", "http://localhost/*", "http://127.0.0.1/*", "file:///*"],
+      "matches": [
+        "https://safinum.cm/hackathon-test*",
+        "http://localhost/*",
+        "http://127.0.0.1/*",
+        "file:///*"
+      ],
       "js": [
         "content/values.js",
         "content/phrasebook.js",
         "content/localize.js",
         "content/env.js",
         "content/translator.js",
+        "content/clipvoice.js",
         "content/speech.js",
         "content/nlu.js",
         "content/screen.js",
@@ -30,6 +51,18 @@
         "content/main.js"
       ],
       "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "audio/pcm/*"
+      ],
+      "matches": [
+        "https://safinum.cm/*",
+        "http://localhost/*",
+        "http://127.0.0.1/*"
+      ]
     }
   ]
 }

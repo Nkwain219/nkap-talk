@@ -110,8 +110,8 @@ function cmdStub(lang) {
       out: (old && old.out) || '',
       reviewed: !!(old && old.reviewed && old.out),
       by: (old && old.by) || '',
-      ...(old && old.aiSure !== undefined ? { aiSure: old.aiSure } : {}),
-      ...(old && old.aiNote ? { aiNote: old.aiNote } : {}),
+      ...(old && old.sure !== undefined ? { sure: old.sure } : {}),
+      ...(old && old.note ? { note: old.note } : {}),
     });
   }
   const dropped = [...bySrc.keys()].filter((s) => !seen.has(s)).length;
@@ -175,8 +175,8 @@ function cmdMerge(lang, src) {
       e.out = out;
       e.reviewed = false;
       e.by = '';
-      e.aiSure = r.sure !== false;
-      if (r.note) e.aiNote = String(r.note);
+      e.sure = r.sure !== false;
+      if (r.note) e.note = String(r.note);
       if (r.sure === false) flagged++;
       added++;
     }

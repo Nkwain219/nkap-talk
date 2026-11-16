@@ -34,7 +34,7 @@ if no, it should be: ________________________________________
 
 **Proposed Ewondo:** Biyong bise, fombɔ jôé a numéro ya mod a ye nyoŋ, ôsusua na ô kaale nlôman moni.
 
-*The machine was unsure: Verify 'nlôman moni' and 'biyong bise' (always).*
+*Worth a close look: Verify 'nlôman moni' and 'biyong bise' (always).*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -52,7 +52,7 @@ if no, it should be: ________________________________________
 
 **Proposed Ewondo:** Kaale
 
-*The machine was unsure: confirm/certify/agree; 'confirmer' also widely used.*
+*Worth a close look: confirm/certify/agree; 'confirmer' also widely used.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -70,7 +70,7 @@ if no, it should be: ________________________________________
 
 **Proposed Ewondo:** Tob aval nlôman moni a abim moni. Frais bia ye lañeban bibien.
 
-*The machine was unsure: Verify 'lañeban bibien' (calculate themselves).*
+*Worth a close look: Verify 'lañeban bibien' (calculate themselves).*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -88,7 +88,7 @@ if no, it should be: ________________________________________
 
 **Proposed Ewondo:** Mod a ye nyoŋ
 
-*The machine was unsure: 'the person who will receive'; speakers also use 'bénéficiaire'.*
+*Worth a close look: 'the person who will receive'; speakers also use 'bénéficiaire'.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -106,7 +106,7 @@ if no, it should be: ________________________________________
 
 **Proposed Ewondo:** A kui été été, a ne fe zezé
 
-*The machine was unsure: 'été été' immediately; 'zezé' free.*
+*Worth a close look: 'été été' immediately; 'zezé' free.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -124,7 +124,7 @@ if no, it should be: ________________________________________
 
 **Proposed Ewondo:** Evus
 
-*The machine was unsure: mistake/error; verify vs 'Erreur' for technical errors.*
+*Worth a close look: mistake/error; verify vs 'Erreur' for technical errors.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -158,7 +158,7 @@ if no, it should be: ________________________________________
 
 **Proposed Ewondo:** Abendé ya mvoé
 
-*The machine was unsure: 'warning of safety'; verify vs 'Alerte de sécurité'.*
+*Worth a close look: 'warning of safety'; verify vs 'Alerte de sécurité'.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -176,7 +176,7 @@ if no, it should be: ________________________________________
 
 **Proposed Ewondo:** Tyam
 
-*The machine was unsure: break/cancel/abort; 'annuler' also common in digital UIs.*
+*Worth a close look: break/cancel/abort; 'annuler' also common in digital UIs.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -194,7 +194,7 @@ if no, it should be: ________________________________________
 
 **Proposed Ewondo:** Frais ya {1} (bi nji bo si ya {2}, bi nji dañ {3})
 
-*The machine was unsure: 'si ya' below for min, 'dañ' exceed for max.*
+*Worth a close look: 'si ya' below for min, 'dañ' exceed for max.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -226,7 +226,7 @@ if no, it should be: ________________________________________
 
 **Proposed Ewondo:** Abim moni ô kômbɔ lôm
 
-*The machine was unsure: (taken from the same line on the bank page)*
+*Worth a close look: (taken from the same line on the bank page)*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -276,7 +276,7 @@ if no, it should be: ________________________________________
 
 **Proposed Ewondo:** Abendé ya mvoé : fombɔ numéro téléphone ya mod a ye nyoŋ ôsusua na ô ke ôsu.
 
-*The machine was unsure: Same as 100.*
+*Worth a close look: Same as 100.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -294,7 +294,7 @@ if no, it should be: ________________________________________
 
 **Proposed Ewondo:** Nlôman moni ô tyamya
 
-*The machine was unsure: 'is cancelled/broken'; verify phrasing.*
+*Worth a close look: 'is cancelled/broken'; verify phrasing.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -312,7 +312,7 @@ if no, it should be: ________________________________________
 
 **Proposed Ewondo:** Ô kuiya a minné mi moni ya môs den.
 
-*The machine was unsure: 'reached the limit of money for today'.*
+*Worth a close look: 'reached the limit of money for today'.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -344,7 +344,7 @@ if no, it should be: ________________________________________
 
 **Proposed Ewondo:** Aval nlôman moni
 
-*The machine was unsure: (taken from the same line on the bank page)*
+*Worth a close look: (taken from the same line on the bank page)*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 

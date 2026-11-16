@@ -8,8 +8,8 @@
       "out": "Homa i nweksene — mam ma bitembe, to moni i mbet bé.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Check exact Basaa phrasing for 'test environment' and 'fictional data'."
+      "sure": false,
+      "note": "Check exact Basaa phrasing for 'test environment' and 'fictional data'."
     },
     {
       "src": "Test environment — fictional data, no real transaction.",
@@ -17,8 +17,8 @@
       "out": "Homa i nweksene — mam ma bitembe, to moni i mbet bé.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify natural phrasing in Centre/Littoral Basaa."
+      "sure": false,
+      "note": "Verify natural phrasing in Centre/Littoral Basaa."
     },
     {
       "src": "Protocole de test",
@@ -26,8 +26,8 @@
       "out": "Mambèn ma nweksene",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'Mambèn' (rules/laws) + 'nweksene' (testing)."
+      "sure": false,
+      "note": "'Mambèn' (rules/laws) + 'nweksene' (testing)."
     },
     {
       "src": "Test protocol",
@@ -35,8 +35,8 @@
       "out": "Mambèn ma nweksene",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 3."
+      "sure": false,
+      "note": "Same as 3."
     },
     {
       "src": "Retour au hackathon",
@@ -44,7 +44,7 @@
       "out": "Témb i hackathon",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Back to hackathon",
@@ -52,7 +52,7 @@
       "out": "Témb i hackathon",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Banque en ligne",
@@ -60,8 +60,8 @@
       "out": "Bank i internet",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Code-switching 'bank' and 'internet'; verify preposition."
+      "sure": false,
+      "note": "Code-switching 'bank' and 'internet'; verify preposition."
     },
     {
       "src": "Online banking",
@@ -69,8 +69,8 @@
       "out": "Bank i internet",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 7."
+      "sure": false,
+      "note": "Same as 7."
     },
     {
       "src": "Connexion sécurisée",
@@ -78,8 +78,8 @@
       "out": "Connexion i yé nsañ",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'nsañ' means peace/safety; verify for 'secure'."
+      "sure": false,
+      "note": "'nsañ' means peace/safety; verify for 'secure'."
     },
     {
       "src": "Secure connection",
@@ -87,8 +87,8 @@
       "out": "Connexion i yé nsañ",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 9."
+      "sure": false,
+      "note": "Same as 9."
     },
     {
       "src": "{} — environnement de démonstration. Ne saisissez aucune donnée personnelle réelle.",
@@ -96,8 +96,8 @@
       "out": "{1} — homa i unda. U ha bañ mam moñ ma nkoda.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify 'homa i unda' and 'mam moñ ma nkoda' (your private things)."
+      "sure": false,
+      "note": "Verify 'homa i unda' and 'mam moñ ma nkoda' (your private things)."
     },
     {
       "src": "{} — demonstration environment. Do not enter real personal data.",
@@ -105,8 +105,8 @@
       "out": "{1} — homa i unda. U ha bañ mam moñ ma nkoda.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 11."
+      "sure": false,
+      "note": "Same as 11."
     },
     {
       "src": "Solde",
@@ -114,8 +114,8 @@
       "out": "Solde",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "No settled Basaa banking term for 'balance'; kept French."
+      "sure": false,
+      "note": "No settled Basaa banking term for 'balance'; kept French."
     },
     {
       "src": "Balance",
@@ -123,8 +123,8 @@
       "out": "Solde",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept 'solde'."
+      "sure": false,
+      "note": "Kept 'solde'."
     },
     {
       "src": "Frais",
@@ -132,8 +132,8 @@
       "out": "Frais",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "No settled Basaa term for transaction fees; kept French."
+      "sure": false,
+      "note": "No settled Basaa term for transaction fees; kept French."
     },
     {
       "src": "Fees",
@@ -141,8 +141,8 @@
       "out": "Frais",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 15."
+      "sure": false,
+      "note": "Same as 15."
     },
     {
       "src": "Fee",
@@ -150,8 +150,8 @@
       "out": "Frais",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 15."
+      "sure": false,
+      "note": "Same as 15."
     },
     {
       "src": "Bénéficiaire",
@@ -159,8 +159,8 @@
       "out": "Mut a nkôhna",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'person who receives'; verify vs 'bénéficiaire'."
+      "sure": false,
+      "note": "'person who receives'; verify vs 'bénéficiaire'."
     },
     {
       "src": "Beneficiary",
@@ -168,8 +168,8 @@
       "out": "Mut a nkôhna",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 18."
+      "sure": false,
+      "note": "Same as 18."
     },
     {
       "src": "Récapitulatif",
@@ -177,8 +177,8 @@
       "out": "Bémbe ki",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'look/check again'; verify noun form for a UI header."
+      "sure": false,
+      "note": "'look/check again'; verify noun form for a UI header."
     },
     {
       "src": "Summary",
@@ -186,8 +186,8 @@
       "out": "Bémbe ki",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 20."
+      "sure": false,
+      "note": "Same as 20."
     },
     {
       "src": "Confirmation",
@@ -195,8 +195,8 @@
       "out": "Neebe",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "accept/agree/confirm; verify imperative vs noun form."
+      "sure": false,
+      "note": "accept/agree/confirm; verify imperative vs noun form."
     },
     {
       "src": "Votre compte",
@@ -204,7 +204,7 @@
       "out": "Compte yoñ",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Your account",
@@ -212,7 +212,7 @@
       "out": "Compte yoñ",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Consultez votre solde et lancez un transfert en toute sécurité.",
@@ -220,8 +220,8 @@
       "out": "Bémbe solde yoñ, u om ki moni ikété nsañ.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Check phrasing for 'safely'."
+      "sure": false,
+      "note": "Check phrasing for 'safely'."
     },
     {
       "src": "Check your balance and start a secure transfer.",
@@ -229,8 +229,8 @@
       "out": "Bémbe solde yoñ, u om ki moni ikété nsañ.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 25."
+      "sure": false,
+      "note": "Same as 25."
     },
     {
       "src": "Solde disponible",
@@ -238,8 +238,8 @@
       "out": "Moni mi yé i compte",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify concord prefix for 'moni'."
+      "sure": false,
+      "note": "Verify concord prefix for 'moni'."
     },
     {
       "src": "Available balance",
@@ -247,8 +247,8 @@
       "out": "Moni mi yé i compte",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 27."
+      "sure": false,
+      "note": "Same as 27."
     },
     {
       "src": "Numéro de compte : {}",
@@ -256,8 +256,8 @@
       "out": "Nômba i compte : {1}",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'Nômba' widely used loanword; verify tone/spelling."
+      "sure": false,
+      "note": "'Nômba' widely used loanword; verify tone/spelling."
     },
     {
       "src": "Account number : {}",
@@ -265,8 +265,8 @@
       "out": "Nômba i compte : {1}",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 29."
+      "sure": false,
+      "note": "Same as 29."
     },
     {
       "src": "Compte courant",
@@ -274,8 +274,8 @@
       "out": "Compte courant",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept French banking term."
+      "sure": false,
+      "note": "Kept French banking term."
     },
     {
       "src": "Current account",
@@ -283,8 +283,8 @@
       "out": "Compte courant",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 31."
+      "sure": false,
+      "note": "Same as 31."
     },
     {
       "src": "Effectuer un transfert",
@@ -292,7 +292,7 @@
       "out": "Om moni",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Make a transfer",
@@ -300,7 +300,7 @@
       "out": "Om moni",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Consulter les frais",
@@ -308,8 +308,8 @@
       "out": "Bémbe frais",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Basaa 'bémbe' with French 'frais'."
+      "sure": false,
+      "note": "Basaa 'bémbe' with French 'frais'."
     },
     {
       "src": "View fees",
@@ -317,8 +317,8 @@
       "out": "Bémbe frais",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 35."
+      "sure": false,
+      "note": "Same as 35."
     },
     {
       "src": "Transactions récentes",
@@ -326,8 +326,8 @@
       "out": "Moni mi ntip tagbe",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'money that recently passed'; verify concord."
+      "sure": false,
+      "note": "'money that recently passed'; verify concord."
     },
     {
       "src": "Recent transactions",
@@ -335,8 +335,8 @@
       "out": "Moni mi ntip tagbe",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 37."
+      "sure": false,
+      "note": "Same as 37."
     },
     {
       "src": "Paiement marchand",
@@ -344,8 +344,8 @@
       "out": "Saa i magasini",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'Saa' (pay) + 'magasini' (shop)."
+      "sure": false,
+      "note": "'Saa' (pay) + 'magasini' (shop)."
     },
     {
       "src": "Merchant payment",
@@ -353,8 +353,8 @@
       "out": "Saa i magasini",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 39."
+      "sure": false,
+      "note": "Same as 39."
     },
     {
       "src": "Salaire reçu",
@@ -362,8 +362,8 @@
       "out": "Salaire i njôp",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'i njôp' = has entered."
+      "sure": false,
+      "note": "'i njôp' = has entered."
     },
     {
       "src": "Salary received",
@@ -371,8 +371,8 @@
       "out": "Salaire i njôp",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 41."
+      "sure": false,
+      "note": "Same as 41."
     },
     {
       "src": "Transfert reçu",
@@ -380,8 +380,8 @@
       "out": "Moni ba ñom we",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'money they sent you'; check verb tone."
+      "sure": false,
+      "note": "'money they sent you'; check verb tone."
     },
     {
       "src": "Transfer received",
@@ -389,8 +389,8 @@
       "out": "Moni ba ñom we",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 43."
+      "sure": false,
+      "note": "Same as 43."
     },
     {
       "src": "Facture électricité",
@@ -398,8 +398,8 @@
       "out": "Facture i kura",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'Kura' is the common word for electricity."
+      "sure": false,
+      "note": "'Kura' is the common word for electricity."
     },
     {
       "src": "Electricity bill",
@@ -407,8 +407,8 @@
       "out": "Facture i kura",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 45."
+      "sure": false,
+      "note": "Same as 45."
     },
     {
       "src": "Sécurité",
@@ -416,8 +416,8 @@
       "out": "Tééda nsañ",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify best Basaa term for 'security' in a financial UI."
+      "sure": false,
+      "note": "Verify best Basaa term for 'security' in a financial UI."
     },
     {
       "src": "Security",
@@ -425,8 +425,8 @@
       "out": "Tééda nsañ",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 47."
+      "sure": false,
+      "note": "Same as 47."
     },
     {
       "src": "Vérifiez toujours le nom et le numéro du bénéficiaire avant de confirmer un transfert.",
@@ -434,8 +434,8 @@
       "out": "Bémbe jôl ni nômba i mut a nkôhna hiki ngéda ilole u neebe transfert.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Check word order and tone for 'hiki ngéda' (always) and 'ilole' (before)."
+      "sure": false,
+      "note": "Check word order and tone for 'hiki ngéda' (always) and 'ilole' (before)."
     },
     {
       "src": "Always verify the beneficiary name and number before confirming a transfer.",
@@ -443,8 +443,8 @@
       "out": "Bémbe jôl ni nômba i mut a nkôhna hiki ngéda ilole u neebe transfert.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 49."
+      "sure": false,
+      "note": "Same as 49."
     },
     {
       "src": "Frais de transfert",
@@ -452,8 +452,8 @@
       "out": "Frais i om moni",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept 'frais' + 'om moni'."
+      "sure": false,
+      "note": "Kept 'frais' + 'om moni'."
     },
     {
       "src": "Transfer fees",
@@ -461,8 +461,8 @@
       "out": "Frais i om moni",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 51."
+      "sure": false,
+      "note": "Same as 51."
     },
     {
       "src": "Choisissez le type de transfert et le montant. Les frais sont calculés automatiquement.",
@@ -470,8 +470,8 @@
       "out": "Pohol ntén transfert ni nseñ u moni. Frais i nlañba yomede.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify 'nseñ u moni' and reflexive 'i nlañba yomede'."
+      "sure": false,
+      "note": "Verify 'nseñ u moni' and reflexive 'i nlañba yomede'."
     },
     {
       "src": "Choose the transfer type and amount. Fees are calculated automatically.",
@@ -479,8 +479,8 @@
       "out": "Pohol ntén transfert ni nseñ u moni. Frais i nlañba yomede.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 53."
+      "sure": false,
+      "note": "Same as 53."
     },
     {
       "src": "Type d'opération",
@@ -488,8 +488,8 @@
       "out": "Ntén transfert",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'Ntén' means kind/type."
+      "sure": false,
+      "note": "'Ntén' means kind/type."
     },
     {
       "src": "Operation type",
@@ -497,8 +497,8 @@
       "out": "Ntén transfert",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 55."
+      "sure": false,
+      "note": "Same as 55."
     },
     {
       "src": "Compte {}",
@@ -506,7 +506,7 @@
       "out": "Compte {1}",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "{} account",
@@ -514,7 +514,7 @@
       "out": "Compte {1}",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Mobile Money",
@@ -522,7 +522,7 @@
       "out": "Mobile Money",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Autre banque",
@@ -530,8 +530,8 @@
       "out": "Bank ipe",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify concord class for 'another' with 'bank'."
+      "sure": false,
+      "note": "Verify concord class for 'another' with 'bank'."
     },
     {
       "src": "Other bank",
@@ -539,8 +539,8 @@
       "out": "Bank ipe",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 60."
+      "sure": false,
+      "note": "Same as 60."
     },
     {
       "src": "Transfert instantané et gratuit",
@@ -548,8 +548,8 @@
       "out": "Transfert i mpam nlélém ngéda, i yé ki yañga",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'nlélém ngéda' (instantly), 'yañga' (free)."
+      "sure": false,
+      "note": "'nlélém ngéda' (instantly), 'yañga' (free)."
     },
     {
       "src": "Instant, free transfer",
@@ -557,8 +557,8 @@
       "out": "Transfert i mpam nlélém ngéda, i yé ki yañga",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 62."
+      "sure": false,
+      "note": "Same as 62."
     },
     {
       "src": "Frais de {} (min. {}, max. {})",
@@ -566,8 +566,8 @@
       "out": "Frais i yé {1} (i nla bé sôs isi {2}, i nla bé tagbe {3})",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify min/max bounds phrasing."
+      "sure": false,
+      "note": "Verify min/max bounds phrasing."
     },
     {
       "src": "{} fee (min. {}, max. {})",
@@ -575,8 +575,8 @@
       "out": "Frais i yé {1} (i nla bé sôs isi {2}, i nla bé tagbe {3})",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 64."
+      "sure": false,
+      "note": "Same as 64."
     },
     {
       "src": "Montant à envoyer",
@@ -584,8 +584,8 @@
       "out": "Nseñ u moni u ngwés om",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'amount of money you want to send'."
+      "sure": false,
+      "note": "'amount of money you want to send'."
     },
     {
       "src": "Amount to send",
@@ -593,8 +593,8 @@
       "out": "Nseñ u moni u ngwés om",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 66."
+      "sure": false,
+      "note": "Same as 66."
     },
     {
       "src": "Gratuit",
@@ -602,7 +602,7 @@
       "out": "Yañga",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Free",
@@ -610,7 +610,7 @@
       "out": "Yañga",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Total à débiter",
@@ -618,8 +618,8 @@
       "out": "Total ba ga héya i compte yoñ",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'héya' = remove/deduct."
+      "sure": false,
+      "note": "'héya' = remove/deduct."
     },
     {
       "src": "Total to debit",
@@ -627,8 +627,8 @@
       "out": "Total ba ga héya i compte yoñ",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 70."
+      "sure": false,
+      "note": "Same as 70."
     },
     {
       "src": "Solde après opération",
@@ -636,8 +636,8 @@
       "out": "Solde i mbus transfert",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'i mbus' = after."
+      "sure": false,
+      "note": "'i mbus' = after."
     },
     {
       "src": "Balance after transfer",
@@ -645,8 +645,8 @@
       "out": "Solde i mbus transfert",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 72."
+      "sure": false,
+      "note": "Same as 72."
     },
     {
       "src": "Retour",
@@ -654,7 +654,7 @@
       "out": "Témb",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Back",
@@ -662,7 +662,7 @@
       "out": "Témb",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Continuer",
@@ -670,7 +670,7 @@
       "out": "Kena ni bisu",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Continue",
@@ -678,7 +678,7 @@
       "out": "Kena ni bisu",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Une erreur est survenue",
@@ -686,8 +686,8 @@
       "out": "Hihôha hi mbôña",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'Hihôha' (error) + 'hi mbôña' (has happened)."
+      "sure": false,
+      "note": "'Hihôha' (error) + 'hi mbôña' (has happened)."
     },
     {
       "src": "An error occurred",
@@ -695,8 +695,8 @@
       "out": "Hihôha hi mbôña",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 78."
+      "sure": false,
+      "note": "Same as 78."
     },
     {
       "src": "Solde insuffisant pour effectuer ce transfert.",
@@ -704,8 +704,8 @@
       "out": "Moni moñ mi nkôli bé inyu transfert ini.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify concord and verb 'kôli' (be sufficient)."
+      "sure": false,
+      "note": "Verify concord and verb 'kôli' (be sufficient)."
     },
     {
       "src": "Insufficient balance for this transfer.",
@@ -713,8 +713,8 @@
       "out": "Moni moñ mi nkôli bé inyu transfert ini.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 80."
+      "sure": false,
+      "note": "Same as 80."
     },
     {
       "src": "Le montant doit être supérieur à zéro.",
@@ -722,8 +722,8 @@
       "out": "Nseñ u moni u nlama tagbe zéro.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept 'zéro'; flag for review if that counts as a number word."
+      "sure": false,
+      "note": "Kept 'zéro'; flag for review if that counts as a number word."
     },
     {
       "src": "The amount must be greater than zero.",
@@ -731,8 +731,8 @@
       "out": "Nseñ u moni u nlama tagbe zéro.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 82."
+      "sure": false,
+      "note": "Same as 82."
     },
     {
       "src": "Vous devez confirmer les informations avant de valider le transfert.",
@@ -740,8 +740,8 @@
       "out": "U nlama ndugi neebe mam mana ilole transfert i nla tagbe.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Check phrasing for 'validate'."
+      "sure": false,
+      "note": "Check phrasing for 'validate'."
     },
     {
       "src": "You must confirm the details before validating the transfer.",
@@ -749,8 +749,8 @@
       "out": "U nlama ndugi neebe mam mana ilole transfert i nla tagbe.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 84."
+      "sure": false,
+      "note": "Same as 84."
     },
     {
       "src": "Renseignez les informations du destinataire. Vérifiez toujours le numéro avant de valider.",
@@ -758,8 +758,8 @@
       "out": "Ha mam ma mut a nkôhna. Bémbe nômba hiki ngéda ilole u neebe.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify phrasing for 'enter details'."
+      "sure": false,
+      "note": "Verify phrasing for 'enter details'."
     },
     {
       "src": "Enter the recipient details. Always verify the number before confirming.",
@@ -767,8 +767,8 @@
       "out": "Ha mam ma mut a nkôhna. Bémbe nômba hiki ngéda ilole u neebe.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 86."
+      "sure": false,
+      "note": "Same as 86."
     },
     {
       "src": "Ce bénéficiaire n'a jamais été utilisé sur ce compte. Vérifiez le numéro avant de continuer.",
@@ -776,8 +776,8 @@
       "out": "U ngi omok moni i mut nunu ni compte ini. Bémbe nômba ilole u nkena ni bisu.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Check negative past 'ngi omok' (have never sent)."
+      "sure": false,
+      "note": "Check negative past 'ngi omok' (have never sent)."
     },
     {
       "src": "This beneficiary has never been used on this account. Verify the number before continuing.",
@@ -785,8 +785,8 @@
       "out": "U ngi omok moni i mut nunu ni compte ini. Bémbe nômba ilole u nkena ni bisu.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 88."
+      "sure": false,
+      "note": "Same as 88."
     },
     {
       "src": "Nom du bénéficiaire",
@@ -794,7 +794,7 @@
       "out": "Jôl li mut a nkôhna",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Beneficiary name",
@@ -802,7 +802,7 @@
       "out": "Jôl li mut a nkôhna",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Numéro de téléphone",
@@ -810,8 +810,8 @@
       "out": "Nômba i téléfôn",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify standard Basaa spelling."
+      "sure": false,
+      "note": "Verify standard Basaa spelling."
     },
     {
       "src": "Phone number",
@@ -819,8 +819,8 @@
       "out": "Nômba i téléfôn",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 92."
+      "sure": false,
+      "note": "Same as 92."
     },
     {
       "src": "Motif du transfert",
@@ -828,8 +828,8 @@
       "out": "Inyuki u ñom moni",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'why you send money'."
+      "sure": false,
+      "note": "'why you send money'."
     },
     {
       "src": "Transfer reason",
@@ -837,8 +837,8 @@
       "out": "Inyuki u ñom moni",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 94."
+      "sure": false,
+      "note": "Same as 94."
     },
     {
       "src": "Note (optionnel)",
@@ -846,8 +846,8 @@
       "out": "Note (ibale u ngwés)",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'ibale u ngwés' = if you want."
+      "sure": false,
+      "note": "'ibale u ngwés' = if you want."
     },
     {
       "src": "Note (optional)",
@@ -855,8 +855,8 @@
       "out": "Note (ibale u ngwés)",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 96."
+      "sure": false,
+      "note": "Same as 96."
     },
     {
       "src": "J'ai vérifié le nom et le numéro du bénéficiaire.",
@@ -864,8 +864,8 @@
       "out": "Me mal bémbe jôl ni nômba i téléfôn i mut a nkôhna.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify completive 'mal'."
+      "sure": false,
+      "note": "Verify completive 'mal'."
     },
     {
       "src": "I have verified the beneficiary name and phone number.",
@@ -873,8 +873,8 @@
       "out": "Me mal bémbe jôl ni nômba i téléfôn i mut a nkôhna.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 98."
+      "sure": false,
+      "note": "Same as 98."
     },
     {
       "src": "Alerte de sécurité",
@@ -882,8 +882,8 @@
       "out": "Yihe inyu nsañ",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify strong phrase for 'Security warning'."
+      "sure": false,
+      "note": "Verify strong phrase for 'Security warning'."
     },
     {
       "src": "Security warning",
@@ -891,8 +891,8 @@
       "out": "Yihe inyu nsañ",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 100."
+      "sure": false,
+      "note": "Same as 100."
     },
     {
       "src": "Alerte de sécurité : vérifiez le numéro du bénéficiaire avant de continuer.",
@@ -900,8 +900,8 @@
       "out": "Yihe inyu nsañ : bémbe nômba i téléfôn i mut a nkôhna ilole u nkena ni bisu.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 100."
+      "sure": false,
+      "note": "Same as 100."
     },
     {
       "src": "Security warning: verify the beneficiary phone number before continuing.",
@@ -909,8 +909,8 @@
       "out": "Yihe inyu nsañ : bémbe nômba i téléfôn i mut a nkôhna ilole u nkena ni bisu.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 100."
+      "sure": false,
+      "note": "Same as 100."
     },
     {
       "src": "Vérifiez les informations avant de confirmer le transfert.",
@@ -918,7 +918,7 @@
       "out": "Bémbe mam momasôna ilole u neebe transfert.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Check the details before confirming the transfer.",
@@ -926,7 +926,7 @@
       "out": "Bémbe mam momasôna ilole u neebe transfert.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Montant",
@@ -934,8 +934,8 @@
       "out": "Nseñ u moni",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify vs 'montant' for a UI label."
+      "sure": false,
+      "note": "Verify vs 'montant' for a UI label."
     },
     {
       "src": "Amount",
@@ -943,8 +943,8 @@
       "out": "Nseñ u moni",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 106."
+      "sure": false,
+      "note": "Same as 106."
     },
     {
       "src": "Total débité",
@@ -952,8 +952,8 @@
       "out": "Total ba nhélés",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Check resultative form of 'héya'."
+      "sure": false,
+      "note": "Check resultative form of 'héya'."
     },
     {
       "src": "Total debited",
@@ -961,8 +961,8 @@
       "out": "Total ba nhélés",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 108."
+      "sure": false,
+      "note": "Same as 108."
     },
     {
       "src": "Téléphone",
@@ -970,8 +970,8 @@
       "out": "Téléfôn",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify tone marks."
+      "sure": false,
+      "note": "Verify tone marks."
     },
     {
       "src": "Phone",
@@ -979,8 +979,8 @@
       "out": "Téléfôn",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 110."
+      "sure": false,
+      "note": "Same as 110."
     },
     {
       "src": "Référence",
@@ -988,8 +988,8 @@
       "out": "Référence",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept French."
+      "sure": false,
+      "note": "Kept French."
     },
     {
       "src": "Reference",
@@ -997,8 +997,8 @@
       "out": "Référence",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 112."
+      "sure": false,
+      "note": "Same as 112."
     },
     {
       "src": "Opération",
@@ -1006,8 +1006,8 @@
       "out": "Ntén transfert",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 55."
+      "sure": false,
+      "note": "Same as 55."
     },
     {
       "src": "Operation",
@@ -1015,8 +1015,8 @@
       "out": "Ntén transfert",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 55."
+      "sure": false,
+      "note": "Same as 55."
     },
     {
       "src": "Je confirme que les informations ci-dessus sont correctes.",
@@ -1024,8 +1024,8 @@
       "out": "Me neebe le mam momasôna ma yé i ngii ma téé.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'ma téé' = are correct; verify concord."
+      "sure": false,
+      "note": "'ma téé' = are correct; verify concord."
     },
     {
       "src": "I confirm the information above is correct.",
@@ -1033,8 +1033,8 @@
       "out": "Me neebe le mam momasôna ma yé i ngii ma téé.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 116."
+      "sure": false,
+      "note": "Same as 116."
     },
     {
       "src": "Modifier",
@@ -1042,7 +1042,7 @@
       "out": "Héñha",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Edit",
@@ -1050,7 +1050,7 @@
       "out": "Héñha",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Confirmer le transfert",
@@ -1058,8 +1058,8 @@
       "out": "Neebe transfert",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Check if 'neebe' is clear enough on a button."
+      "sure": false,
+      "note": "Check if 'neebe' is clear enough on a button."
     },
     {
       "src": "Confirm transfer",
@@ -1067,8 +1067,8 @@
       "out": "Neebe transfert",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 120."
+      "sure": false,
+      "note": "Same as 120."
     },
     {
       "src": "Transfert effectué",
@@ -1076,8 +1076,8 @@
       "out": "Transfert i mal ke",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'transfer has gone'; verify aspect."
+      "sure": false,
+      "note": "'transfer has gone'; verify aspect."
     },
     {
       "src": "Transfer completed",
@@ -1085,8 +1085,8 @@
       "out": "Transfert i mal ke",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 122."
+      "sure": false,
+      "note": "Same as 122."
     },
     {
       "src": "Votre transfert a été envoyé avec succès.",
@@ -1094,7 +1094,7 @@
       "out": "Transfert yoñ i mal ke loñge.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Your transfer has been sent successfully.",
@@ -1102,7 +1102,7 @@
       "out": "Transfert yoñ i mal ke loñge.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Statut",
@@ -1110,8 +1110,8 @@
       "out": "Statut",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept French."
+      "sure": false,
+      "note": "Kept French."
     },
     {
       "src": "Status",
@@ -1119,8 +1119,8 @@
       "out": "Statut",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 126."
+      "sure": false,
+      "note": "Same as 126."
     },
     {
       "src": "Succès",
@@ -1128,8 +1128,8 @@
       "out": "I mbôña loñge",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'succeeded'; verify short badge label."
+      "sure": false,
+      "note": "'succeeded'; verify short badge label."
     },
     {
       "src": "Success",
@@ -1137,8 +1137,8 @@
       "out": "I mbôña loñge",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 128."
+      "sure": false,
+      "note": "Same as 128."
     },
     {
       "src": "Nouveau transfert",
@@ -1146,8 +1146,8 @@
       "out": "Om moni mipe",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify concord on 'mipe'."
+      "sure": false,
+      "note": "Verify concord on 'mipe'."
     },
     {
       "src": "New transfer",
@@ -1155,8 +1155,8 @@
       "out": "Om moni mipe",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 130."
+      "sure": false,
+      "note": "Same as 130."
     },
     {
       "src": "Annuler",
@@ -1164,8 +1164,8 @@
       "out": "Tjél",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "refuse/reject/cancel; verify vs 'kôdôl'."
+      "sure": false,
+      "note": "refuse/reject/cancel; verify vs 'kôdôl'."
     },
     {
       "src": "Cancel",
@@ -1173,8 +1173,8 @@
       "out": "Tjél",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 132."
+      "sure": false,
+      "note": "Same as 132."
     },
     {
       "src": "Valider",
@@ -1182,8 +1182,8 @@
       "out": "Neebe",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 22."
+      "sure": false,
+      "note": "Same as 22."
     },
     {
       "src": "Validate",
@@ -1191,8 +1191,8 @@
       "out": "Neebe",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 22."
+      "sure": false,
+      "note": "Same as 22."
     },
     {
       "src": "Envoyer",
@@ -1200,7 +1200,7 @@
       "out": "Om",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Send",
@@ -1208,7 +1208,7 @@
       "out": "Om",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Fermer",
@@ -1216,8 +1216,8 @@
       "out": "Kôdôl",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify vs 'yib' for closing a dialog."
+      "sure": false,
+      "note": "Verify vs 'yib' for closing a dialog."
     },
     {
       "src": "Close",
@@ -1225,8 +1225,8 @@
       "out": "Kôdôl",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 138."
+      "sure": false,
+      "note": "Same as 138."
     },
     {
       "src": "Oui",
@@ -1234,7 +1234,7 @@
       "out": "Ñ",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Yes",
@@ -1242,7 +1242,7 @@
       "out": "Ñ",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Non",
@@ -1250,8 +1250,8 @@
       "out": "To",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'To' or 'héni' for 'no'; verify which is standard."
+      "sure": false,
+      "note": "'To' or 'héni' for 'no'; verify which is standard."
     },
     {
       "src": "No",
@@ -1259,8 +1259,8 @@
       "out": "To",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 142."
+      "sure": false,
+      "note": "Same as 142."
     },
     {
       "src": "Attention",
@@ -1268,7 +1268,7 @@
       "out": "Yihe",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Warning",
@@ -1276,7 +1276,7 @@
       "out": "Yihe",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Erreur",
@@ -1284,7 +1284,7 @@
       "out": "Hihôha",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Error",
@@ -1292,7 +1292,7 @@
       "out": "Hihôha",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Transfert annulé",
@@ -1300,8 +1300,8 @@
       "out": "Transfert i ntjélba",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Passive of 'tjél'; verify morphology."
+      "sure": false,
+      "note": "Passive of 'tjél'; verify morphology."
     },
     {
       "src": "Transfer cancelled",
@@ -1309,8 +1309,8 @@
       "out": "Transfert i ntjélba",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 148."
+      "sure": false,
+      "note": "Same as 148."
     },
     {
       "src": "Transfert en cours",
@@ -1318,8 +1318,8 @@
       "out": "Transfert i ngi keek",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify progressive aspect."
+      "sure": false,
+      "note": "Verify progressive aspect."
     },
     {
       "src": "Transfer in progress",
@@ -1327,8 +1327,8 @@
       "out": "Transfert i ngi keek",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 150."
+      "sure": false,
+      "note": "Same as 150."
     },
     {
       "src": "Transaction en cours de traitement.",
@@ -1336,8 +1336,8 @@
       "out": "Ba ngi bôlô i ngii transaction.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'they are still working on the transaction'."
+      "sure": false,
+      "note": "'they are still working on the transaction'."
     },
     {
       "src": "Transaction being processed.",
@@ -1345,8 +1345,8 @@
       "out": "Ba ngi bôlô i ngii transaction.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 152."
+      "sure": false,
+      "note": "Same as 152."
     },
     {
       "src": "Ne communiquez jamais votre code PIN.",
@@ -1354,8 +1354,8 @@
       "out": "U ti bañ mut to wada code PIN yoñ.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Prohibitive 'bañ' + 'mut to wada' (not even one person); 'wada' is 'one', check against Rule 2."
+      "sure": false,
+      "note": "Prohibitive 'bañ' + 'mut to wada' (not even one person); 'wada' is 'one', check against Rule 2."
     },
     {
       "src": "Never share your PIN code.",
@@ -1363,8 +1363,8 @@
       "out": "U ti bañ mut to wada code PIN yoñ.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 154."
+      "sure": false,
+      "note": "Same as 154."
     },
     {
       "src": "Ne partagez jamais votre code OTP.",
@@ -1372,8 +1372,8 @@
       "out": "U ti bañ mut to wada code OTP yoñ.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 154."
+      "sure": false,
+      "note": "Same as 154."
     },
     {
       "src": "Never share your OTP code.",
@@ -1381,8 +1381,8 @@
       "out": "U ti bañ mut to wada code OTP yoñ.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 154."
+      "sure": false,
+      "note": "Same as 154."
     },
     {
       "src": "Safinum ne vous demandera jamais votre code PIN.",
@@ -1390,8 +1390,8 @@
       "out": "Safinum a ga bat bé we code PIN yoñ kekikel.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'Kekikel' = never; strong negative future."
+      "sure": false,
+      "note": "'Kekikel' = never; strong negative future."
     },
     {
       "src": "Safinum will never ask for your PIN code.",
@@ -1399,8 +1399,8 @@
       "out": "Safinum a ga bat bé we code PIN yoñ kekikel.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 158."
+      "sure": false,
+      "note": "Same as 158."
     },
     {
       "src": "Numéro de téléphone invalide.",
@@ -1408,8 +1408,8 @@
       "out": "Nômba i téléfôn ini i téé bé.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'this phone number is not correct'."
+      "sure": false,
+      "note": "'this phone number is not correct'."
     },
     {
       "src": "Invalid phone number.",
@@ -1417,8 +1417,8 @@
       "out": "Nômba i téléfôn ini i téé bé.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 160."
+      "sure": false,
+      "note": "Same as 160."
     },
     {
       "src": "Bénéficiaire introuvable.",
@@ -1426,8 +1426,8 @@
       "out": "Di nléba bé mut a nkôhna.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'we do not find'."
+      "sure": false,
+      "note": "'we do not find'."
     },
     {
       "src": "Beneficiary not found.",
@@ -1435,8 +1435,8 @@
       "out": "Di nléba bé mut a nkôhna.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 162."
+      "sure": false,
+      "note": "Same as 162."
     },
     {
       "src": "Plafond journalier atteint.",
@@ -1444,8 +1444,8 @@
       "out": "U mal pam i nseñ u moni u nsôk inyu len.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'you have reached the final amount for today'."
+      "sure": false,
+      "note": "'you have reached the final amount for today'."
     },
     {
       "src": "Daily limit reached.",
@@ -1453,8 +1453,8 @@
       "out": "U mal pam i nseñ u moni u nsôk inyu len.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 164."
+      "sure": false,
+      "note": "Same as 164."
     },
     {
       "src": "Montant maximum dépassé.",
@@ -1462,8 +1462,8 @@
       "out": "Nseñ u moni u ntagbe nseñ u nsôk.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'the amount exceeds the maximum'."
+      "sure": false,
+      "note": "'the amount exceeds the maximum'."
     },
     {
       "src": "Maximum amount exceeded.",
@@ -1471,8 +1471,8 @@
       "out": "Nseñ u moni u ntagbe nseñ u nsôk.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 166."
+      "sure": false,
+      "note": "Same as 166."
     },
     {
       "src": "Service temporairement indisponible.",
@@ -1480,8 +1480,8 @@
       "out": "Service i mbôlô bé hanano. Témb u nweksene mbus ndék ngéda.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'mbus ndék ngéda' = after a short time."
+      "sure": false,
+      "note": "'mbus ndék ngéda' = after a short time."
     },
     {
       "src": "Service temporarily unavailable.",
@@ -1489,8 +1489,8 @@
       "out": "Service i mbôlô bé hanano. Témb u nweksene mbus ndék ngéda.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 168."
+      "sure": false,
+      "note": "Same as 168."
     },
     {
       "src": "Votre session va expirer.",
@@ -1498,8 +1498,8 @@
       "out": "Session yoñ i mbééga kôdôl.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'mbééga' = is about to; verify verb choice."
+      "sure": false,
+      "note": "'mbééga' = is about to; verify verb choice."
     },
     {
       "src": "Your session will expire.",
@@ -1507,8 +1507,8 @@
       "out": "Session yoñ i mbééga kôdôl.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 170."
+      "sure": false,
+      "note": "Same as 170."
     },
     {
       "src": "Votre session a expiré. Veuillez vous reconnecter.",
@@ -1516,8 +1516,8 @@
       "out": "Session yoñ i mal kôdôl. Soho, témb u jôp.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'Soho' = please; 'témb u jôp' = log in again."
+      "sure": false,
+      "note": "'Soho' = please; 'témb u jôp' = log in again."
     },
     {
       "src": "Your session has expired. Please log in again.",
@@ -1525,8 +1525,8 @@
       "out": "Session yoñ i mal kôdôl. Soho, témb u jôp.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 172."
+      "sure": false,
+      "note": "Same as 172."
     },
     {
       "src": "Veuillez réessayer.",
@@ -1534,7 +1534,7 @@
       "out": "Soho, témb u nweksene.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Please try again.",
@@ -1542,7 +1542,7 @@
       "out": "Soho, témb u nweksene.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Opération réussie.",
@@ -1550,8 +1550,8 @@
       "out": "Bôlô i mbôña loñge.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'The operation succeeded well'."
+      "sure": false,
+      "note": "'The operation succeeded well'."
     },
     {
       "src": "Operation successful.",
@@ -1559,8 +1559,8 @@
       "out": "Bôlô i mbôña loñge.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 176."
+      "sure": false,
+      "note": "Same as 176."
     },
     {
       "src": "Code de vérification",
@@ -1568,8 +1568,8 @@
       "out": "Code i bémbe",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'bémbe' = check/verify."
+      "sure": false,
+      "note": "'bémbe' = check/verify."
     },
     {
       "src": "Verification code",
@@ -1577,8 +1577,8 @@
       "out": "Code i bémbe",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 178."
+      "sure": false,
+      "note": "Same as 178."
     },
     {
       "src": "Code PIN",
@@ -1586,7 +1586,7 @@
       "out": "Code PIN",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "PIN code",
@@ -1594,7 +1594,7 @@
       "out": "Code PIN",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     }
   ]
 }

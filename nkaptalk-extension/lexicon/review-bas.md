@@ -18,7 +18,7 @@ Reviewer: ________________  Date: __________
 
 **Proposed Basaa:** U ngi omok moni i mut nunu ni compte ini. Bémbe nômba ilole u nkena ni bisu.
 
-*The machine was unsure: Check negative past 'ngi omok' (have never sent).*
+*Worth a close look: Check negative past 'ngi omok' (have never sent).*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -36,7 +36,7 @@ if no, it should be: ________________________________________
 
 **Proposed Basaa:** Bémbe jôl ni nômba i mut a nkôhna hiki ngéda ilole u neebe transfert.
 
-*The machine was unsure: Check word order and tone for 'hiki ngéda' (always) and 'ilole' (before).*
+*Worth a close look: Check word order and tone for 'hiki ngéda' (always) and 'ilole' (before).*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -54,7 +54,7 @@ if no, it should be: ________________________________________
 
 **Proposed Basaa:** Neebe
 
-*The machine was unsure: accept/agree/confirm; verify imperative vs noun form.*
+*Worth a close look: accept/agree/confirm; verify imperative vs noun form.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -70,7 +70,7 @@ if no, it should be: ________________________________________
 
 **Proposed Basaa:** Nseñ u moni u nlama tagbe zéro.
 
-*The machine was unsure: Same as 82. (taken from the same line on the bank page)*
+*Worth a close look: Same as 82. (taken from the same line on the bank page)*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -88,7 +88,7 @@ if no, it should be: ________________________________________
 
 **Proposed Basaa:** Mut a nkôhna
 
-*The machine was unsure: 'person who receives'; verify vs 'bénéficiaire'.*
+*Worth a close look: 'person who receives'; verify vs 'bénéficiaire'.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -104,7 +104,7 @@ if no, it should be: ________________________________________
 
 **Proposed Basaa:** Nseñ u moni u ngwés om
 
-*The machine was unsure: Same as 66. (taken from the same line on the bank page)*
+*Worth a close look: Same as 66. (taken from the same line on the bank page)*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -122,7 +122,7 @@ if no, it should be: ________________________________________
 
 **Proposed Basaa:** Hihôha hi mbôña
 
-*The machine was unsure: 'Hihôha' (error) + 'hi mbôña' (has happened).*
+*Worth a close look: 'Hihôha' (error) + 'hi mbôña' (has happened).*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -140,7 +140,7 @@ if no, it should be: ________________________________________
 
 **Proposed Basaa:** U ti bañ mut to wada code PIN yoñ.
 
-*The machine was unsure: Prohibitive 'bañ' + 'mut to wada' (not even one person); 'wada' is 'one', check against Rule 2.*
+*Worth a close look: Prohibitive 'bañ' + 'mut to wada' (not even one person); 'wada' is 'one', check against Rule 2.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -158,7 +158,7 @@ if no, it should be: ________________________________________
 
 **Proposed Basaa:** Ha mam ma mut a nkôhna. Bémbe nômba hiki ngéda ilole u neebe.
 
-*The machine was unsure: Verify phrasing for 'enter details'.*
+*Worth a close look: Verify phrasing for 'enter details'.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -176,7 +176,7 @@ if no, it should be: ________________________________________
 
 **Proposed Basaa:** U nlama ndugi neebe mam mana ilole transfert i nla tagbe.
 
-*The machine was unsure: Check phrasing for 'validate'.*
+*Worth a close look: Check phrasing for 'validate'.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -194,7 +194,7 @@ if no, it should be: ________________________________________
 
 **Proposed Basaa:** Solde
 
-*The machine was unsure: No settled Basaa banking term for 'balance'; kept French.*
+*Worth a close look: No settled Basaa banking term for 'balance'; kept French.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -212,7 +212,7 @@ if no, it should be: ________________________________________
 
 **Proposed Basaa:** Nômba i compte : {1}
 
-*The machine was unsure: 'Nômba' widely used loanword; verify tone/spelling.*
+*Worth a close look: 'Nômba' widely used loanword; verify tone/spelling.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -228,7 +228,7 @@ if no, it should be: ________________________________________
 
 **Proposed Basaa:** Ntén transfert
 
-*The machine was unsure: Same as 55. (taken from the same line on the bank page)*
+*Worth a close look: Same as 55. (taken from the same line on the bank page)*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -262,7 +262,7 @@ if no, it should be: ________________________________________
 
 **Proposed Basaa:** U ti bañ mut to wada code OTP yoñ.
 
-*The machine was unsure: Same as 154.*
+*Worth a close look: Same as 154.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -280,7 +280,7 @@ if no, it should be: ________________________________________
 
 **Proposed Basaa:** Yihe inyu nsañ
 
-*The machine was unsure: Verify strong phrase for 'Security warning'.*
+*Worth a close look: Verify strong phrase for 'Security warning'.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -298,7 +298,7 @@ if no, it should be: ________________________________________
 
 **Proposed Basaa:** Me neebe le mam momasôna ma yé i ngii ma téé.
 
-*The machine was unsure: 'ma téé' = are correct; verify concord.*
+*Worth a close look: 'ma téé' = are correct; verify concord.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -316,7 +316,7 @@ if no, it should be: ________________________________________
 
 **Proposed Basaa:** Frais
 
-*The machine was unsure: No settled Basaa term for transaction fees; kept French.*
+*Worth a close look: No settled Basaa term for transaction fees; kept French.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -334,7 +334,7 @@ if no, it should be: ________________________________________
 
 **Proposed Basaa:** Nômba i téléfôn
 
-*The machine was unsure: Verify standard Basaa spelling.*
+*Worth a close look: Verify standard Basaa spelling.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -350,7 +350,7 @@ if no, it should be: ________________________________________
 
 **Proposed Basaa:** Transfert i mal ke
 
-*The machine was unsure: Same as 122. (taken from the same line on the bank page)*
+*Worth a close look: Same as 122. (taken from the same line on the bank page)*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 

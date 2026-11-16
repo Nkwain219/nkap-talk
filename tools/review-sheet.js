@@ -50,12 +50,12 @@ page.entries.forEach((e, i) => {
   const r = rank(e.src + ' ' + e.pidgin);
   // an unsure draft matters more than a confident one
   rows.push({ set: 'page', n: i + 1, src: e.src, pidgin: e.pidgin, out: e.out, reviewed: e.reviewed,
-    score: r.score + (e.aiSure === false ? 8 : 0), why: r.why, note: e.aiNote || '' });
+    score: r.score + (e.sure === false ? 8 : 0), why: r.why, note: e.note || '' });
 });
 replies.entries.forEach((e, i) => {
   const r = rank(e.pidgin);
   rows.push({ set: 'reply', n: i + 1, src: '', pidgin: e.pidgin, out: e.out, reviewed: e.reviewed,
-    score: r.score + (e.aiSure === false ? 8 : 0) + 5, why: r.why, note: e.aiNote || '' });
+    score: r.score + (e.sure === false ? 8 : 0) + 5, why: r.why, note: e.note || '' });
 });
 
 const seen = new Set();
@@ -96,7 +96,7 @@ pick.forEach((x, i) => {
   if (x.src) md += `**The bank says:** ${x.src}\n\n`;
   md += `**In Pidgin:** ${x.pidgin}\n\n`;
   md += `**Proposed ${name}:** ${x.out || '_(nothing yet)_'}\n\n`;
-  if (x.note) md += `*The machine was unsure: ${x.note}*\n\n`;
+  if (x.note) md += `*Worth a close look: ${x.note}*\n\n`;
   md += `correct? ☐ yes  ☐ no  ☐ not sure\n\n`;
   md += `if no, it should be: ________________________________________\n\n`;
   md += `<small>${x.set} line ${x.n}</small>\n\n---\n\n`;

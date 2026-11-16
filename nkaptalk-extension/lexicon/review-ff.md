@@ -34,7 +34,7 @@ if no, it should be: ________________________________________
 
 **Proposed Fulfulde:** Tintinol kisal
 
-*The machine was unsure: 'notice of safety'; verify vs 'Alerte de sécurité'.*
+*Worth a close look: 'notice of safety'; verify vs 'Alerte de sécurité'.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -52,7 +52,7 @@ if no, it should be: ________________________________________
 
 **Proposed Fulfulde:** Tabitingo
 
-*The machine was unsure: confirming/making certain; 'confirmer' also widely used.*
+*Worth a close look: confirming/making certain; 'confirmer' also widely used.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -70,7 +70,7 @@ if no, it should be: ________________________________________
 
 **Proposed Fulfulde:** Suɓu iri neldal ceede bee ko foti. Frais ɗon limte bee hoore muum.
 
-*The machine was unsure: Verify 'limte bee hoore muum' (calculated by itself).*
+*Worth a close look: Verify 'limte bee hoore muum' (calculated by itself).*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -88,7 +88,7 @@ if no, it should be: ________________________________________
 
 **Proposed Fulfulde:** Jaɓoowo
 
-*The machine was unsure: recipient/receiver; speakers also use 'bénéficiaire'.*
+*Worth a close look: recipient/receiver; speakers also use 'bénéficiaire'.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -106,7 +106,7 @@ if no, it should be: ________________________________________
 
 **Proposed Fulfulde:** Ɗon yotta jooni-jooni, walaa ko yoɓete
 
-*The machine was unsure: 'jooni-jooni' right away; 'walaa ko yoɓete' nothing is paid.*
+*Worth a close look: 'jooni-jooni' right away; 'walaa ko yoɓete' nothing is paid.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -124,7 +124,7 @@ if no, it should be: ________________________________________
 
 **Proposed Fulfulde:** Boofki
 
-*The machine was unsure: mistake/error; verify vs 'Erreur' for technical errors.*
+*Worth a close look: mistake/error; verify vs 'Erreur' for technical errors.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -158,7 +158,7 @@ if no, it should be: ________________________________________
 
 **Proposed Fulfulde:** Tintinol kisal : laaru numéro téléphone jaɓoowo hiddeko a tokka yeeso.
 
-*The machine was unsure: Same as 100.*
+*Worth a close look: Same as 100.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -176,7 +176,7 @@ if no, it should be: ________________________________________
 
 **Proposed Fulfulde:** Woppu
 
-*The machine was unsure: leave/drop/cancel; 'annuler' also common in digital UIs.*
+*Worth a close look: leave/drop/cancel; 'annuler' also common in digital UIs.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -194,7 +194,7 @@ if no, it should be: ________________________________________
 
 **Proposed Fulfulde:** Frais {1} (ɗum ustaako les {2}, ɗum ɓurataa {3})
 
-*The machine was unsure: 'ustaako les' does not go below, 'ɓurataa' does not exceed.*
+*Worth a close look: 'ustaako les' does not go below, 'ɓurataa' does not exceed.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -226,7 +226,7 @@ if no, it should be: ________________________________________
 
 **Proposed Fulfulde:** Ceede ɗe ngiɗɗaa neldugo
 
-*The machine was unsure: (taken from the same line on the bank page)*
+*Worth a close look: (taken from the same line on the bank page)*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -292,7 +292,7 @@ if no, it should be: ________________________________________
 
 **Proposed Fulfulde:** Neldal ceede woppaama
 
-*The machine was unsure: 'has been dropped/cancelled'; verify phrasing.*
+*Worth a close look: 'has been dropped/cancelled'; verify phrasing.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -310,7 +310,7 @@ if no, it should be: ________________________________________
 
 **Proposed Fulfulde:** Ko foti
 
-*The machine was unsure: 'how much/the amount'; speakers also use 'Montant'.*
+*Worth a close look: 'how much/the amount'; speakers also use 'Montant'.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -342,7 +342,7 @@ if no, it should be: ________________________________________
 
 **Proposed Fulfulde:** Iri neldal ceede
 
-*The machine was unsure: (taken from the same line on the bank page)*
+*Worth a close look: (taken from the same line on the bank page)*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 

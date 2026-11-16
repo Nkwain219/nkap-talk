@@ -8,8 +8,8 @@
       "out": "Nokkuure jarribaaki — kabaaruuji fenaande, ceede goonga ɗon yaataa.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'place of testing' and 'false information'."
+      "sure": false,
+      "note": "'place of testing' and 'false information'."
     },
     {
       "src": "Test environment — fictional data, no real transaction.",
@@ -17,8 +17,8 @@
       "out": "Nokkuure jarribaaki — kabaaruuji fenaande, ceede goonga ɗon yaataa.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 1."
+      "sure": false,
+      "note": "Same as 1."
     },
     {
       "src": "Protocole de test",
@@ -26,8 +26,8 @@
       "out": "Dookaji jarribaaki",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'Dookaji' rules/laws; 'jarribaaki' testing."
+      "sure": false,
+      "note": "'Dookaji' rules/laws; 'jarribaaki' testing."
     },
     {
       "src": "Test protocol",
@@ -35,8 +35,8 @@
       "out": "Dookaji jarribaaki",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 3."
+      "sure": false,
+      "note": "Same as 3."
     },
     {
       "src": "Retour au hackathon",
@@ -44,7 +44,7 @@
       "out": "Lortu haa hackathon",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Back to hackathon",
@@ -52,7 +52,7 @@
       "out": "Lortu haa hackathon",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Banque en ligne",
@@ -60,8 +60,8 @@
       "out": "Banki dow internet",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept 'Banki' and 'internet' as used in Adamawa/North."
+      "sure": false,
+      "note": "Kept 'Banki' and 'internet' as used in Adamawa/North."
     },
     {
       "src": "Online banking",
@@ -69,8 +69,8 @@
       "out": "Banki dow internet",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 7."
+      "sure": false,
+      "note": "Same as 7."
     },
     {
       "src": "Connexion sécurisée",
@@ -78,8 +78,8 @@
       "out": "Connexion ɗon haa kisal",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'ɗon haa kisal' means is in safety."
+      "sure": false,
+      "note": "'ɗon haa kisal' means is in safety."
     },
     {
       "src": "Secure connection",
@@ -87,8 +87,8 @@
       "out": "Connexion ɗon haa kisal",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 9."
+      "sure": false,
+      "note": "Same as 9."
     },
     {
       "src": "{} — environnement de démonstration. Ne saisissez aucune donnée personnelle réelle.",
@@ -96,8 +96,8 @@
       "out": "{1} — nokkuure jarribaaki. Taa nastin kabaaruuji maaɗa goonga ɗoo.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'real personal data' as 'kabaaruuji maaɗa goonga'."
+      "sure": false,
+      "note": "'real personal data' as 'kabaaruuji maaɗa goonga'."
     },
     {
       "src": "{} — demonstration environment. Do not enter real personal data.",
@@ -105,8 +105,8 @@
       "out": "{1} — nokkuure jarribaaki. Taa nastin kabaaruuji maaɗa goonga ɗoo.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 11."
+      "sure": false,
+      "note": "Same as 11."
     },
     {
       "src": "Solde",
@@ -114,7 +114,7 @@
       "out": "Solde",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Balance",
@@ -122,7 +122,7 @@
       "out": "Solde",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Frais",
@@ -130,7 +130,7 @@
       "out": "Frais",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Fees",
@@ -138,7 +138,7 @@
       "out": "Frais",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Fee",
@@ -146,7 +146,7 @@
       "out": "Frais",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Bénéficiaire",
@@ -154,8 +154,8 @@
       "out": "Jaɓoowo",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "recipient/receiver; speakers also use 'bénéficiaire'."
+      "sure": false,
+      "note": "recipient/receiver; speakers also use 'bénéficiaire'."
     },
     {
       "src": "Beneficiary",
@@ -163,8 +163,8 @@
       "out": "Jaɓoowo",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 18."
+      "sure": false,
+      "note": "Same as 18."
     },
     {
       "src": "Récapitulatif",
@@ -172,8 +172,8 @@
       "out": "Laaru fahin",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'look/check again'; unsure of a shorter UI label."
+      "sure": false,
+      "note": "'look/check again'; unsure of a shorter UI label."
     },
     {
       "src": "Summary",
@@ -181,8 +181,8 @@
       "out": "Laaru fahin",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 20."
+      "sure": false,
+      "note": "Same as 20."
     },
     {
       "src": "Confirmation",
@@ -190,8 +190,8 @@
       "out": "Tabitingo",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "confirming/making certain; 'confirmer' also widely used."
+      "sure": false,
+      "note": "confirming/making certain; 'confirmer' also widely used."
     },
     {
       "src": "Votre compte",
@@ -199,7 +199,7 @@
       "out": "Compte maaɗa",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Your account",
@@ -207,7 +207,7 @@
       "out": "Compte maaɗa",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Consultez votre solde et lancez un transfert en toute sécurité.",
@@ -215,7 +215,7 @@
       "out": "Laaru solde maaɗa, a nelda ceede bee kisal.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Check your balance and start a secure transfer.",
@@ -223,7 +223,7 @@
       "out": "Laaru solde maaɗa, a nelda ceede bee kisal.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Solde disponible",
@@ -231,7 +231,7 @@
       "out": "Ceede gonɗe nder compte maaɗa",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Available balance",
@@ -239,7 +239,7 @@
       "out": "Ceede gonɗe nder compte maaɗa",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Numéro de compte : {}",
@@ -247,7 +247,7 @@
       "out": "Numéro compte : {1}",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Account number : {}",
@@ -255,7 +255,7 @@
       "out": "Numéro compte : {1}",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Compte courant",
@@ -263,7 +263,7 @@
       "out": "Compte courant",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Current account",
@@ -271,7 +271,7 @@
       "out": "Compte courant",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Effectuer un transfert",
@@ -279,7 +279,7 @@
       "out": "Neldu ceede",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Make a transfer",
@@ -287,7 +287,7 @@
       "out": "Neldu ceede",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Consulter les frais",
@@ -295,7 +295,7 @@
       "out": "Laaru frais",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "View fees",
@@ -303,7 +303,7 @@
       "out": "Laaru frais",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Transactions récentes",
@@ -311,8 +311,8 @@
       "out": "Ceede dilluɗe baawo ɗoo",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'money that moved recently'."
+      "sure": false,
+      "note": "'money that moved recently'."
     },
     {
       "src": "Recent transactions",
@@ -320,8 +320,8 @@
       "out": "Ceede dilluɗe baawo ɗoo",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 37."
+      "sure": false,
+      "note": "Same as 37."
     },
     {
       "src": "Paiement marchand",
@@ -329,8 +329,8 @@
       "out": "Yoɓugo haa kanti",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'Yoɓugo' paying, 'kanti' shop."
+      "sure": false,
+      "note": "'Yoɓugo' paying, 'kanti' shop."
     },
     {
       "src": "Merchant payment",
@@ -338,8 +338,8 @@
       "out": "Yoɓugo haa kanti",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 39."
+      "sure": false,
+      "note": "Same as 39."
     },
     {
       "src": "Salaire reçu",
@@ -347,7 +347,7 @@
       "out": "Ngeenaari nastii",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Salary received",
@@ -355,7 +355,7 @@
       "out": "Ngeenaari nastii",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Transfert reçu",
@@ -363,7 +363,7 @@
       "out": "Ceede neldaaɗe ma",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Transfer received",
@@ -371,7 +371,7 @@
       "out": "Ceede neldaaɗe ma",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Facture électricité",
@@ -379,7 +379,7 @@
       "out": "Facture courant",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Electricity bill",
@@ -387,7 +387,7 @@
       "out": "Facture courant",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Sécurité",
@@ -395,8 +395,8 @@
       "out": "Hakkilango",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "being careful; 'sécurité' also commonly used."
+      "sure": false,
+      "note": "being careful; 'sécurité' also commonly used."
     },
     {
       "src": "Security",
@@ -404,8 +404,8 @@
       "out": "Hakkilango",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 47."
+      "sure": false,
+      "note": "Same as 47."
     },
     {
       "src": "Vérifiez toujours le nom et le numéro du bénéficiaire avant de confirmer un transfert.",
@@ -413,7 +413,7 @@
       "out": "Wakkati fuu, laaru innde bee numéro jaɓoowo hiddeko a tabitina neldal ceede.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Always verify the beneficiary name and number before confirming a transfer.",
@@ -421,7 +421,7 @@
       "out": "Wakkati fuu, laaru innde bee numéro jaɓoowo hiddeko a tabitina neldal ceede.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Frais de transfert",
@@ -429,7 +429,7 @@
       "out": "Frais neldal ceede",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Transfer fees",
@@ -437,7 +437,7 @@
       "out": "Frais neldal ceede",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Choisissez le type de transfert et le montant. Les frais sont calculés automatiquement.",
@@ -445,8 +445,8 @@
       "out": "Suɓu iri neldal ceede bee ko foti. Frais ɗon limte bee hoore muum.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify 'limte bee hoore muum' (calculated by itself)."
+      "sure": false,
+      "note": "Verify 'limte bee hoore muum' (calculated by itself)."
     },
     {
       "src": "Choose the transfer type and amount. Fees are calculated automatically.",
@@ -454,8 +454,8 @@
       "out": "Suɓu iri neldal ceede bee ko foti. Frais ɗon limte bee hoore muum.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 53."
+      "sure": false,
+      "note": "Same as 53."
     },
     {
       "src": "Type d'opération",
@@ -463,7 +463,7 @@
       "out": "Iri neldal ceede",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Operation type",
@@ -471,7 +471,7 @@
       "out": "Iri neldal ceede",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Compte {}",
@@ -479,7 +479,7 @@
       "out": "Compte {1}",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "{} account",
@@ -487,7 +487,7 @@
       "out": "Compte {1}",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Mobile Money",
@@ -495,7 +495,7 @@
       "out": "Mobile Money",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Autre banque",
@@ -503,7 +503,7 @@
       "out": "Banki feere",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Other bank",
@@ -511,7 +511,7 @@
       "out": "Banki feere",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Transfert instantané et gratuit",
@@ -519,8 +519,8 @@
       "out": "Ɗon yotta jooni-jooni, walaa ko yoɓete",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'jooni-jooni' right away; 'walaa ko yoɓete' nothing is paid."
+      "sure": false,
+      "note": "'jooni-jooni' right away; 'walaa ko yoɓete' nothing is paid."
     },
     {
       "src": "Instant, free transfer",
@@ -528,8 +528,8 @@
       "out": "Ɗon yotta jooni-jooni, walaa ko yoɓete",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 62."
+      "sure": false,
+      "note": "Same as 62."
     },
     {
       "src": "Frais de {} (min. {}, max. {})",
@@ -537,8 +537,8 @@
       "out": "Frais {1} (ɗum ustaako les {2}, ɗum ɓurataa {3})",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'ustaako les' does not go below, 'ɓurataa' does not exceed."
+      "sure": false,
+      "note": "'ustaako les' does not go below, 'ɓurataa' does not exceed."
     },
     {
       "src": "{} fee (min. {}, max. {})",
@@ -546,8 +546,8 @@
       "out": "Frais {1} (ɗum ustaako les {2}, ɗum ɓurataa {3})",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 64."
+      "sure": false,
+      "note": "Same as 64."
     },
     {
       "src": "Montant à envoyer",
@@ -555,7 +555,7 @@
       "out": "Ceede ɗe ngiɗɗaa neldugo",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Amount to send",
@@ -563,7 +563,7 @@
       "out": "Ceede ɗe ngiɗɗaa neldugo",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Gratuit",
@@ -571,8 +571,8 @@
       "out": "Meere",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "free/for nothing; speakers also use 'gratuit' or 'walaa ceede'."
+      "sure": false,
+      "note": "free/for nothing; speakers also use 'gratuit' or 'walaa ceede'."
     },
     {
       "src": "Free",
@@ -580,8 +580,8 @@
       "out": "Meere",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 68."
+      "sure": false,
+      "note": "Same as 68."
     },
     {
       "src": "Total à débiter",
@@ -589,7 +589,7 @@
       "out": "Ceede fuu ɗe ɓe ittata nder compte maaɗa",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Total to debit",
@@ -597,7 +597,7 @@
       "out": "Ceede fuu ɗe ɓe ittata nder compte maaɗa",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Solde après opération",
@@ -605,7 +605,7 @@
       "out": "Solde baawo neldal ceede",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Balance after transfer",
@@ -613,7 +613,7 @@
       "out": "Solde baawo neldal ceede",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Retour",
@@ -621,7 +621,7 @@
       "out": "Lortu",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Back",
@@ -629,7 +629,7 @@
       "out": "Lortu",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Continuer",
@@ -637,7 +637,7 @@
       "out": "Tokku yeeso",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Continue",
@@ -645,7 +645,7 @@
       "out": "Tokku yeeso",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Une erreur est survenue",
@@ -653,7 +653,7 @@
       "out": "Huunde huuwaay booɗɗum",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "An error occurred",
@@ -661,7 +661,7 @@
       "out": "Huunde huuwaay booɗɗum",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Solde insuffisant pour effectuer ce transfert.",
@@ -669,7 +669,7 @@
       "out": "Ceede maaɗa keƴaay ngam neldal ceede ngal.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Insufficient balance for this transfer.",
@@ -677,7 +677,7 @@
       "out": "Ceede maaɗa keƴaay ngam neldal ceede ngal.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Le montant doit être supérieur à zéro.",
@@ -685,7 +685,7 @@
       "out": "Ceede ɗen haani ɓura zéro.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "The amount must be greater than zero.",
@@ -693,7 +693,7 @@
       "out": "Ceede ɗen haani ɓura zéro.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Vous devez confirmer les informations avant de valider le transfert.",
@@ -701,7 +701,7 @@
       "out": "A haani tabitingo kabaaruuji hiddeko a nelda ceede.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "You must confirm the details before validating the transfer.",
@@ -709,7 +709,7 @@
       "out": "A haani tabitingo kabaaruuji hiddeko a nelda ceede.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Renseignez les informations du destinataire. Vérifiez toujours le numéro avant de valider.",
@@ -717,7 +717,7 @@
       "out": "Nastin kabaaruuji jaɓoowo. Laaru numéro wakkati fuu hiddeko a tabitina.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Enter the recipient details. Always verify the number before confirming.",
@@ -725,7 +725,7 @@
       "out": "Nastin kabaaruuji jaɓoowo. Laaru numéro wakkati fuu hiddeko a tabitina.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Ce bénéficiaire n'a jamais été utilisé sur ce compte. Vérifiez le numéro avant de continuer.",
@@ -733,7 +733,7 @@
       "out": "A meɗaay neldugo neɗɗo oo ceede nder compte ngoo. Laaru numéro hiddeko a tokka yeeso.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "This beneficiary has never been used on this account. Verify the number before continuing.",
@@ -741,7 +741,7 @@
       "out": "A meɗaay neldugo neɗɗo oo ceede nder compte ngoo. Laaru numéro hiddeko a tokka yeeso.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Nom du bénéficiaire",
@@ -749,7 +749,7 @@
       "out": "Innde jaɓoowo",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Beneficiary name",
@@ -757,7 +757,7 @@
       "out": "Innde jaɓoowo",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Numéro de téléphone",
@@ -765,7 +765,7 @@
       "out": "Numéro téléphone",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Phone number",
@@ -773,7 +773,7 @@
       "out": "Numéro téléphone",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Motif du transfert",
@@ -781,7 +781,7 @@
       "out": "Ngam ɗume a ɗon nelda ceede",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Transfer reason",
@@ -789,7 +789,7 @@
       "out": "Ngam ɗume a ɗon nelda ceede",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Note (optionnel)",
@@ -797,8 +797,8 @@
       "out": "Note (to a yiɗi)",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept French 'Note'."
+      "sure": false,
+      "note": "Kept French 'Note'."
     },
     {
       "src": "Note (optional)",
@@ -806,8 +806,8 @@
       "out": "Note (to a yiɗi)",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 96."
+      "sure": false,
+      "note": "Same as 96."
     },
     {
       "src": "J'ai vérifié le nom et le numéro du bénéficiaire.",
@@ -815,7 +815,7 @@
       "out": "Mi laarii innde bee numéro téléphone jaɓoowo.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "I have verified the beneficiary name and phone number.",
@@ -823,7 +823,7 @@
       "out": "Mi laarii innde bee numéro téléphone jaɓoowo.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Alerte de sécurité",
@@ -831,8 +831,8 @@
       "out": "Tintinol kisal",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'notice of safety'; verify vs 'Alerte de sécurité'."
+      "sure": false,
+      "note": "'notice of safety'; verify vs 'Alerte de sécurité'."
     },
     {
       "src": "Security warning",
@@ -840,8 +840,8 @@
       "out": "Tintinol kisal",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 100."
+      "sure": false,
+      "note": "Same as 100."
     },
     {
       "src": "Alerte de sécurité : vérifiez le numéro du bénéficiaire avant de continuer.",
@@ -849,8 +849,8 @@
       "out": "Tintinol kisal : laaru numéro téléphone jaɓoowo hiddeko a tokka yeeso.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 100."
+      "sure": false,
+      "note": "Same as 100."
     },
     {
       "src": "Security warning: verify the beneficiary phone number before continuing.",
@@ -858,8 +858,8 @@
       "out": "Tintinol kisal : laaru numéro téléphone jaɓoowo hiddeko a tokka yeeso.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 102."
+      "sure": false,
+      "note": "Same as 102."
     },
     {
       "src": "Vérifiez les informations avant de confirmer le transfert.",
@@ -867,7 +867,7 @@
       "out": "Laaru kabaaruuji fuu hiddeko a tabitina neldal ceede.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Check the details before confirming the transfer.",
@@ -875,7 +875,7 @@
       "out": "Laaru kabaaruuji fuu hiddeko a tabitina neldal ceede.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Montant",
@@ -883,8 +883,8 @@
       "out": "Ko foti",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'how much/the amount'; speakers also use 'Montant'."
+      "sure": false,
+      "note": "'how much/the amount'; speakers also use 'Montant'."
     },
     {
       "src": "Amount",
@@ -892,8 +892,8 @@
       "out": "Ko foti",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 106."
+      "sure": false,
+      "note": "Same as 106."
     },
     {
       "src": "Total débité",
@@ -901,7 +901,7 @@
       "out": "Ceede fuu ɗe ɓe itti",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Total debited",
@@ -909,7 +909,7 @@
       "out": "Ceede fuu ɗe ɓe itti",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Téléphone",
@@ -917,7 +917,7 @@
       "out": "Téléphone",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Phone",
@@ -925,7 +925,7 @@
       "out": "Téléphone",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Référence",
@@ -933,7 +933,7 @@
       "out": "Référence",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Reference",
@@ -941,7 +941,7 @@
       "out": "Référence",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Opération",
@@ -949,7 +949,7 @@
       "out": "Iri neldal ceede",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Operation",
@@ -957,7 +957,7 @@
       "out": "Iri neldal ceede",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Je confirme que les informations ci-dessus sont correctes.",
@@ -965,7 +965,7 @@
       "out": "Mi ɗon tabitina kabaaruuji dow ɗoo fuu ɗon goonga.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "I confirm the information above is correct.",
@@ -973,7 +973,7 @@
       "out": "Mi ɗon tabitina kabaaruuji dow ɗoo fuu ɗon goonga.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Modifier",
@@ -981,7 +981,7 @@
       "out": "Sannju",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Edit",
@@ -989,7 +989,7 @@
       "out": "Sannju",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Confirmer le transfert",
@@ -997,7 +997,7 @@
       "out": "Tabitin neldal ceede",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Confirm transfer",
@@ -1005,7 +1005,7 @@
       "out": "Tabitin neldal ceede",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Transfert effectué",
@@ -1013,7 +1013,7 @@
       "out": "Ceede neldaama",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Transfer completed",
@@ -1021,7 +1021,7 @@
       "out": "Ceede neldaama",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Votre transfert a été envoyé avec succès.",
@@ -1029,7 +1029,7 @@
       "out": "Neldal ceede maaɗa yehii booɗɗum.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Your transfer has been sent successfully.",
@@ -1037,7 +1037,7 @@
       "out": "Neldal ceede maaɗa yehii booɗɗum.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Statut",
@@ -1045,8 +1045,8 @@
       "out": "Statut",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept French; no settled single-word UI label."
+      "sure": false,
+      "note": "Kept French; no settled single-word UI label."
     },
     {
       "src": "Status",
@@ -1054,8 +1054,8 @@
       "out": "Statut",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 126."
+      "sure": false,
+      "note": "Same as 126."
     },
     {
       "src": "Succès",
@@ -1063,7 +1063,7 @@
       "out": "Ɗum huuwii booɗɗum",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Success",
@@ -1071,7 +1071,7 @@
       "out": "Ɗum huuwii booɗɗum",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Nouveau transfert",
@@ -1079,7 +1079,7 @@
       "out": "Neldu ceede feere",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "New transfer",
@@ -1087,7 +1087,7 @@
       "out": "Neldu ceede feere",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Annuler",
@@ -1095,8 +1095,8 @@
       "out": "Woppu",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "leave/drop/cancel; 'annuler' also common in digital UIs."
+      "sure": false,
+      "note": "leave/drop/cancel; 'annuler' also common in digital UIs."
     },
     {
       "src": "Cancel",
@@ -1104,8 +1104,8 @@
       "out": "Woppu",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 132."
+      "sure": false,
+      "note": "Same as 132."
     },
     {
       "src": "Valider",
@@ -1113,7 +1113,7 @@
       "out": "Tabitin",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Validate",
@@ -1121,7 +1121,7 @@
       "out": "Tabitin",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Envoyer",
@@ -1129,7 +1129,7 @@
       "out": "Neldu",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Send",
@@ -1137,7 +1137,7 @@
       "out": "Neldu",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Fermer",
@@ -1145,7 +1145,7 @@
       "out": "Maɓɓu",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Close",
@@ -1153,7 +1153,7 @@
       "out": "Maɓɓu",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Oui",
@@ -1161,7 +1161,7 @@
       "out": "Ooho",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Yes",
@@ -1169,7 +1169,7 @@
       "out": "Ooho",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Non",
@@ -1177,7 +1177,7 @@
       "out": "A’aa",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "No",
@@ -1185,7 +1185,7 @@
       "out": "A’aa",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Attention",
@@ -1193,7 +1193,7 @@
       "out": "Hakkil",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Warning",
@@ -1201,7 +1201,7 @@
       "out": "Hakkil",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Erreur",
@@ -1209,8 +1209,8 @@
       "out": "Boofki",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "mistake/error; verify vs 'Erreur' for technical errors."
+      "sure": false,
+      "note": "mistake/error; verify vs 'Erreur' for technical errors."
     },
     {
       "src": "Error",
@@ -1218,8 +1218,8 @@
       "out": "Boofki",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 146."
+      "sure": false,
+      "note": "Same as 146."
     },
     {
       "src": "Transfert annulé",
@@ -1227,8 +1227,8 @@
       "out": "Neldal ceede woppaama",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'has been dropped/cancelled'; verify phrasing."
+      "sure": false,
+      "note": "'has been dropped/cancelled'; verify phrasing."
     },
     {
       "src": "Transfer cancelled",
@@ -1236,8 +1236,8 @@
       "out": "Neldal ceede woppaama",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 148."
+      "sure": false,
+      "note": "Same as 148."
     },
     {
       "src": "Transfert en cours",
@@ -1245,7 +1245,7 @@
       "out": "Neldal ceede ɗon yaha haa jooni",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Transfer in progress",
@@ -1253,7 +1253,7 @@
       "out": "Neldal ceede ɗon yaha haa jooni",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Transaction en cours de traitement.",
@@ -1261,8 +1261,8 @@
       "out": "Ɓe ɗon kuuwa dow transaction haa jooni.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'they are working on'."
+      "sure": false,
+      "note": "'they are working on'."
     },
     {
       "src": "Transaction being processed.",
@@ -1270,8 +1270,8 @@
       "out": "Ɓe ɗon kuuwa dow transaction haa jooni.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 152."
+      "sure": false,
+      "note": "Same as 152."
     },
     {
       "src": "Ne communiquez jamais votre code PIN.",
@@ -1279,7 +1279,7 @@
       "out": "Taa hokku hay gooto code PIN maaɗa abada.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Never share your PIN code.",
@@ -1287,7 +1287,7 @@
       "out": "Taa hokku hay gooto code PIN maaɗa abada.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Ne partagez jamais votre code OTP.",
@@ -1295,7 +1295,7 @@
       "out": "Taa hokku hay gooto code OTP maaɗa abada.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Never share your OTP code.",
@@ -1303,7 +1303,7 @@
       "out": "Taa hokku hay gooto code OTP maaɗa abada.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Safinum ne vous demandera jamais votre code PIN.",
@@ -1311,7 +1311,7 @@
       "out": "Safinum ƴamataa ma code PIN maaɗa abada.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Safinum will never ask for your PIN code.",
@@ -1319,7 +1319,7 @@
       "out": "Safinum ƴamataa ma code PIN maaɗa abada.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Numéro de téléphone invalide.",
@@ -1327,7 +1327,7 @@
       "out": "Numéro téléphone oo wooɗaay.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Invalid phone number.",
@@ -1335,7 +1335,7 @@
       "out": "Numéro téléphone oo wooɗaay.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Bénéficiaire introuvable.",
@@ -1343,7 +1343,7 @@
       "out": "Min yi’aay jaɓoowo oo.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Beneficiary not found.",
@@ -1351,7 +1351,7 @@
       "out": "Min yi’aay jaɓoowo oo.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Plafond journalier atteint.",
@@ -1359,8 +1359,8 @@
       "out": "A yottake keeri ceede hannde.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'reached the limit of money for today'."
+      "sure": false,
+      "note": "'reached the limit of money for today'."
     },
     {
       "src": "Daily limit reached.",
@@ -1368,8 +1368,8 @@
       "out": "A yottake keeri ceede hannde.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 164."
+      "sure": false,
+      "note": "Same as 164."
     },
     {
       "src": "Montant maximum dépassé.",
@@ -1377,7 +1377,7 @@
       "out": "Ceede ɗen ɓurii maximum.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Maximum amount exceeded.",
@@ -1385,7 +1385,7 @@
       "out": "Ceede ɗen ɓurii maximum.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Service temporairement indisponible.",
@@ -1393,7 +1393,7 @@
       "out": "Service huuwataa jooni. Jarribu fahin baawo seeɗa.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Service temporarily unavailable.",
@@ -1401,7 +1401,7 @@
       "out": "Service huuwataa jooni. Jarribu fahin baawo seeɗa.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Votre session va expirer.",
@@ -1409,8 +1409,8 @@
       "out": "Session maaɗa maɓɓete ɓaawo seeɗa.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'will close soon'."
+      "sure": false,
+      "note": "'will close soon'."
     },
     {
       "src": "Your session will expire.",
@@ -1418,8 +1418,8 @@
       "out": "Session maaɗa maɓɓete ɓaawo seeɗa.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 170."
+      "sure": false,
+      "note": "Same as 170."
     },
     {
       "src": "Votre session a expiré. Veuillez vous reconnecter.",
@@ -1427,7 +1427,7 @@
       "out": "Session maaɗa maɓɓaama. Useni, nastu fahin.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Your session has expired. Please log in again.",
@@ -1435,7 +1435,7 @@
       "out": "Session maaɗa maɓɓaama. Useni, nastu fahin.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Veuillez réessayer.",
@@ -1443,7 +1443,7 @@
       "out": "Useni, jarribu fahin.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Please try again.",
@@ -1451,7 +1451,7 @@
       "out": "Useni, jarribu fahin.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Opération réussie.",
@@ -1459,7 +1459,7 @@
       "out": "Ɗum huuwii booɗɗum.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Operation successful.",
@@ -1467,7 +1467,7 @@
       "out": "Ɗum huuwii booɗɗum.",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Code de vérification",
@@ -1475,8 +1475,8 @@
       "out": "Code laarugo",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "'code to check'; speakers often say 'code de vérification'."
+      "sure": false,
+      "note": "'code to check'; speakers often say 'code de vérification'."
     },
     {
       "src": "Verification code",
@@ -1484,8 +1484,8 @@
       "out": "Code laarugo",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Same as 178."
+      "sure": false,
+      "note": "Same as 178."
     },
     {
       "src": "Code PIN",
@@ -1493,7 +1493,7 @@
       "out": "Code PIN",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "PIN code",
@@ -1501,7 +1501,7 @@
       "out": "Code PIN",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     }
   ]
 }

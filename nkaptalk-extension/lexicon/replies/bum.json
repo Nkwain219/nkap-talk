@@ -37,8 +37,8 @@
       "out": "Bank mfe",
       "reviewed": false,
       "by": "",
-      "aiSure": true,
-      "aiNote": "(taken from the same line on the bank page)"
+      "sure": true,
+      "note": "(taken from the same line on the bank page)"
     },
     {
       "pidgin": "balance after go be",
@@ -63,8 +63,8 @@
       "out": "Abim moni da yiane dañ zéro.",
       "reviewed": false,
       "by": "",
-      "aiSure": true,
-      "aiNote": "(taken from the same line on the bank page)"
+      "sure": true,
+      "note": "(taken from the same line on the bank page)"
     },
     {
       "pidgin": "di button dem na",
@@ -137,8 +137,8 @@
       "out": "Abim moni ô kômbô lôm",
       "reviewed": false,
       "by": "",
-      "aiSure": true,
-      "aiNote": "(taken from the same line on the bank page)"
+      "sure": true,
+      "note": "(taken from the same line on the bank page)"
     },
     {
       "pidgin": "how you dey",
@@ -265,8 +265,8 @@
       "out": "Aval nlôman moni",
       "reviewed": false,
       "by": "",
-      "aiSure": true,
-      "aiNote": "(taken from the same line on the bank page)"
+      "sure": true,
+      "note": "(taken from the same line on the bank page)"
     },
     {
       "pidgin": "kind of transfer na",
@@ -297,8 +297,8 @@
       "out": "Mobile Money",
       "reviewed": false,
       "by": "",
-      "aiSure": true,
-      "aiNote": "(taken from the same line on the bank page)"
+      "sure": true,
+      "note": "(taken from the same line on the bank page)"
     },
     {
       "pidgin": "moni wey dey your account na",
@@ -473,8 +473,8 @@
       "out": "Moni a keya",
       "reviewed": false,
       "by": "",
-      "aiSure": true,
-      "aiNote": "(taken from the same line on the bank page)"
+      "sure": true,
+      "note": "(taken from the same line on the bank page)"
     },
     {
       "pidgin": "translate off",
@@ -517,8 +517,8 @@
       "out": "Amu jé wo lôm moni",
       "reviewed": false,
       "by": "",
-      "aiSure": true,
-      "aiNote": "(taken from the same line on the bank page)"
+      "sure": true,
+      "note": "(taken from the same line on the bank page)"
     },
     {
       "pidgin": "you fit tell me how much moni dey my account wetin be di charge i wan send 5000 give ngwa paul wetin dey for screen or say am again",

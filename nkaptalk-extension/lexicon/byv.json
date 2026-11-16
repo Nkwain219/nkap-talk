@@ -8,8 +8,8 @@
       "out": "Fə̀' yà'rə́ — mə̀sɔ̀ŋ mə̀ bə̀bɔ̀ŋ, nkàb mə̀tɔ̀' mə̀ kə̀ kɛ̀.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Approximated 'test place / fictional data'; verify with a native Medumba speaker."
+      "sure": false,
+      "note": "Approximated 'test place / fictional data'; verify with a native Medumba speaker."
     },
     {
       "src": "Test environment — fictional data, no real transaction.",
@@ -17,8 +17,8 @@
       "out": "Fə̀' yà'rə́ — mə̀sɔ̀ŋ mə̀ bə̀bɔ̀ŋ, nkàb mə̀tɔ̀' mə̀ kə̀ kɛ̀.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Approximated 'test place / fictional data'; verify with a native Medumba speaker."
+      "sure": false,
+      "note": "Approximated 'test place / fictional data'; verify with a native Medumba speaker."
     },
     {
       "src": "Protocole de test",
@@ -26,8 +26,8 @@
       "out": "Mə̀tìŋ mə̀ yà'rə́",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Translated 'rules for testing'."
+      "sure": false,
+      "note": "Translated 'rules for testing'."
     },
     {
       "src": "Test protocol",
@@ -35,8 +35,8 @@
       "out": "Mə̀tìŋ mə̀ yà'rə́",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Translated 'rules for testing'."
+      "sure": false,
+      "note": "Translated 'rules for testing'."
     },
     {
       "src": "Retour au hackathon",
@@ -44,8 +44,8 @@
       "out": "Kɛ̀rə́ num hackathon",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept 'hackathon' as English loanword; verify preposition 'num'."
+      "sure": false,
+      "note": "Kept 'hackathon' as English loanword; verify preposition 'num'."
     },
     {
       "src": "Back to hackathon",
@@ -53,8 +53,8 @@
       "out": "Kɛ̀rə́ num hackathon",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept 'hackathon' as English loanword; verify preposition 'num'."
+      "sure": false,
+      "note": "Kept 'hackathon' as English loanword; verify preposition 'num'."
     },
     {
       "src": "Banque en ligne",
@@ -62,8 +62,8 @@
       "out": "Bank num internet",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept 'bank' and 'internet' per rule 6."
+      "sure": false,
+      "note": "Kept 'bank' and 'internet' per rule 6."
     },
     {
       "src": "Online banking",
@@ -71,8 +71,8 @@
       "out": "Bank num internet",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept 'bank' and 'internet' per rule 6."
+      "sure": false,
+      "note": "Kept 'bank' and 'internet' per rule 6."
     },
     {
       "src": "Connexion sécurisée",
@@ -80,8 +80,8 @@
       "out": "Connection bə̀ bɔ̀ŋ",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept 'connection'."
+      "sure": false,
+      "note": "Kept 'connection'."
     },
     {
       "src": "Secure connection",
@@ -89,8 +89,8 @@
       "out": "Connection bə̀ bɔ̀ŋ",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept 'connection'."
+      "sure": false,
+      "note": "Kept 'connection'."
     },
     {
       "src": "{} — environnement de démonstration. Ne saisissez aucune donnée personnelle réelle.",
@@ -98,8 +98,8 @@
       "out": "{1} — fə̀' yà'rə́. Kə̀ bì mə̀sɔ̀ŋ mù mə̀tɔ̀' fɛ̀n.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Security/demo warning; verify imperative prohibition 'kə̀ bì'."
+      "sure": false,
+      "note": "Security/demo warning; verify imperative prohibition 'kə̀ bì'."
     },
     {
       "src": "{} — demonstration environment. Do not enter real personal data.",
@@ -107,8 +107,8 @@
       "out": "{1} — fə̀' yà'rə́. Kə̀ bì mə̀sɔ̀ŋ mù mə̀tɔ̀' fɛ̀n.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Security/demo warning; verify imperative prohibition 'kə̀ bì'."
+      "sure": false,
+      "note": "Security/demo warning; verify imperative prohibition 'kə̀ bì'."
     },
     {
       "src": "Solde",
@@ -116,7 +116,7 @@
       "out": "Balance",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Balance",
@@ -124,7 +124,7 @@
       "out": "Balance",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Frais",
@@ -132,8 +132,8 @@
       "out": "Frais",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept French 'Frais' as commonly code-switched in Bangangté."
+      "sure": false,
+      "note": "Kept French 'Frais' as commonly code-switched in Bangangté."
     },
     {
       "src": "Fees",
@@ -141,8 +141,8 @@
       "out": "Frais",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept French 'Frais' as commonly code-switched in Bangangté."
+      "sure": false,
+      "note": "Kept French 'Frais' as commonly code-switched in Bangangté."
     },
     {
       "src": "Fee",
@@ -150,8 +150,8 @@
       "out": "Frais",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept French 'Frais' as commonly code-switched in Bangangté."
+      "sure": false,
+      "note": "Kept French 'Frais' as commonly code-switched in Bangangté."
     },
     {
       "src": "Bénéficiaire",
@@ -159,8 +159,8 @@
       "out": "Mɛ̀n zə́ à bə̀ kɔ̀'",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'the person who will receive'."
+      "sure": false,
+      "note": "Literal: 'the person who will receive'."
     },
     {
       "src": "Beneficiary",
@@ -168,8 +168,8 @@
       "out": "Mɛ̀n zə́ à bə̀ kɔ̀'",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'the person who will receive'."
+      "sure": false,
+      "note": "Literal: 'the person who will receive'."
     },
     {
       "src": "Récapitulatif",
@@ -177,8 +177,8 @@
       "out": "Yə̀n bɛ̀'",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Translated as 'look again/review'."
+      "sure": false,
+      "note": "Translated as 'look again/review'."
     },
     {
       "src": "Summary",
@@ -186,8 +186,8 @@
       "out": "Yə̀n bɛ̀'",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Translated as 'look again/review'."
+      "sure": false,
+      "note": "Translated as 'look again/review'."
     },
     {
       "src": "Confirmation",
@@ -195,7 +195,7 @@
       "out": "Confirm",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Votre compte",
@@ -203,8 +203,8 @@
       "out": "Compte wù",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Code-switched French 'compte' with Medumba possessive 'wù'."
+      "sure": false,
+      "note": "Code-switched French 'compte' with Medumba possessive 'wù'."
     },
     {
       "src": "Your account",
@@ -212,8 +212,8 @@
       "out": "Compte wù",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Code-switched French 'compte' with Medumba possessive 'wù'."
+      "sure": false,
+      "note": "Code-switched French 'compte' with Medumba possessive 'wù'."
     },
     {
       "src": "Consultez votre solde et lancez un transfert en toute sécurité.",
@@ -221,8 +221,8 @@
       "out": "Yə̀n balance wù, bɔ̀ ù tùm nkàb bɔ̀ŋ-bɔ̀ŋ.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify imperative and adverbial 'bɔ̀ŋ-bɔ̀ŋ'."
+      "sure": false,
+      "note": "Verify imperative and adverbial 'bɔ̀ŋ-bɔ̀ŋ'."
     },
     {
       "src": "Check your balance and start a secure transfer.",
@@ -230,8 +230,8 @@
       "out": "Yə̀n balance wù, bɔ̀ ù tùm nkàb bɔ̀ŋ-bɔ̀ŋ.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify imperative and adverbial 'bɔ̀ŋ-bɔ̀ŋ'."
+      "sure": false,
+      "note": "Verify imperative and adverbial 'bɔ̀ŋ-bɔ̀ŋ'."
     },
     {
       "src": "Solde disponible",
@@ -239,8 +239,8 @@
       "out": "Nkàb zə́ à bə̀ num compte wù",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'money that is in your account'."
+      "sure": false,
+      "note": "Literal: 'money that is in your account'."
     },
     {
       "src": "Available balance",
@@ -248,8 +248,8 @@
       "out": "Nkàb zə́ à bə̀ num compte wù",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'money that is in your account'."
+      "sure": false,
+      "note": "Literal: 'money that is in your account'."
     },
     {
       "src": "Numéro de compte : {}",
@@ -257,8 +257,8 @@
       "out": "Numéro compte : {1}",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Code-switched 'numéro' and 'compte'."
+      "sure": false,
+      "note": "Code-switched 'numéro' and 'compte'."
     },
     {
       "src": "Account number : {}",
@@ -266,8 +266,8 @@
       "out": "Numéro compte : {1}",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Code-switched 'numéro' and 'compte'."
+      "sure": false,
+      "note": "Code-switched 'numéro' and 'compte'."
     },
     {
       "src": "Compte courant",
@@ -275,7 +275,7 @@
       "out": "Compte courant",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Current account",
@@ -283,7 +283,7 @@
       "out": "Compte courant",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Effectuer un transfert",
@@ -291,7 +291,7 @@
       "out": "Tùm nkàb",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Make a transfer",
@@ -299,7 +299,7 @@
       "out": "Tùm nkàb",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Consulter les frais",
@@ -307,8 +307,8 @@
       "out": "Yə̀n frais",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept 'frais' as loanword."
+      "sure": false,
+      "note": "Kept 'frais' as loanword."
     },
     {
       "src": "View fees",
@@ -316,8 +316,8 @@
       "out": "Yə̀n frais",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept 'frais' as loanword."
+      "sure": false,
+      "note": "Kept 'frais' as loanword."
     },
     {
       "src": "Transactions récentes",
@@ -325,8 +325,8 @@
       "out": "Nkàb zə́ à kɛ̀ num mə̀mbvə̀m",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'money that moved recently'."
+      "sure": false,
+      "note": "Literal: 'money that moved recently'."
     },
     {
       "src": "Recent transactions",
@@ -334,8 +334,8 @@
       "out": "Nkàb zə́ à kɛ̀ num mə̀mbvə̀m",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'money that moved recently'."
+      "sure": false,
+      "note": "Literal: 'money that moved recently'."
     },
     {
       "src": "Paiement marchand",
@@ -343,8 +343,8 @@
       "out": "Sɔ̀' nkàb num ndá-nkù'",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Translated 'shop' as 'ndá-nkù''; verify verb 'sɔ̀''."
+      "sure": false,
+      "note": "Translated 'shop' as 'ndá-nkù''; verify verb 'sɔ̀''."
     },
     {
       "src": "Merchant payment",
@@ -352,8 +352,8 @@
       "out": "Sɔ̀' nkàb num ndá-nkù'",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Translated 'shop' as 'ndá-nkù''; verify verb 'sɔ̀''."
+      "sure": false,
+      "note": "Translated 'shop' as 'ndá-nkù''; verify verb 'sɔ̀''."
     },
     {
       "src": "Salaire reçu",
@@ -361,8 +361,8 @@
       "out": "Salaire nà dù",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept 'salaire'; 'nà dù' expresses 'has entered/arrived'."
+      "sure": false,
+      "note": "Kept 'salaire'; 'nà dù' expresses 'has entered/arrived'."
     },
     {
       "src": "Salary received",
@@ -370,8 +370,8 @@
       "out": "Salaire nà dù",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept 'salaire'; 'nà dù' expresses 'has entered/arrived'."
+      "sure": false,
+      "note": "Kept 'salaire'; 'nà dù' expresses 'has entered/arrived'."
     },
     {
       "src": "Transfert reçu",
@@ -379,8 +379,8 @@
       "out": "Nkàb zə́ bù tùm ù",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'money that they sent you'."
+      "sure": false,
+      "note": "Literal: 'money that they sent you'."
     },
     {
       "src": "Transfer received",
@@ -388,8 +388,8 @@
       "out": "Nkàb zə́ bù tùm ù",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'money that they sent you'."
+      "sure": false,
+      "note": "Literal: 'money that they sent you'."
     },
     {
       "src": "Facture électricité",
@@ -397,8 +397,8 @@
       "out": "Nkàb mɔ̀'",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify if 'nkàb mɔ̀'' or 'facture courant' is preferred in Bangangté."
+      "sure": false,
+      "note": "Verify if 'nkàb mɔ̀'' or 'facture courant' is preferred in Bangangté."
     },
     {
       "src": "Electricity bill",
@@ -406,8 +406,8 @@
       "out": "Nkàb mɔ̀'",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify if 'nkàb mɔ̀'' or 'facture courant' is preferred in Bangangté."
+      "sure": false,
+      "note": "Verify if 'nkàb mɔ̀'' or 'facture courant' is preferred in Bangangté."
     },
     {
       "src": "Sécurité",
@@ -415,8 +415,8 @@
       "out": "Sécurité",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept French 'Sécurité'; verify if a native noun is preferred."
+      "sure": false,
+      "note": "Kept French 'Sécurité'; verify if a native noun is preferred."
     },
     {
       "src": "Security",
@@ -424,8 +424,8 @@
       "out": "Sécurité",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept French 'Sécurité'; verify if a native noun is preferred."
+      "sure": false,
+      "note": "Kept French 'Sécurité'; verify if a native noun is preferred."
     },
     {
       "src": "Vérifiez toujours le nom et le numéro du bénéficiaire avant de confirmer un transfert.",
@@ -433,8 +433,8 @@
       "out": "Ntsə̀' tsɔ̀, yə̀n lìn bɔ̀ numéro mɛ̀n zə́ à bə̀ kɔ̀' nkàb, làŋ ù confirm transfert.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Critical security instruction; verify conjunction 'làŋ ù'."
+      "sure": false,
+      "note": "Critical security instruction; verify conjunction 'làŋ ù'."
     },
     {
       "src": "Always verify the beneficiary name and number before confirming a transfer.",
@@ -442,8 +442,8 @@
       "out": "Ntsə̀' tsɔ̀, yə̀n lìn bɔ̀ numéro mɛ̀n zə́ à bə̀ kɔ̀' nkàb, làŋ ù confirm transfert.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Critical security instruction; verify conjunction 'làŋ ù'."
+      "sure": false,
+      "note": "Critical security instruction; verify conjunction 'làŋ ù'."
     },
     {
       "src": "Frais de transfert",
@@ -451,8 +451,8 @@
       "out": "Frais tùm nkàb",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Code-switched 'frais' with 'tùm nkàb'."
+      "sure": false,
+      "note": "Code-switched 'frais' with 'tùm nkàb'."
     },
     {
       "src": "Transfer fees",
@@ -460,8 +460,8 @@
       "out": "Frais tùm nkàb",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Code-switched 'frais' with 'tùm nkàb'."
+      "sure": false,
+      "note": "Code-switched 'frais' with 'tùm nkàb'."
     },
     {
       "src": "Choisissez le type de transfert et le montant. Les frais sont calculés automatiquement.",
@@ -469,8 +469,8 @@
       "out": "Sɔ̀ŋ fə̀' transfert bɔ̀ nkàb zə́ ù kùn tùm. Frais bə̀ bɛ̀'tə́ nyù yì.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify reflexive 'nyù yì'."
+      "sure": false,
+      "note": "Verify reflexive 'nyù yì'."
     },
     {
       "src": "Choose the transfer type and amount. Fees are calculated automatically.",
@@ -478,8 +478,8 @@
       "out": "Sɔ̀ŋ fə̀' transfert bɔ̀ nkàb zə́ ù kùn tùm. Frais bə̀ bɛ̀'tə́ nyù yì.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify reflexive 'nyù yì'."
+      "sure": false,
+      "note": "Verify reflexive 'nyù yì'."
     },
     {
       "src": "Type d'opération",
@@ -487,8 +487,8 @@
       "out": "Fə̀' transfert",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'kind/type of transfer'."
+      "sure": false,
+      "note": "Literal: 'kind/type of transfer'."
     },
     {
       "src": "Operation type",
@@ -496,8 +496,8 @@
       "out": "Fə̀' transfert",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'kind/type of transfer'."
+      "sure": false,
+      "note": "Literal: 'kind/type of transfer'."
     },
     {
       "src": "Compte {}",
@@ -505,7 +505,7 @@
       "out": "Compte {1}",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "{} account",
@@ -513,7 +513,7 @@
       "out": "Compte {1}",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Mobile Money",
@@ -521,7 +521,7 @@
       "out": "Mobile Money",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Autre banque",
@@ -529,8 +529,8 @@
       "out": "Bank mɔ̀'",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify determiner 'mɔ̀'' with loanword 'bank'."
+      "sure": false,
+      "note": "Verify determiner 'mɔ̀'' with loanword 'bank'."
     },
     {
       "src": "Other bank",
@@ -538,8 +538,8 @@
       "out": "Bank mɔ̀'",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify determiner 'mɔ̀'' with loanword 'bank'."
+      "sure": false,
+      "note": "Verify determiner 'mɔ̀'' with loanword 'bank'."
     },
     {
       "src": "Transfert instantané et gratuit",
@@ -547,8 +547,8 @@
       "out": "Transfert à dù tsə̀'tsə̀', bɔ̀ à bə̀ gratuit",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Translated 'instantly' as 'tsə̀'tsə̀''; kept 'gratuit'."
+      "sure": false,
+      "note": "Translated 'instantly' as 'tsə̀'tsə̀''; kept 'gratuit'."
     },
     {
       "src": "Instant, free transfer",
@@ -556,8 +556,8 @@
       "out": "Transfert à dù tsə̀'tsə̀', bɔ̀ à bə̀ gratuit",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Translated 'instantly' as 'tsə̀'tsə̀''; kept 'gratuit'."
+      "sure": false,
+      "note": "Translated 'instantly' as 'tsə̀'tsə̀''; kept 'gratuit'."
     },
     {
       "src": "Frais de {} (min. {}, max. {})",
@@ -565,8 +565,8 @@
       "out": "Frais bə̀ {1} (à kə̀ sì num dzə̀m {2}, à kə̀ tsà' {3})",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Complex comparative/limit construction; must be verified so min/max limits are unmistakable."
+      "sure": false,
+      "note": "Complex comparative/limit construction; must be verified so min/max limits are unmistakable."
     },
     {
       "src": "{} fee (min. {}, max. {})",
@@ -574,8 +574,8 @@
       "out": "Frais bə̀ {1} (à kə̀ sì num dzə̀m {2}, à kə̀ tsà' {3})",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Complex comparative/limit construction; must be verified so min/max limits are unmistakable."
+      "sure": false,
+      "note": "Complex comparative/limit construction; must be verified so min/max limits are unmistakable."
     },
     {
       "src": "Montant à envoyer",
@@ -583,7 +583,7 @@
       "out": "Nkàb zə́ ù kùn tùm",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Amount to send",
@@ -591,7 +591,7 @@
       "out": "Nkàb zə́ ù kùn tùm",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Gratuit",
@@ -599,7 +599,7 @@
       "out": "Gratuit",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Free",
@@ -607,7 +607,7 @@
       "out": "Gratuit",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Total à débiter",
@@ -615,8 +615,8 @@
       "out": "Total zə́ bù bə̀ tùm num compte wù",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'Total that they will remove from your account'."
+      "sure": false,
+      "note": "Literal: 'Total that they will remove from your account'."
     },
     {
       "src": "Total to debit",
@@ -624,8 +624,8 @@
       "out": "Total zə́ bù bə̀ tùm num compte wù",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'Total that they will remove from your account'."
+      "sure": false,
+      "note": "Literal: 'Total that they will remove from your account'."
     },
     {
       "src": "Solde après opération",
@@ -633,8 +633,8 @@
       "out": "Balance num mə̀mbvə̀m transfert",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Code-switched with 'num mə̀mbvə̀m' (after)."
+      "sure": false,
+      "note": "Code-switched with 'num mə̀mbvə̀m' (after)."
     },
     {
       "src": "Balance after transfer",
@@ -642,8 +642,8 @@
       "out": "Balance num mə̀mbvə̀m transfert",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Code-switched with 'num mə̀mbvə̀m' (after)."
+      "sure": false,
+      "note": "Code-switched with 'num mə̀mbvə̀m' (after)."
     },
     {
       "src": "Retour",
@@ -651,7 +651,7 @@
       "out": "Kɛ̀rə́",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Back",
@@ -659,7 +659,7 @@
       "out": "Kɛ̀rə́",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Continuer",
@@ -667,8 +667,8 @@
       "out": "Continuer",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept French 'Continuer'; verify if 'Kɛ̀ num mbòy' is preferred."
+      "sure": false,
+      "note": "Kept French 'Continuer'; verify if 'Kɛ̀ num mbòy' is preferred."
     },
     {
       "src": "Continue",
@@ -676,8 +676,8 @@
       "out": "Continuer",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept French 'Continuer'; verify if 'Kɛ̀ num mbòy' is preferred."
+      "sure": false,
+      "note": "Kept French 'Continuer'; verify if 'Kɛ̀ num mbòy' is preferred."
     },
     {
       "src": "Une erreur est survenue",
@@ -685,8 +685,8 @@
       "out": "Yù mɔ̀' kə̀ fɛ̀' bɔ̀ŋ",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'Something did not work well'."
+      "sure": false,
+      "note": "Literal: 'Something did not work well'."
     },
     {
       "src": "An error occurred",
@@ -694,8 +694,8 @@
       "out": "Yù mɔ̀' kə̀ fɛ̀' bɔ̀ŋ",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'Something did not work well'."
+      "sure": false,
+      "note": "Literal: 'Something did not work well'."
     },
     {
       "src": "Solde insuffisant pour effectuer ce transfert.",
@@ -703,8 +703,8 @@
       "out": "Nkàb wù kə̀ kù'rə́ num transfert zɛ̀n.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify verb 'kù'rə́' and demonstrative agreement."
+      "sure": false,
+      "note": "Verify verb 'kù'rə́' and demonstrative agreement."
     },
     {
       "src": "Insufficient balance for this transfer.",
@@ -712,8 +712,8 @@
       "out": "Nkàb wù kə̀ kù'rə́ num transfert zɛ̀n.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify verb 'kù'rə́' and demonstrative agreement."
+      "sure": false,
+      "note": "Verify verb 'kù'rə́' and demonstrative agreement."
     },
     {
       "src": "Le montant doit être supérieur à zéro.",
@@ -721,8 +721,8 @@
       "out": "Nkàb làbə́ tsà' zéro.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept 'zéro' as loanword to avoid writing digits; verify 'làbə́ tsà''."
+      "sure": false,
+      "note": "Kept 'zéro' as loanword to avoid writing digits; verify 'làbə́ tsà''."
     },
     {
       "src": "The amount must be greater than zero.",
@@ -730,8 +730,8 @@
       "out": "Nkàb làbə́ tsà' zéro.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept 'zéro' as loanword to avoid writing digits; verify 'làbə́ tsà''."
+      "sure": false,
+      "note": "Kept 'zéro' as loanword to avoid writing digits; verify 'làbə́ tsà''."
     },
     {
       "src": "Vous devez confirmer les informations avant de valider le transfert.",
@@ -739,8 +739,8 @@
       "out": "Ù làbə́ confirm mə̀sɔ̀ŋ mə̀n làŋ transfert kɛ̀.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify modal 'làbə́' and clause ordering."
+      "sure": false,
+      "note": "Verify modal 'làbə́' and clause ordering."
     },
     {
       "src": "You must confirm the details before validating the transfer.",
@@ -748,8 +748,8 @@
       "out": "Ù làbə́ confirm mə̀sɔ̀ŋ mə̀n làŋ transfert kɛ̀.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify modal 'làbə́' and clause ordering."
+      "sure": false,
+      "note": "Verify modal 'làbə́' and clause ordering."
     },
     {
       "src": "Renseignez les informations du destinataire. Vérifiez toujours le numéro avant de valider.",
@@ -757,8 +757,8 @@
       "out": "Bì mə̀sɔ̀ŋ mə̀ mɛ̀n zə́ à bə̀ kɔ̀' nkàb. Ntsə̀' tsɔ̀, yə̀n numéro làŋ ù confirm.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify verb 'bì' in digital form context."
+      "sure": false,
+      "note": "Verify verb 'bì' in digital form context."
     },
     {
       "src": "Enter the recipient details. Always verify the number before confirming.",
@@ -766,8 +766,8 @@
       "out": "Bì mə̀sɔ̀ŋ mə̀ mɛ̀n zə́ à bə̀ kɔ̀' nkàb. Ntsə̀' tsɔ̀, yə̀n numéro làŋ ù confirm.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify verb 'bì' in digital form context."
+      "sure": false,
+      "note": "Verify verb 'bì' in digital form context."
     },
     {
       "src": "Ce bénéficiaire n'a jamais été utilisé sur ce compte. Vérifiez le numéro avant de continuer.",
@@ -775,8 +775,8 @@
       "out": "Ù kə̀ tùm nkàb fɔ̀ mɛ̀n zɛ̀n num compte zɛ̀n tɔ̀' bɛ̀'. Yə̀n numéro làŋ ù continuer.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Security warning for first-time recipient; verify 'never before' phrasing."
+      "sure": false,
+      "note": "Security warning for first-time recipient; verify 'never before' phrasing."
     },
     {
       "src": "This beneficiary has never been used on this account. Verify the number before continuing.",
@@ -784,8 +784,8 @@
       "out": "Ù kə̀ tùm nkàb fɔ̀ mɛ̀n zɛ̀n num compte zɛ̀n tɔ̀' bɛ̀'. Yə̀n numéro làŋ ù continuer.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Security warning for first-time recipient; verify 'never before' phrasing."
+      "sure": false,
+      "note": "Security warning for first-time recipient; verify 'never before' phrasing."
     },
     {
       "src": "Nom du bénéficiaire",
@@ -793,8 +793,8 @@
       "out": "Lìn mɛ̀n zə́ à bə̀ kɔ̀'",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'Name of the person who will receive'."
+      "sure": false,
+      "note": "Literal: 'Name of the person who will receive'."
     },
     {
       "src": "Beneficiary name",
@@ -802,8 +802,8 @@
       "out": "Lìn mɛ̀n zə́ à bə̀ kɔ̀'",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'Name of the person who will receive'."
+      "sure": false,
+      "note": "Literal: 'Name of the person who will receive'."
     },
     {
       "src": "Numéro de téléphone",
@@ -811,7 +811,7 @@
       "out": "Numéro téléphone",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Phone number",
@@ -819,7 +819,7 @@
       "out": "Numéro téléphone",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Motif du transfert",
@@ -827,8 +827,8 @@
       "out": "Yù zə́ ù tùm nkàb",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'Why you send money'."
+      "sure": false,
+      "note": "Literal: 'Why you send money'."
     },
     {
       "src": "Transfer reason",
@@ -836,8 +836,8 @@
       "out": "Yù zə́ ù tùm nkàb",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'Why you send money'."
+      "sure": false,
+      "note": "Literal: 'Why you send money'."
     },
     {
       "src": "Note (optionnel)",
@@ -845,8 +845,8 @@
       "out": "Note (bɛ́ ù kùn)",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept 'Note'; 'bɛ́ ù kùn' means 'if you want'."
+      "sure": false,
+      "note": "Kept 'Note'; 'bɛ́ ù kùn' means 'if you want'."
     },
     {
       "src": "Note (optional)",
@@ -854,8 +854,8 @@
       "out": "Note (bɛ́ ù kùn)",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept 'Note'; 'bɛ́ ù kùn' means 'if you want'."
+      "sure": false,
+      "note": "Kept 'Note'; 'bɛ́ ù kùn' means 'if you want'."
     },
     {
       "src": "J'ai vérifié le nom et le numéro du bénéficiaire.",
@@ -863,8 +863,8 @@
       "out": "Mə̀ nà yə̀n lìn bɔ̀ numéro téléphone mɛ̀n zə́ à bə̀ kɔ̀'.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "First-person confirmation checkbox; verify 'mə̀ nà yə̀n'."
+      "sure": false,
+      "note": "First-person confirmation checkbox; verify 'mə̀ nà yə̀n'."
     },
     {
       "src": "I have verified the beneficiary name and phone number.",
@@ -872,8 +872,8 @@
       "out": "Mə̀ nà yə̀n lìn bɔ̀ numéro téléphone mɛ̀n zə́ à bə̀ kɔ̀'.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "First-person confirmation checkbox; verify 'mə̀ nà yə̀n'."
+      "sure": false,
+      "note": "First-person confirmation checkbox; verify 'mə̀ nà yə̀n'."
     },
     {
       "src": "Alerte de sécurité",
@@ -881,8 +881,8 @@
       "out": "Alerte sécurité",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept French security header to preserve urgency; verify if a native Medumba warning term is established."
+      "sure": false,
+      "note": "Kept French security header to preserve urgency; verify if a native Medumba warning term is established."
     },
     {
       "src": "Security warning",
@@ -890,8 +890,8 @@
       "out": "Alerte sécurité",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept French security header to preserve urgency; verify if a native Medumba warning term is established."
+      "sure": false,
+      "note": "Kept French security header to preserve urgency; verify if a native Medumba warning term is established."
     },
     {
       "src": "Alerte de sécurité : vérifiez le numéro du bénéficiaire avant de continuer.",
@@ -899,8 +899,8 @@
       "out": "Alerte sécurité : yə̀n numéro téléphone mɛ̀n zə́ à bə̀ kɔ̀' làŋ ù continuer.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept 'Alerte sécurité'; verify rest of sentence."
+      "sure": false,
+      "note": "Kept 'Alerte sécurité'; verify rest of sentence."
     },
     {
       "src": "Security warning: verify the beneficiary phone number before continuing.",
@@ -908,8 +908,8 @@
       "out": "Alerte sécurité : yə̀n numéro téléphone mɛ̀n zə́ à bə̀ kɔ̀' làŋ ù continuer.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept 'Alerte sécurité'; verify rest of sentence."
+      "sure": false,
+      "note": "Kept 'Alerte sécurité'; verify rest of sentence."
     },
     {
       "src": "Vérifiez les informations avant de confirmer le transfert.",
@@ -917,8 +917,8 @@
       "out": "Yə̀n mə̀sɔ̀ŋ mə̀n tsɔ̀ làŋ ù confirm transfert.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify quantifier 'tsɔ̀' agreement with 'mə̀sɔ̀ŋ'."
+      "sure": false,
+      "note": "Verify quantifier 'tsɔ̀' agreement with 'mə̀sɔ̀ŋ'."
     },
     {
       "src": "Check the details before confirming the transfer.",
@@ -926,8 +926,8 @@
       "out": "Yə̀n mə̀sɔ̀ŋ mə̀n tsɔ̀ làŋ ù confirm transfert.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify quantifier 'tsɔ̀' agreement with 'mə̀sɔ̀ŋ'."
+      "sure": false,
+      "note": "Verify quantifier 'tsɔ̀' agreement with 'mə̀sɔ̀ŋ'."
     },
     {
       "src": "Montant",
@@ -935,7 +935,7 @@
       "out": "Montant",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Amount",
@@ -943,7 +943,7 @@
       "out": "Montant",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Total débité",
@@ -951,8 +951,8 @@
       "out": "Total zə́ bù tùm",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'Total that they removed'."
+      "sure": false,
+      "note": "Literal: 'Total that they removed'."
     },
     {
       "src": "Total debited",
@@ -960,8 +960,8 @@
       "out": "Total zə́ bù tùm",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'Total that they removed'."
+      "sure": false,
+      "note": "Literal: 'Total that they removed'."
     },
     {
       "src": "Téléphone",
@@ -969,7 +969,7 @@
       "out": "Téléphone",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Phone",
@@ -977,7 +977,7 @@
       "out": "Téléphone",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Référence",
@@ -985,7 +985,7 @@
       "out": "Référence",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Reference",
@@ -993,7 +993,7 @@
       "out": "Référence",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Opération",
@@ -1001,8 +1001,8 @@
       "out": "Fə̀' transfert",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'Kind of transfer'."
+      "sure": false,
+      "note": "Literal: 'Kind of transfer'."
     },
     {
       "src": "Operation",
@@ -1010,8 +1010,8 @@
       "out": "Fə̀' transfert",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'Kind of transfer'."
+      "sure": false,
+      "note": "Literal: 'Kind of transfer'."
     },
     {
       "src": "Je confirme que les informations ci-dessus sont correctes.",
@@ -1019,8 +1019,8 @@
       "out": "Mə̀ confirm mbə̀ mə̀sɔ̀ŋ mə̀n tsɔ̀ bə̀ bɔ̀ŋ.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify complementizer 'mbə̀' and 'bə̀ bɔ̀ŋ'."
+      "sure": false,
+      "note": "Verify complementizer 'mbə̀' and 'bə̀ bɔ̀ŋ'."
     },
     {
       "src": "I confirm the information above is correct.",
@@ -1028,8 +1028,8 @@
       "out": "Mə̀ confirm mbə̀ mə̀sɔ̀ŋ mə̀n tsɔ̀ bə̀ bɔ̀ŋ.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify complementizer 'mbə̀' and 'bə̀ bɔ̀ŋ'."
+      "sure": false,
+      "note": "Verify complementizer 'mbə̀' and 'bə̀ bɔ̀ŋ'."
     },
     {
       "src": "Modifier",
@@ -1037,8 +1037,8 @@
       "out": "Sàŋtə́",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify verb 'sàŋtə́' in UI button context."
+      "sure": false,
+      "note": "Verify verb 'sàŋtə́' in UI button context."
     },
     {
       "src": "Edit",
@@ -1046,8 +1046,8 @@
       "out": "Sàŋtə́",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify verb 'sàŋtə́' in UI button context."
+      "sure": false,
+      "note": "Verify verb 'sàŋtə́' in UI button context."
     },
     {
       "src": "Confirmer le transfert",
@@ -1055,7 +1055,7 @@
       "out": "Confirm transfert",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Confirm transfer",
@@ -1063,7 +1063,7 @@
       "out": "Confirm transfert",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Transfert effectué",
@@ -1071,8 +1071,8 @@
       "out": "Transfert nà kɛ̀",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'Transfer has gone'."
+      "sure": false,
+      "note": "Literal: 'Transfer has gone'."
     },
     {
       "src": "Transfer completed",
@@ -1080,8 +1080,8 @@
       "out": "Transfert nà kɛ̀",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'Transfer has gone'."
+      "sure": false,
+      "note": "Literal: 'Transfer has gone'."
     },
     {
       "src": "Votre transfert a été envoyé avec succès.",
@@ -1089,8 +1089,8 @@
       "out": "Transfert wù nà kɛ̀ bɔ̀ŋ.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'Your transfer has gone well'."
+      "sure": false,
+      "note": "Literal: 'Your transfer has gone well'."
     },
     {
       "src": "Your transfer has been sent successfully.",
@@ -1098,8 +1098,8 @@
       "out": "Transfert wù nà kɛ̀ bɔ̀ŋ.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'Your transfer has gone well'."
+      "sure": false,
+      "note": "Literal: 'Your transfer has gone well'."
     },
     {
       "src": "Statut",
@@ -1107,7 +1107,7 @@
       "out": "Statut",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Status",
@@ -1115,7 +1115,7 @@
       "out": "Statut",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Succès",
@@ -1123,8 +1123,8 @@
       "out": "À nà fɛ̀' bɔ̀ŋ",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Translated 'Success' as 'À nà fɛ̀' bɔ̀ŋ'."
+      "sure": false,
+      "note": "Translated 'Success' as 'À nà fɛ̀' bɔ̀ŋ'."
     },
     {
       "src": "Success",
@@ -1132,8 +1132,8 @@
       "out": "À nà fɛ̀' bɔ̀ŋ",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Translated 'Success' as 'À nà fɛ̀' bɔ̀ŋ'."
+      "sure": false,
+      "note": "Translated 'Success' as 'À nà fɛ̀' bɔ̀ŋ'."
     },
     {
       "src": "Nouveau transfert",
@@ -1141,8 +1141,8 @@
       "out": "Tùm nkàb bɛ̀'",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'Send money again'."
+      "sure": false,
+      "note": "Literal: 'Send money again'."
     },
     {
       "src": "New transfer",
@@ -1150,8 +1150,8 @@
       "out": "Tùm nkàb bɛ̀'",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'Send money again'."
+      "sure": false,
+      "note": "Literal: 'Send money again'."
     },
     {
       "src": "Annuler",
@@ -1159,7 +1159,7 @@
       "out": "Annuler",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Cancel",
@@ -1167,7 +1167,7 @@
       "out": "Annuler",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Valider",
@@ -1175,7 +1175,7 @@
       "out": "Confirm",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Validate",
@@ -1183,7 +1183,7 @@
       "out": "Confirm",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Envoyer",
@@ -1191,7 +1191,7 @@
       "out": "Tùm",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Send",
@@ -1199,7 +1199,7 @@
       "out": "Tùm",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Fermer",
@@ -1207,8 +1207,8 @@
       "out": "Kwì'",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify verb 'kwì'' for closing a digital window/modal."
+      "sure": false,
+      "note": "Verify verb 'kwì'' for closing a digital window/modal."
     },
     {
       "src": "Close",
@@ -1216,8 +1216,8 @@
       "out": "Kwì'",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify verb 'kwì'' for closing a digital window/modal."
+      "sure": false,
+      "note": "Verify verb 'kwì'' for closing a digital window/modal."
     },
     {
       "src": "Oui",
@@ -1225,7 +1225,7 @@
       "out": "Ɛ̀n",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Yes",
@@ -1233,7 +1233,7 @@
       "out": "Ɛ̀n",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Non",
@@ -1241,8 +1241,8 @@
       "out": "Ŋgàŋ",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify standalone 'No' ('Ŋgàŋ' vs 'Kə̀')."
+      "sure": false,
+      "note": "Verify standalone 'No' ('Ŋgàŋ' vs 'Kə̀')."
     },
     {
       "src": "No",
@@ -1250,8 +1250,8 @@
       "out": "Ŋgàŋ",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify standalone 'No' ('Ŋgàŋ' vs 'Kə̀')."
+      "sure": false,
+      "note": "Verify standalone 'No' ('Ŋgàŋ' vs 'Kə̀')."
     },
     {
       "src": "Attention",
@@ -1259,8 +1259,8 @@
       "out": "Fà' lɔ̀ŋ",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Translated 'Take care/Pay attention' as 'Fà' lɔ̀ŋ'."
+      "sure": false,
+      "note": "Translated 'Take care/Pay attention' as 'Fà' lɔ̀ŋ'."
     },
     {
       "src": "Warning",
@@ -1268,7 +1268,7 @@
       "out": "Attention",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Erreur",
@@ -1276,7 +1276,7 @@
       "out": "Erreur",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Error",
@@ -1284,7 +1284,7 @@
       "out": "Erreur",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "Transfert annulé",
@@ -1292,8 +1292,8 @@
       "out": "Transfert nà annuler",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Code-switched 'transfert' and 'annuler'."
+      "sure": false,
+      "note": "Code-switched 'transfert' and 'annuler'."
     },
     {
       "src": "Transfer cancelled",
@@ -1301,8 +1301,8 @@
       "out": "Transfert nà annuler",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Code-switched 'transfert' and 'annuler'."
+      "sure": false,
+      "note": "Code-switched 'transfert' and 'annuler'."
     },
     {
       "src": "Transfert en cours",
@@ -1310,8 +1310,8 @@
       "out": "Transfert bə̀ num njì'",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Idiomatic 'on the way'; verify."
+      "sure": false,
+      "note": "Idiomatic 'on the way'; verify."
     },
     {
       "src": "Transfer in progress",
@@ -1319,8 +1319,8 @@
       "out": "Transfert bə̀ num njì'",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Idiomatic 'on the way'; verify."
+      "sure": false,
+      "note": "Idiomatic 'on the way'; verify."
     },
     {
       "src": "Transaction en cours de traitement.",
@@ -1328,8 +1328,8 @@
       "out": "Bù bə̀ fɛ̀' num transaction.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'They are working on the transaction'."
+      "sure": false,
+      "note": "Literal: 'They are working on the transaction'."
     },
     {
       "src": "Transaction being processed.",
@@ -1337,8 +1337,8 @@
       "out": "Bù bə̀ fɛ̀' num transaction.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'They are working on the transaction'."
+      "sure": false,
+      "note": "Literal: 'They are working on the transaction'."
     },
     {
       "src": "Ne communiquez jamais votre code PIN.",
@@ -1346,8 +1346,8 @@
       "out": "Kə̀ fɔ̀ code PIN wù fɔ̀ mɛ̀n mɔ̀' tɔ̀' bɛ̀'.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Critical security warning; verify emphatic 'never' ('tɔ̀' bɛ̀'')."
+      "sure": false,
+      "note": "Critical security warning; verify emphatic 'never' ('tɔ̀' bɛ̀'')."
     },
     {
       "src": "Never share your PIN code.",
@@ -1355,8 +1355,8 @@
       "out": "Kə̀ fɔ̀ code PIN wù fɔ̀ mɛ̀n mɔ̀' tɔ̀' bɛ̀'.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Critical security warning; verify emphatic 'never' ('tɔ̀' bɛ̀'')."
+      "sure": false,
+      "note": "Critical security warning; verify emphatic 'never' ('tɔ̀' bɛ̀'')."
     },
     {
       "src": "Ne partagez jamais votre code OTP.",
@@ -1364,8 +1364,8 @@
       "out": "Kə̀ fɔ̀ code OTP wù fɔ̀ mɛ̀n mɔ̀' tɔ̀' bɛ̀'.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Critical security warning; verify emphatic 'never' ('tɔ̀' bɛ̀'')."
+      "sure": false,
+      "note": "Critical security warning; verify emphatic 'never' ('tɔ̀' bɛ̀'')."
     },
     {
       "src": "Never share your OTP code.",
@@ -1373,8 +1373,8 @@
       "out": "Kə̀ fɔ̀ code OTP wù fɔ̀ mɛ̀n mɔ̀' tɔ̀' bɛ̀'.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Critical security warning; verify emphatic 'never' ('tɔ̀' bɛ̀'')."
+      "sure": false,
+      "note": "Critical security warning; verify emphatic 'never' ('tɔ̀' bɛ̀'')."
     },
     {
       "src": "Safinum ne vous demandera jamais votre code PIN.",
@@ -1382,8 +1382,8 @@
       "out": "Safinum kə̀ bə̀ bìtə́ ù code PIN wù tɔ̀' bɛ̀'.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Critical security warning; verify 'kə̀ bə̀ bìtə́' (will never ask)."
+      "sure": false,
+      "note": "Critical security warning; verify 'kə̀ bə̀ bìtə́' (will never ask)."
     },
     {
       "src": "Safinum will never ask for your PIN code.",
@@ -1391,8 +1391,8 @@
       "out": "Safinum kə̀ bə̀ bìtə́ ù code PIN wù tɔ̀' bɛ̀'.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Critical security warning; verify 'kə̀ bə̀ bìtə́' (will never ask)."
+      "sure": false,
+      "note": "Critical security warning; verify 'kə̀ bə̀ bìtə́' (will never ask)."
     },
     {
       "src": "Numéro de téléphone invalide.",
@@ -1400,8 +1400,8 @@
       "out": "Numéro téléphone zɛ̀n kə̀ bə̀ bɔ̀ŋ.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'This phone number is not right'."
+      "sure": false,
+      "note": "Literal: 'This phone number is not right'."
     },
     {
       "src": "Invalid phone number.",
@@ -1409,8 +1409,8 @@
       "out": "Numéro téléphone zɛ̀n kə̀ bə̀ bɔ̀ŋ.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'This phone number is not right'."
+      "sure": false,
+      "note": "Literal: 'This phone number is not right'."
     },
     {
       "src": "Bénéficiaire introuvable.",
@@ -1418,8 +1418,8 @@
       "out": "Bə̀g kə̀ yə̀n mɛ̀n zə́ à bə̀ kɔ̀' nkàb.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'We did not see the person who will receive'."
+      "sure": false,
+      "note": "Literal: 'We did not see the person who will receive'."
     },
     {
       "src": "Beneficiary not found.",
@@ -1427,8 +1427,8 @@
       "out": "Bə̀g kə̀ yə̀n mɛ̀n zə́ à bə̀ kɔ̀' nkàb.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'We did not see the person who will receive'."
+      "sure": false,
+      "note": "Literal: 'We did not see the person who will receive'."
     },
     {
       "src": "Plafond journalier atteint.",
@@ -1436,8 +1436,8 @@
       "out": "Ù nà dù num nkàb zə́ à tsà' tsɔ̀ num lɛ̀n.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Approximated 'daily limit reached'; verify 'num lɛ̀n' and 'tsà' tsɔ̀'."
+      "sure": false,
+      "note": "Approximated 'daily limit reached'; verify 'num lɛ̀n' and 'tsà' tsɔ̀'."
     },
     {
       "src": "Daily limit reached.",
@@ -1445,8 +1445,8 @@
       "out": "Ù nà dù num nkàb zə́ à tsà' tsɔ̀ num lɛ̀n.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Approximated 'daily limit reached'; verify 'num lɛ̀n' and 'tsà' tsɔ̀'."
+      "sure": false,
+      "note": "Approximated 'daily limit reached'; verify 'num lɛ̀n' and 'tsà' tsɔ̀'."
     },
     {
       "src": "Montant maximum dépassé.",
@@ -1454,8 +1454,8 @@
       "out": "Montant nà tsà' maximum.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept 'montant' and 'maximum' as loanwords."
+      "sure": false,
+      "note": "Kept 'montant' and 'maximum' as loanwords."
     },
     {
       "src": "Maximum amount exceeded.",
@@ -1463,8 +1463,8 @@
       "out": "Montant nà tsà' maximum.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept 'montant' and 'maximum' as loanwords."
+      "sure": false,
+      "note": "Kept 'montant' and 'maximum' as loanwords."
     },
     {
       "src": "Service temporairement indisponible.",
@@ -1472,8 +1472,8 @@
       "out": "Service kə̀ bə̀ fɛ̀' lɛ̀n. Yà'rə́ bɛ̀' num mə̀mbvə̀m.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify 'lɛ̀n' (now/today) and 'num mə̀mbvə̀m' (later)."
+      "sure": false,
+      "note": "Verify 'lɛ̀n' (now/today) and 'num mə̀mbvə̀m' (later)."
     },
     {
       "src": "Service temporarily unavailable.",
@@ -1481,8 +1481,8 @@
       "out": "Service kə̀ bə̀ fɛ̀' lɛ̀n. Yà'rə́ bɛ̀' num mə̀mbvə̀m.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Verify 'lɛ̀n' (now/today) and 'num mə̀mbvə̀m' (later)."
+      "sure": false,
+      "note": "Verify 'lɛ̀n' (now/today) and 'num mə̀mbvə̀m' (later)."
     },
     {
       "src": "Votre session va expirer.",
@@ -1490,8 +1490,8 @@
       "out": "Session wù bə̀ kwì' tsə̀'tsə̀'.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept 'session'; 'kwì' tsə̀'tsə̀'' means 'will close soon'."
+      "sure": false,
+      "note": "Kept 'session'; 'kwì' tsə̀'tsə̀'' means 'will close soon'."
     },
     {
       "src": "Your session will expire.",
@@ -1499,8 +1499,8 @@
       "out": "Session wù bə̀ kwì' tsə̀'tsə̀'.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept 'session'; 'kwì' tsə̀'tsə̀'' means 'will close soon'."
+      "sure": false,
+      "note": "Kept 'session'; 'kwì' tsə̀'tsə̀'' means 'will close soon'."
     },
     {
       "src": "Votre session a expiré. Veuillez vous reconnecter.",
@@ -1508,8 +1508,8 @@
       "out": "Session wù nà kwì'. Connecter bɛ̀'.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept 'session' and 'connecter'; verify polite imperative."
+      "sure": false,
+      "note": "Kept 'session' and 'connecter'; verify polite imperative."
     },
     {
       "src": "Your session has expired. Please log in again.",
@@ -1517,8 +1517,8 @@
       "out": "Session wù nà kwì'. Connecter bɛ̀'.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Kept 'session' and 'connecter'; verify polite imperative."
+      "sure": false,
+      "note": "Kept 'session' and 'connecter'; verify polite imperative."
     },
     {
       "src": "Veuillez réessayer.",
@@ -1526,8 +1526,8 @@
       "out": "Yà'rə́ bɛ̀'.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'Try again'."
+      "sure": false,
+      "note": "Literal: 'Try again'."
     },
     {
       "src": "Please try again.",
@@ -1535,8 +1535,8 @@
       "out": "Yà'rə́ bɛ̀'.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'Try again'."
+      "sure": false,
+      "note": "Literal: 'Try again'."
     },
     {
       "src": "Opération réussie.",
@@ -1544,8 +1544,8 @@
       "out": "À nà fɛ̀' bɔ̀ŋ.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'It worked well'."
+      "sure": false,
+      "note": "Literal: 'It worked well'."
     },
     {
       "src": "Operation successful.",
@@ -1553,8 +1553,8 @@
       "out": "À nà fɛ̀' bɔ̀ŋ.",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'It worked well'."
+      "sure": false,
+      "note": "Literal: 'It worked well'."
     },
     {
       "src": "Code de vérification",
@@ -1562,8 +1562,8 @@
       "out": "Code yə̀n",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'Code for checking'."
+      "sure": false,
+      "note": "Literal: 'Code for checking'."
     },
     {
       "src": "Verification code",
@@ -1571,8 +1571,8 @@
       "out": "Code yə̀n",
       "reviewed": false,
       "by": "",
-      "aiSure": false,
-      "aiNote": "Literal: 'Code for checking'."
+      "sure": false,
+      "note": "Literal: 'Code for checking'."
     },
     {
       "src": "Code PIN",
@@ -1580,7 +1580,7 @@
       "out": "Code PIN",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     },
     {
       "src": "PIN code",
@@ -1588,7 +1588,7 @@
       "out": "Code PIN",
       "reviewed": false,
       "by": "",
-      "aiSure": true
+      "sure": true
     }
   ]
 }

@@ -18,7 +18,7 @@ Reviewer: ________________  Date: __________
 
 **Proposed Medumba:** Ù kə̀ tùm nkàb fɔ̀ mɛ̀n zɛ̀n num compte zɛ̀n tɔ̀' bɛ̀'. Yə̀n numéro làŋ ù continuer.
 
-*The machine was unsure: Security warning for first-time recipient; verify 'never before' phrasing.*
+*Worth a close look: Security warning for first-time recipient; verify 'never before' phrasing.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -36,7 +36,7 @@ if no, it should be: ________________________________________
 
 **Proposed Medumba:** Ntsə̀' tsɔ̀, yə̀n lìn bɔ̀ numéro mɛ̀n zə́ à bə̀ kɔ̀' nkàb, làŋ ù confirm transfert.
 
-*The machine was unsure: Critical security instruction; verify conjunction 'làŋ ù'.*
+*Worth a close look: Critical security instruction; verify conjunction 'làŋ ù'.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -54,7 +54,7 @@ if no, it should be: ________________________________________
 
 **Proposed Medumba:** Ù làbə́ confirm mə̀sɔ̀ŋ mə̀n làŋ transfert kɛ̀.
 
-*The machine was unsure: Verify modal 'làbə́' and clause ordering.*
+*Worth a close look: Verify modal 'làbə́' and clause ordering.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -70,7 +70,7 @@ if no, it should be: ________________________________________
 
 **Proposed Medumba:** Nkàb làbə́ tsà' zéro.
 
-*The machine was unsure: Kept 'zéro' as loanword to avoid writing digits; verify 'làbə́ tsà''. (taken from the same line on the bank page)*
+*Worth a close look: Kept 'zéro' as loanword to avoid writing digits; verify 'làbə́ tsà''. (taken from the same line on the bank page)*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -88,7 +88,7 @@ if no, it should be: ________________________________________
 
 **Proposed Medumba:** Mɛ̀n zə́ à bə̀ kɔ̀'
 
-*The machine was unsure: Literal: 'the person who will receive'.*
+*Worth a close look: Literal: 'the person who will receive'.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -104,7 +104,7 @@ if no, it should be: ________________________________________
 
 **Proposed Medumba:** Fə̀' transfert
 
-*The machine was unsure: Literal: 'Kind of transfer'. (taken from the same line on the bank page)*
+*Worth a close look: Literal: 'Kind of transfer'. (taken from the same line on the bank page)*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -122,7 +122,7 @@ if no, it should be: ________________________________________
 
 **Proposed Medumba:** Yù mɔ̀' kə̀ fɛ̀' bɔ̀ŋ
 
-*The machine was unsure: Literal: 'Something did not work well'.*
+*Worth a close look: Literal: 'Something did not work well'.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -140,7 +140,7 @@ if no, it should be: ________________________________________
 
 **Proposed Medumba:** Kə̀ fɔ̀ code PIN wù fɔ̀ mɛ̀n mɔ̀' tɔ̀' bɛ̀'.
 
-*The machine was unsure: Critical security warning; verify emphatic 'never' ('tɔ̀' bɛ̀'').*
+*Worth a close look: Critical security warning; verify emphatic 'never' ('tɔ̀' bɛ̀'').*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -158,7 +158,7 @@ if no, it should be: ________________________________________
 
 **Proposed Medumba:** Bì mə̀sɔ̀ŋ mə̀ mɛ̀n zə́ à bə̀ kɔ̀' nkàb. Ntsə̀' tsɔ̀, yə̀n numéro làŋ ù confirm.
 
-*The machine was unsure: Verify verb 'bì' in digital form context.*
+*Worth a close look: Verify verb 'bì' in digital form context.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -176,7 +176,7 @@ if no, it should be: ________________________________________
 
 **Proposed Medumba:** Mə̀ confirm mbə̀ mə̀sɔ̀ŋ mə̀n tsɔ̀ bə̀ bɔ̀ŋ.
 
-*The machine was unsure: Verify complementizer 'mbə̀' and 'bə̀ bɔ̀ŋ'.*
+*Worth a close look: Verify complementizer 'mbə̀' and 'bə̀ bɔ̀ŋ'.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -194,7 +194,7 @@ if no, it should be: ________________________________________
 
 **Proposed Medumba:** Frais
 
-*The machine was unsure: Kept French 'Frais' as commonly code-switched in Bangangté.*
+*Worth a close look: Kept French 'Frais' as commonly code-switched in Bangangté.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -212,7 +212,7 @@ if no, it should be: ________________________________________
 
 **Proposed Medumba:** Numéro compte : {1}
 
-*The machine was unsure: Code-switched 'numéro' and 'compte'.*
+*Worth a close look: Code-switched 'numéro' and 'compte'.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -228,7 +228,7 @@ if no, it should be: ________________________________________
 
 **Proposed Medumba:** Transfert nà kɛ̀
 
-*The machine was unsure: Literal: 'Transfer has gone'. (taken from the same line on the bank page)*
+*Worth a close look: Literal: 'Transfer has gone'. (taken from the same line on the bank page)*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -262,7 +262,7 @@ if no, it should be: ________________________________________
 
 **Proposed Medumba:** Kə̀ fɔ̀ code OTP wù fɔ̀ mɛ̀n mɔ̀' tɔ̀' bɛ̀'.
 
-*The machine was unsure: Critical security warning; verify emphatic 'never' ('tɔ̀' bɛ̀'').*
+*Worth a close look: Critical security warning; verify emphatic 'never' ('tɔ̀' bɛ̀'').*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -280,7 +280,7 @@ if no, it should be: ________________________________________
 
 **Proposed Medumba:** Alerte sécurité
 
-*The machine was unsure: Kept French security header to preserve urgency; verify if a native Medumba warning term is established.*
+*Worth a close look: Kept French security header to preserve urgency; verify if a native Medumba warning term is established.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -298,7 +298,7 @@ if no, it should be: ________________________________________
 
 **Proposed Medumba:** Transfert nà annuler
 
-*The machine was unsure: Code-switched 'transfert' and 'annuler'.*
+*Worth a close look: Code-switched 'transfert' and 'annuler'.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -316,7 +316,7 @@ if no, it should be: ________________________________________
 
 **Proposed Medumba:** Yə̀n balance wù, bɔ̀ ù tùm nkàb bɔ̀ŋ-bɔ̀ŋ.
 
-*The machine was unsure: Verify imperative and adverbial 'bɔ̀ŋ-bɔ̀ŋ'.*
+*Worth a close look: Verify imperative and adverbial 'bɔ̀ŋ-bɔ̀ŋ'.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -334,7 +334,7 @@ if no, it should be: ________________________________________
 
 **Proposed Medumba:** Lìn mɛ̀n zə́ à bə̀ kɔ̀'
 
-*The machine was unsure: Literal: 'Name of the person who will receive'.*
+*Worth a close look: Literal: 'Name of the person who will receive'.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -350,7 +350,7 @@ if no, it should be: ________________________________________
 
 **Proposed Medumba:** Yù zə́ ù tùm nkàb
 
-*The machine was unsure: Literal: 'Why you send money'. (taken from the same line on the bank page)*
+*Worth a close look: Literal: 'Why you send money'. (taken from the same line on the bank page)*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 

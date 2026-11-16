@@ -34,7 +34,7 @@ if no, it should be: ________________________________________
 
 **Proposed Ghomala':** Nə dyə́’ tsə́, kə́’ə́ zə́ nə numéro yə mɔ̌ yə́ a gɔ́ kɔ́’, pə́’ o təm nkáp.
 
-*The machine was unsure: Verify phrasing for 'before confirming a transfer'.*
+*Worth a close look: Verify phrasing for 'before confirming a transfer'.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -52,7 +52,7 @@ if no, it should be: ________________________________________
 
 **Proposed Ghomala':** Kə́’ə́ mfa’
 
-*The machine was unsure: 'verify true/confirm'; 'confirmer' widely used in UIs.*
+*Worth a close look: 'verify true/confirm'; 'confirmer' widely used in UIs.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -70,7 +70,7 @@ if no, it should be: ________________________________________
 
 **Proposed Ghomala':** Tsɔ́’ mfa’ təm nkáp nə mpfə́ nkáp. Frais gɔ́ lə́ŋ nə yə́.
 
-*The machine was unsure: Verify 'lɔ́ŋ nə yə́' (calculates itself).*
+*Worth a close look: Verify 'lɔ́ŋ nə yə́' (calculates itself).*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -88,7 +88,7 @@ if no, it should be: ________________________________________
 
 **Proposed Ghomala':** Mɔ̌ yə́ a gɔ́ kɔ́’
 
-*The machine was unsure: 'the person who will receive'; speakers also use 'bénéficiaire'.*
+*Worth a close look: 'the person who will receive'; speakers also use 'bénéficiaire'.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -106,7 +106,7 @@ if no, it should be: ________________________________________
 
 **Proposed Ghomala':** A gɔ́ kɔ́’ ntyə́’ yə́, a bə fe zezé
 
-*The machine was unsure: 'ntyə́’ yə́' immediately; 'zezé' free.*
+*Worth a close look: 'ntyə́’ yə́' immediately; 'zezé' free.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -124,7 +124,7 @@ if no, it should be: ________________________________________
 
 **Proposed Ghomala':** Nshyə́
 
-*The machine was unsure: mistake/fault; verify vs 'Erreur' for technical errors.*
+*Worth a close look: mistake/fault; verify vs 'Erreur' for technical errors.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -158,7 +158,7 @@ if no, it should be: ________________________________________
 
 **Proposed Ghomala':** Fə́’ə́ nə bɔŋ
 
-*The machine was unsure: 'warning for safety'; verify vs 'Alerte de sécurité'.*
+*Worth a close look: 'warning for safety'; verify vs 'Alerte de sécurité'.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -176,7 +176,7 @@ if no, it should be: ________________________________________
 
 **Proposed Ghomala':** Lɔ́’
 
-*The machine was unsure: leave/drop/cancel; 'annuler' also common in digital UIs.*
+*Worth a close look: leave/drop/cancel; 'annuler' also common in digital UIs.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -194,7 +194,7 @@ if no, it should be: ________________________________________
 
 **Proposed Ghomala':** Frais yə {1} (a tə̂ gɔ́ nə shyə́ {2}, a tə̂ cə́ {3})
 
-*The machine was unsure: 'nə shyə́' below for min, 'cə́' exceed for max.*
+*Worth a close look: 'nə shyə́' below for min, 'cə́' exceed for max.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -226,7 +226,7 @@ if no, it should be: ________________________________________
 
 **Proposed Ghomala':** Mpfə́ nkáp o kɔ́ŋ təm
 
-*The machine was unsure: (taken from the same line on the bank page)*
+*Worth a close look: (taken from the same line on the bank page)*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -276,7 +276,7 @@ if no, it should be: ________________________________________
 
 **Proposed Ghomala':** Fə́’ə́ nə bɔŋ : kə́’ə́ numéro téléphone yə mɔ̌ yə́ a gɔ́ kɔ́’ pə́’ o gɔ́ nə bhyə́.
 
-*The machine was unsure: Same as 100.*
+*Worth a close look: Same as 100.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -294,7 +294,7 @@ if no, it should be: ________________________________________
 
 **Proposed Ghomala':** Pɔ́ lɔ́’ təm nkáp
 
-*The machine was unsure: 'dropped/cancelled'; verify phrasing.*
+*Worth a close look: 'dropped/cancelled'; verify phrasing.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -312,7 +312,7 @@ if no, it should be: ________________________________________
 
 **Proposed Ghomala':** O kɔ́’ nə mpfə́ nkáp yə́ a cə́ nə lə́’ yə́.
 
-*The machine was unsure: 'reached the maximum amount for today'.*
+*Worth a close look: 'reached the maximum amount for today'.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -344,7 +344,7 @@ if no, it should be: ________________________________________
 
 **Proposed Ghomala':** Mfa’ təm nkáp
 
-*The machine was unsure: (taken from the same line on the bank page)*
+*Worth a close look: (taken from the same line on the bank page)*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 

@@ -18,7 +18,7 @@ Reviewer: ________________  Date: __________
 
 **Proposed Duala:** O si ta o lomɛ nun moto moni o nin compte. Bɛbɛlɛ numéro oboso na o ma bɛndɛ.
 
-*The machine was unsure: Check aspect 'o si ta o lomɛ' for 'you have never sent'.*
+*Worth a close look: Check aspect 'o si ta o lomɛ' for 'you have never sent'.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -36,7 +36,7 @@ if no, it should be: ________________________________________
 
 **Proposed Duala:** Ponda yɛsɛ, bɛbɛlɛ dina na numéro ba nu ma kusa oboso na o ma emɛbɛ loma la moni.
 
-*The machine was unsure: Check agreement of 'ba' and flow for 'before confirming'.*
+*Worth a close look: Check agreement of 'ba' and flow for 'before confirming'.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -54,7 +54,7 @@ if no, it should be: ________________________________________
 
 **Proposed Duala:** Emɛbɛ
 
-*The machine was unsure: accept/agree/confirm; 'confirmer' also widely used.*
+*Worth a close look: accept/agree/confirm; 'confirmer' also widely used.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -72,7 +72,7 @@ if no, it should be: ________________________________________
 
 **Proposed Duala:** Bɛbɛlɛ solde ɔŋ, o loma pɛ moni na mbaki.
 
-*The machine was unsure: 'na mbaki' for 'in all security'.*
+*Worth a close look: 'na mbaki' for 'in all security'.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -90,7 +90,7 @@ if no, it should be: ________________________________________
 
 **Proposed Duala:** Nukusan
 
-*The machine was unsure: From 'kusa' (receive); speakers often use 'bénéficiaire' or 'nu ma kusa'.*
+*Worth a close look: From 'kusa' (receive); speakers often use 'bénéficiaire' or 'nu ma kusa'.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -108,7 +108,7 @@ if no, it should be: ________________________________________
 
 **Proposed Duala:** Moni mu ma pɔ dibokimɛnɛ, mu si ma sawɛ.
 
-*The machine was unsure: 'dibokimɛnɛ' immediately; 'mu si ma sawɛ' does not cost.*
+*Worth a close look: 'dibokimɛnɛ' immediately; 'mu si ma sawɛ' does not cost.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -126,7 +126,7 @@ if no, it should be: ________________________________________
 
 **Proposed Duala:** Nyɔŋgɔn
 
-*The machine was unsure: mistake/error; verify vs 'Erreur' for technical errors.*
+*Worth a close look: mistake/error; verify vs 'Erreur' for technical errors.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -160,7 +160,7 @@ if no, it should be: ________________________________________
 
 **Proposed Duala:** Mbela ma tatamɛ
 
-*The machine was unsure: 'call to be careful'; verify vs 'Alerte de sécurité'.*
+*Worth a close look: 'call to be careful'; verify vs 'Alerte de sécurité'.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -178,7 +178,7 @@ if no, it should be: ________________________________________
 
 **Proposed Duala:** Dimisɛ
 
-*The machine was unsure: extinguish/cancel; 'annuler' also frequent in digital UIs.*
+*Worth a close look: extinguish/cancel; 'annuler' also frequent in digital UIs.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -196,7 +196,7 @@ if no, it should be: ________________________________________
 
 **Proposed Duala:** Pɔsɔ nja mbad'a loma la moni na ninka moni. Frais mi ma sɔŋgɔlɛ mɔmɛnɛ.
 
-*The machine was unsure: Verify 'sɔŋgɔlɛ mɔmɛnɛ' (calculates itself) and class agreement.*
+*Worth a close look: Verify 'sɔŋgɔlɛ mɔmɛnɛ' (calculates itself) and class agreement.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -228,7 +228,7 @@ if no, it should be: ________________________________________
 
 **Proposed Duala:** Ninka moni o ma loma
 
-*The machine was unsure: (taken from the same line on the bank page)*
+*Worth a close look: (taken from the same line on the bank page)*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -278,7 +278,7 @@ if no, it should be: ________________________________________
 
 **Proposed Duala:** Mbela ma tatamɛ : bɛbɛlɛ numéro ma téléphone ma nu ma kusa oboso na o ma bɛndɛ.
 
-*The machine was unsure: Same as 100.*
+*Worth a close look: Same as 100.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -296,7 +296,7 @@ if no, it should be: ________________________________________
 
 **Proposed Duala:** Ba dimisɛ loma la moni
 
-*The machine was unsure: Verify natural passive phrasing.*
+*Worth a close look: Verify natural passive phrasing.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -314,7 +314,7 @@ if no, it should be: ________________________________________
 
 **Proposed Duala:** Frais ma {1} (mu si ma siba {2}, mu si ma buka {3})
 
-*The machine was unsure: 'siba' go under, 'buka' exceed; verify UI conciseness.*
+*Worth a close look: 'siba' go under, 'buka' exceed; verify UI conciseness.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -346,7 +346,7 @@ if no, it should be: ________________________________________
 
 **Proposed Duala:** Mbad'a loma la moni
 
-*The machine was unsure: (taken from the same line on the bank page)*
+*Worth a close look: (taken from the same line on the bank page)*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 

@@ -18,7 +18,7 @@ Reviewer: ________________  Date: __________
 
 **Proposed Lamnso':** Á yo'sí tɔ̀m nkà' fɔ̀ wìr wɛ̀n é account wɛ̀n. Yɛ̀n number làŋ á continue.
 
-*The machine was unsure: Security warning for first-time recipient; verify negation 'yo'sí' (never/not yet).*
+*Worth a close look: Security warning for first-time recipient; verify negation 'yo'sí' (never/not yet).*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -36,7 +36,7 @@ if no, it should be: ________________________________________
 
 **Proposed Lamnso':** Və̀r kìm, yɛ̀n lìn bò number é wìr yo' é wù yì kɔ̀' nkà', làŋ á confirm transfer.
 
-*The machine was unsure: Critical security instruction; verify conjunction 'làŋ á' (before you) with native speaker.*
+*Worth a close look: Critical security instruction; verify conjunction 'làŋ á' (before you) with native speaker.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -54,7 +54,7 @@ if no, it should be: ________________________________________
 
 **Proposed Lamnso':** Á làm confirm mìŋgwɛ̀' mìn làŋ transfer ì kɛ̀ɛ̀.
 
-*The machine was unsure: Verify modal 'làm' (must) and clause ordering.*
+*Worth a close look: Verify modal 'làm' (must) and clause ordering.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -70,7 +70,7 @@ if no, it should be: ________________________________________
 
 **Proposed Lamnso':** Nkà' yì làm tsà' zero.
 
-*The machine was unsure: Kept 'zero' as loanword to avoid writing digits; verify 'làm tsà'' (must exceed). (taken from the same line on the bank page)*
+*Worth a close look: Kept 'zero' as loanword to avoid writing digits; verify 'làm tsà'' (must exceed). (taken from the same line on the bank page)*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -88,7 +88,7 @@ if no, it should be: ________________________________________
 
 **Proposed Lamnso':** Wìr yo' é wù yì kɔ̀'
 
-*The machine was unsure: Literal: 'the person who will receive'; check natural phrasing for recipient.*
+*Worth a close look: Literal: 'the person who will receive'; check natural phrasing for recipient.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -104,7 +104,7 @@ if no, it should be: ________________________________________
 
 **Proposed Lamnso':** Kìtù ké transfer
 
-*The machine was unsure: Literal: 'Kind of transfer'. (taken from the same line on the bank page)*
+*Worth a close look: Literal: 'Kind of transfer'. (taken from the same line on the bank page)*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -122,7 +122,7 @@ if no, it should be: ________________________________________
 
 **Proposed Lamnso':** Kìfà kì mò' kì yò'sí kɛ̀ɛ̀ boŋ
 
-*The machine was unsure: Literal: 'Something did not go well'.*
+*Worth a close look: Literal: 'Something did not go well'.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -140,7 +140,7 @@ if no, it should be: ________________________________________
 
 **Proposed Lamnso':** Bò' á fɔ̀ PIN code wò fɔ̀ wìr mò' və̀r kìm.
 
-*The machine was unsure: Critical security warning ('Never share your PIN'); verify emphatic 'never' phrasing with native speaker.*
+*Worth a close look: Critical security warning ('Never share your PIN'); verify emphatic 'never' phrasing with native speaker.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -158,7 +158,7 @@ if no, it should be: ________________________________________
 
 **Proposed Lamnso':** Bii mìŋgwɛ̀' mì wìr yo' é wù yì kɔ̀' nkà'. Və̀r kìm, yɛ̀n number làŋ á confirm.
 
-*The machine was unsure: Verify verb 'bii' (put/enter) in digital form context.*
+*Worth a close look: Verify verb 'bii' (put/enter) in digital form context.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -176,7 +176,7 @@ if no, it should be: ________________________________________
 
 **Proposed Lamnso':** M̀ confirm ghàn mìŋgwɛ̀' mìn kìm mì dzé boŋ.
 
-*The machine was unsure: Verify complementizer 'ghàn' (that) and 'dzé boŋ' (are correct).*
+*Worth a close look: Verify complementizer 'ghàn' (that) and 'dzé boŋ' (are correct).*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -194,7 +194,7 @@ if no, it should be: ________________________________________
 
 **Proposed Lamnso':** Charge
 
-*The machine was unsure: Kept 'charge' per rule 6; verify if 'nkà' vé tɔ̀m' is preferred.*
+*Worth a close look: Kept 'charge' per rule 6; verify if 'nkà' vé tɔ̀m' is preferred.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -212,7 +212,7 @@ if no, it should be: ________________________________________
 
 **Proposed Lamnso':** Number é account : {1}
 
-*The machine was unsure: Code-switched 'number' and 'account'.*
+*Worth a close look: Code-switched 'number' and 'account'.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -228,7 +228,7 @@ if no, it should be: ________________________________________
 
 **Proposed Lamnso':** Transfer ì kɛ̀ɛ̀
 
-*The machine was unsure: Literal: 'Transfer has gone'. (taken from the same line on the bank page)*
+*Worth a close look: Literal: 'Transfer has gone'. (taken from the same line on the bank page)*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -262,7 +262,7 @@ if no, it should be: ________________________________________
 
 **Proposed Lamnso':** Bò' á fɔ̀ OTP code wò fɔ̀ wìr mò' və̀r kìm.
 
-*The machine was unsure: Critical security warning ('Never share your OTP'); verify emphatic 'never' phrasing with native speaker.*
+*Worth a close look: Critical security warning ('Never share your OTP'); verify emphatic 'never' phrasing with native speaker.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -280,7 +280,7 @@ if no, it should be: ________________________________________
 
 **Proposed Lamnso':** Security warning
 
-*The machine was unsure: Kept English security header to avoid weakening urgency; verify if a Lamnso' warning term is established.*
+*Worth a close look: Kept English security header to avoid weakening urgency; verify if a Lamnso' warning term is established.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -298,7 +298,7 @@ if no, it should be: ________________________________________
 
 **Proposed Lamnso':** Transfer ì cancel
 
-*The machine was unsure: Code-switched 'transfer' and 'cancel'.*
+*Worth a close look: Code-switched 'transfer' and 'cancel'.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -316,7 +316,7 @@ if no, it should be: ________________________________________
 
 **Proposed Lamnso':** Yɛ̀n balance wò, bò á tɔ̀m nkà' boŋ-boŋ.
 
-*The machine was unsure: Verify imperative and adverbial 'boŋ-boŋ' (safely).*
+*Worth a close look: Verify imperative and adverbial 'boŋ-boŋ' (safely).*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -334,7 +334,7 @@ if no, it should be: ________________________________________
 
 **Proposed Lamnso':** Lìn é wìr yo' é wù yì kɔ̀'
 
-*The machine was unsure: Literal: 'Name of the person who will receive'.*
+*Worth a close look: Literal: 'Name of the person who will receive'.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
@@ -350,7 +350,7 @@ if no, it should be: ________________________________________
 
 **Proposed Lamnso':** Kìfà ké á tɔ̀m nkà'
 
-*The machine was unsure: Literal: 'Reason why you send money'. (taken from the same line on the bank page)*
+*Worth a close look: Literal: 'Reason why you send money'. (taken from the same line on the bank page)*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 

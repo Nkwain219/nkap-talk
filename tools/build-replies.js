@@ -54,8 +54,8 @@ function cmdStub(lang) {
       out: (o && o.out) || '',
       reviewed: !!(o && o.reviewed && o.out),
       by: (o && o.by) || '',
-      ...(o && o.aiSure !== undefined ? { aiSure: o.aiSure } : {}),
-      ...(o && o.aiNote ? { aiNote: o.aiNote } : {}),
+      ...(o && o.sure !== undefined ? { sure: o.sure } : {}),
+      ...(o && o.note ? { note: o.note } : {}),
     };
   });
   write(lang, { language: lang, name: CV.VOICES[lang].name, entries });
@@ -91,8 +91,8 @@ function cmdMerge(lang, src) {
     const errs = LEX.problems(e.pidgin, out);
     if (errs.length) { refused++; console.log(`  refused line ${r.i}: ${errs.join('; ')}\n    pidgin: ${e.pidgin}\n    out:    ${out}`); continue; }
     e.out = out; e.reviewed = false; e.by = '';
-    e.aiSure = r.sure !== false;
-    if (r.note) e.aiNote = String(r.note);
+    e.sure = r.sure !== false;
+    if (r.note) e.note = String(r.note);
     if (r.sure === false) flagged++;
     added++;
   }
@@ -165,8 +165,8 @@ function cmdFromPage(lang) {
     e.out = hit.out;
     e.reviewed = false;
     e.by = '';
-    e.aiSure = hit.aiSure !== false;
-    e.aiNote = (hit.aiNote ? hit.aiNote + ' ' : '') + '(taken from the same line on the bank page)';
+    e.sure = hit.sure !== false;
+    e.note = (hit.note ? hit.note + ' ' : '') + '(taken from the same line on the bank page)';
     added++;
   }
   write(lang, d);

@@ -148,6 +148,20 @@ const ref = kinds('SAF-2026-L8NV4F');
 check(ref && ref.includes('s') && ref.includes('deux'), `REF spelled with French digits: ${ref && ref.join(' ')}`);
 check(C.spellIds('AB-12', num).join(' ') === 'a b un deux', C.spellIds('AB-12', num).join(' '));
 
+// 14b. a reference and a phone number must be coverable through planSentence too, not just
+// through plan(): they arrive as bare digits and the clips are named after the words.
+const tier1pcm = new Set(C.NUMBERS.map(C.slug));
+tier1pcm.add(C.slug('account number na'));
+tier1pcm.add(C.slug('di phone number na'));
+check(C.planSentence('Account number na SAF-001-2026.', 'pcm', tier1pcm) !== null,
+  'reference planned through planSentence');
+check(C.planSentence('Di phone number na +237 699 00 11 22.', 'pcm', tier1pcm) !== null,
+  'phone number planned through planSentence');
+const refIds = C.planSentence('Account number na SAF-001-2026.', 'pcm', tier1pcm) || [];
+check(refIds.includes('zero') && refIds.includes('two'),
+  `digits became words: ${refIds.slice(1, 6).join(' ')}`);
+check(!refIds.some((x) => /^[0-9]$/.test(x)), 'no bare digit survives as a clip id');
+
 // 15. the number vocabulary each language has to record
 check(C.numberVocabulary('pcm').length === 63, `Pidgin tier 1 is ${C.numberVocabulary('pcm').length}`);
 check(C.numberVocabulary('ewo').length === 58, `Ewondo tier 1 is ${C.numberVocabulary('ewo').length}`);

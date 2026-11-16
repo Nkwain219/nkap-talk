@@ -195,7 +195,9 @@
       const vIds = valueIds(s, num);
       if (!vIds) return null;
       for (const id of vIds) {
-        const sl = slug(id);
+        // clipWord here too: a reference or phone number arrives as bare digits from
+        // digits()/spellIds(), and a clip is named after the word, not the character
+        const sl = slug(clipWord(id));
         if (!have.has(sl)) return null;
         ids.push(sl);
       }

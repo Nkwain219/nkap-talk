@@ -9,8 +9,12 @@
     await P.translator.start(); // loads the display language first
     if (P.env.settings.autoTranslate) P.translator.setOn(true);
     // display language changed in settings, or native-speaker corrections edited
+    let drafts = !!P.env.settings.showDrafts;
     P.env.on('settings', (s) => {
-      if ((s.pageLanguage || 'pcm') !== P.translator.language) P.translator.setLanguage(s.pageLanguage);
+      const lang = s.pageLanguage || 'pcm';
+      if (lang !== P.translator.language) { drafts = !!s.showDrafts; return P.translator.setLanguage(lang); }
+      // showing or hiding unchecked lines changes what every line reads, so redraw the page
+      if (!!s.showDrafts !== drafts) { drafts = !!s.showDrafts; P.translator.setLanguage(lang); }
     });
     P.env.on('local-store', (changes) => {
       if (Object.keys(changes).includes(`fix:${P.translator.language}`)) P.translator.setLanguage(P.translator.language);

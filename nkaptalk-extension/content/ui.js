@@ -146,7 +146,16 @@
     const base = P.env.online() ? `Gemini ${s.useGeminiNLU ? 'voice' : ''}${s.useGeminiTranslate ? ' + new text (values hidden)' : ''}` : 'Local mode · nothing leaves dis computer';
     const code = P.translator.language;
     const local = code !== 'pcm' && P.localize && P.localize.LANGUAGES[code];
-    modeEl.textContent = local ? `${base} · page in ${local.name}, voice in Pidgin` : base;
+    // the voice is no longer always Pidgin: say which one is actually set, and say when a
+    // language is chosen but has no recordings, because then it still speaks Pidgin
+    const vcode = P.env.settings.voiceLanguage || 'pcm';
+    const voices = P.clipvoice && P.clipvoice.VOICES;
+    const vname = vcode === 'pcm' ? 'Pidgin' : ((voices && voices[vcode] && voices[vcode].name) || vcode);
+    const clips = P.clipvoice && P.clipvoice.installed;
+    const voicePart = vcode === 'pcm' ? 'voice in Pidgin'
+      : clips ? `voice in ${vname}` : `voice in ${vname} once it is recorded, Pidgin until then`;
+    modeEl.textContent = local ? `${base} · page in ${local.name}, ${voicePart}`
+      : (vcode === 'pcm' ? base : `${base} · ${voicePart}`);
   }
 
   function refreshLock(announce) {

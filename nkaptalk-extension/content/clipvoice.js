@@ -329,6 +329,14 @@
     return missed;
   }
 
+  /** True once a language with recordings has been loaded; the panel reports it. */
+  Object.defineProperty(P.clipvoice, 'installed', {
+    get() {
+      const idx = indexes.get(P.env && P.env.settings ? (P.env.settings.voiceLanguage || 'pcm') : 'pcm');
+      return !!(idx && Object.keys(idx).length);
+    },
+  });
+
   P.clipvoice.speak = speak;
   P.clipvoice.stop = stop;
   P.clipvoice.have = have;

@@ -224,17 +224,17 @@ if no, it should be: ________________________________________
 
 ### 13. the transfer itself
 
-**The bank says:** Votre compte
+**In Pidgin:** how much you wan send
 
-**In Pidgin:** Your account
+**Proposed Duala:** Ninka moni o ma loma
 
-**Proposed Duala:** Compte ɔŋ
+*The machine was unsure: (taken from the same line on the bank page)*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
 if no, it should be: ________________________________________
 
-<small>page line 23</small>
+<small>reply line 22</small>
 
 ---
 
@@ -342,19 +342,19 @@ if no, it should be: ________________________________________
 
 ### 20. the transfer itself
 
-**The bank says:** Compte courant
+**In Pidgin:** kind of transfer
 
-**In Pidgin:** Everyday account
+**Proposed Duala:** Mbad'a loma la moni
 
-**Proposed Duala:** Compte courant
+*The machine was unsure: (taken from the same line on the bank page)*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
 if no, it should be: ________________________________________
 
-<small>page line 31</small>
+<small>reply line 43</small>
 
 ---
 
-_87 of the 268 lines have no proposed Duala yet and are left out of this sheet._
+_80 of the 268 lines have no proposed Duala yet and are left out of this sheet._
 

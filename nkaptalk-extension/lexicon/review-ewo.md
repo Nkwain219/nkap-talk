@@ -222,17 +222,17 @@ if no, it should be: ________________________________________
 
 ### 13. the transfer itself
 
-**The bank says:** Votre compte
+**In Pidgin:** how much you wan send
 
-**In Pidgin:** Your account
+**Proposed Ewondo:** Abim moni ô kômbɔ lôm
 
-**Proposed Ewondo:** Compte dôe
+*The machine was unsure: (taken from the same line on the bank page)*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
 if no, it should be: ________________________________________
 
-<small>page line 23</small>
+<small>reply line 22</small>
 
 ---
 
@@ -340,19 +340,19 @@ if no, it should be: ________________________________________
 
 ### 20. the transfer itself
 
-**The bank says:** Compte courant
+**In Pidgin:** kind of transfer
 
-**In Pidgin:** Everyday account
+**Proposed Ewondo:** Aval nlôman moni
 
-**Proposed Ewondo:** Compte courant
+*The machine was unsure: (taken from the same line on the bank page)*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
 if no, it should be: ________________________________________
 
-<small>page line 31</small>
+<small>reply line 43</small>
 
 ---
 
-_87 of the 268 lines have no proposed Ewondo yet and are left out of this sheet._
+_80 of the 268 lines have no proposed Ewondo yet and are left out of this sheet._
 

@@ -66,19 +66,17 @@ if no, it should be: ________________________________________
 
 ### 4. an amount on screen
 
-**The bank says:** Frais
+**In Pidgin:** di amount must pass zero
 
-**In Pidgin:** Charge
+**Proposed Medumba:** Nkàb làbə́ tsà' zéro.
 
-**Proposed Medumba:** Frais
-
-*The machine was unsure: Kept French 'Frais' as commonly code-switched in Bangangté.*
+*The machine was unsure: Kept 'zéro' as loanword to avoid writing digits; verify 'làbə́ tsà''. (taken from the same line on the bank page)*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
 if no, it should be: ________________________________________
 
-<small>page line 15</small>
+<small>reply line 10</small>
 
 ---
 
@@ -102,19 +100,17 @@ if no, it should be: ________________________________________
 
 ### 6. the transfer itself
 
-**The bank says:** Votre compte
+**In Pidgin:** kind of transfer
 
-**In Pidgin:** Your account
+**Proposed Medumba:** Fə̀' transfert
 
-**Proposed Medumba:** Compte wù
-
-*The machine was unsure: Code-switched French 'compte' with Medumba possessive 'wù'.*
+*The machine was unsure: Literal: 'Kind of transfer'. (taken from the same line on the bank page)*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
 if no, it should be: ________________________________________
 
-<small>page line 23</small>
+<small>reply line 43</small>
 
 ---
 
@@ -192,19 +188,19 @@ if no, it should be: ________________________________________
 
 ### 11. an amount on screen
 
-**The bank says:** Consultez votre solde et lancez un transfert en toute sécurité.
+**The bank says:** Frais
 
-**In Pidgin:** Look your balance, and send moni safe safe.
+**In Pidgin:** Charge
 
-**Proposed Medumba:** Yə̀n balance wù, bɔ̀ ù tùm nkàb bɔ̀ŋ-bɔ̀ŋ.
+**Proposed Medumba:** Frais
 
-*The machine was unsure: Verify imperative and adverbial 'bɔ̀ŋ-bɔ̀ŋ'.*
+*The machine was unsure: Kept French 'Frais' as commonly code-switched in Bangangté.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
 if no, it should be: ________________________________________
 
-<small>page line 25</small>
+<small>page line 15</small>
 
 ---
 
@@ -228,19 +224,17 @@ if no, it should be: ________________________________________
 
 ### 13. the transfer itself
 
-**The bank says:** Transfert reçu
+**In Pidgin:** transfer don go
 
-**In Pidgin:** Moni wey dem send you
+**Proposed Medumba:** Transfert nà kɛ̀
 
-**Proposed Medumba:** Nkàb zə́ bù tùm ù
-
-*The machine was unsure: Literal: 'money that they sent you'.*
+*The machine was unsure: Literal: 'Transfer has gone'. (taken from the same line on the bank page)*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
 if no, it should be: ________________________________________
 
-<small>page line 43</small>
+<small>reply line 77</small>
 
 ---
 
@@ -316,19 +310,19 @@ if no, it should be: ________________________________________
 
 ### 18. an amount on screen
 
-**The bank says:** Solde disponible
+**The bank says:** Consultez votre solde et lancez un transfert en toute sécurité.
 
-**In Pidgin:** Moni wey dey your account
+**In Pidgin:** Look your balance, and send moni safe safe.
 
-**Proposed Medumba:** Nkàb zə́ à bə̀ num compte wù
+**Proposed Medumba:** Yə̀n balance wù, bɔ̀ ù tùm nkàb bɔ̀ŋ-bɔ̀ŋ.
 
-*The machine was unsure: Literal: 'money that is in your account'.*
+*The machine was unsure: Verify imperative and adverbial 'bɔ̀ŋ-bɔ̀ŋ'.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
 if no, it should be: ________________________________________
 
-<small>page line 27</small>
+<small>page line 25</small>
 
 ---
 
@@ -352,21 +346,19 @@ if no, it should be: ________________________________________
 
 ### 20. the transfer itself
 
-**The bank says:** Type d'opération
+**In Pidgin:** why you di send di moni
 
-**In Pidgin:** Which kind transfer
+**Proposed Medumba:** Yù zə́ ù tùm nkàb
 
-**Proposed Medumba:** Fə̀' transfert
-
-*The machine was unsure: Literal: 'kind/type of transfer'.*
+*The machine was unsure: Literal: 'Why you send money'. (taken from the same line on the bank page)*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
 if no, it should be: ________________________________________
 
-<small>page line 55</small>
+<small>reply line 84</small>
 
 ---
 
-_87 of the 268 lines have no proposed Medumba yet and are left out of this sheet._
+_80 of the 268 lines have no proposed Medumba yet and are left out of this sheet._
 

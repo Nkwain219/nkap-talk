@@ -66,19 +66,17 @@ if no, it should be: ________________________________________
 
 ### 4. an amount on screen
 
-**The bank says:** Solde
+**In Pidgin:** di amount must pass zero
 
-**In Pidgin:** Balance
+**Proposed Basaa:** Nseñ u moni u nlama tagbe zéro.
 
-**Proposed Basaa:** Solde
-
-*The machine was unsure: No settled Basaa banking term for 'balance'; kept French.*
+*The machine was unsure: Same as 82. (taken from the same line on the bank page)*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
 if no, it should be: ________________________________________
 
-<small>page line 13</small>
+<small>reply line 10</small>
 
 ---
 
@@ -102,19 +100,17 @@ if no, it should be: ________________________________________
 
 ### 6. the transfer itself
 
-**The bank says:** Compte courant
+**In Pidgin:** how much you wan send
 
-**In Pidgin:** Everyday account
+**Proposed Basaa:** Nseñ u moni u ngwés om
 
-**Proposed Basaa:** Compte courant
-
-*The machine was unsure: Kept French banking term.*
+*The machine was unsure: Same as 66. (taken from the same line on the bank page)*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
 if no, it should be: ________________________________________
 
-<small>page line 31</small>
+<small>reply line 22</small>
 
 ---
 
@@ -192,19 +188,19 @@ if no, it should be: ________________________________________
 
 ### 11. an amount on screen
 
-**The bank says:** Frais
+**The bank says:** Solde
 
-**In Pidgin:** Charge
+**In Pidgin:** Balance
 
-**Proposed Basaa:** Frais
+**Proposed Basaa:** Solde
 
-*The machine was unsure: No settled Basaa term for transaction fees; kept French.*
+*The machine was unsure: No settled Basaa banking term for 'balance'; kept French.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
 if no, it should be: ________________________________________
 
-<small>page line 15</small>
+<small>page line 13</small>
 
 ---
 
@@ -228,19 +224,17 @@ if no, it should be: ________________________________________
 
 ### 13. the transfer itself
 
-**The bank says:** Transfert reçu
+**In Pidgin:** kind of transfer
 
-**In Pidgin:** Moni wey dem send you
+**Proposed Basaa:** Ntén transfert
 
-**Proposed Basaa:** Moni ba ñom we
-
-*The machine was unsure: 'money they sent you'; check verb tone.*
+*The machine was unsure: Same as 55. (taken from the same line on the bank page)*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
 if no, it should be: ________________________________________
 
-<small>page line 43</small>
+<small>reply line 43</small>
 
 ---
 
@@ -316,19 +310,19 @@ if no, it should be: ________________________________________
 
 ### 18. an amount on screen
 
-**The bank says:** Consultez votre solde et lancez un transfert en toute sécurité.
+**The bank says:** Frais
 
-**In Pidgin:** Look your balance, and send moni safe safe.
+**In Pidgin:** Charge
 
-**Proposed Basaa:** Bémbe solde yoñ, u om ki moni ikété nsañ.
+**Proposed Basaa:** Frais
 
-*The machine was unsure: Check phrasing for 'safely'.*
+*The machine was unsure: No settled Basaa term for transaction fees; kept French.*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
 if no, it should be: ________________________________________
 
-<small>page line 25</small>
+<small>page line 15</small>
 
 ---
 
@@ -352,21 +346,19 @@ if no, it should be: ________________________________________
 
 ### 20. the transfer itself
 
-**The bank says:** Type d'opération
+**In Pidgin:** transfer don go
 
-**In Pidgin:** Which kind transfer
+**Proposed Basaa:** Transfert i mal ke
 
-**Proposed Basaa:** Ntén transfert
-
-*The machine was unsure: 'Ntén' means kind/type.*
+*The machine was unsure: Same as 122. (taken from the same line on the bank page)*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
 if no, it should be: ________________________________________
 
-<small>page line 55</small>
+<small>reply line 77</small>
 
 ---
 
-_87 of the 268 lines have no proposed Basaa yet and are left out of this sheet._
+_80 of the 268 lines have no proposed Basaa yet and are left out of this sheet._
 

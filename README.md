@@ -210,6 +210,59 @@ keeping whatever has already been filled in and dropping lines that are no longe
 Once a language has a reviewed lexicon and its recordings, it needs no key and nothing leaves
 the computer, exactly like Pidgin.
 
+### What NkapTalk itself says
+
+The lexicon above covers the bank's page. NkapTalk's own sentences are a separate set, written
+in Pidgin in `assistant.js` and filled with values from the screen as it speaks, so choosing
+Ewondo used to leave it answering in Pidgin about an Ewondo page.
+
+`lexicon/replies/<language>.json` holds those 87 sentences per language, and `replybook.js`
+swaps the Pidgin pieces of a reply for them while leaving every value exactly as it is. The
+pieces are the parts of a reply between its values, keyed by the Pidgin with case and
+punctuation removed, which is the same key the recordings use: one translation round gives
+both the text on screen and the script a speaker reads.
+
+**What is spoken stays Pidgin.** A browser voice cannot read these languages, and the
+recordings are keyed by the Pidgin piece, so `speech.js` keeps receiving Pidgin and plays the
+local recording once one exists. You read the local language; you hear Pidgin until there is
+a recorded voice.
+
+A reply is swapped whole or not at all, an unchecked line is not shown, and the values are put
+back and compared as everywhere else.
+
+```bash
+node tools/build-replies.js stub --all          # create the files
+node tools/build-replies.js from-page --all     # reuse page lines that say the same thing
+node tools/build-replies.js prompt --all        # one prompt per language
+node tools/build-replies.js merge ewo answer.json
+node tools/build-replies.js check --all
+```
+
+`from-page` takes the handful of sentences that are word for word a line of the bank's page,
+which the page lexicon already has a translation for. They arrive as drafts like everything
+else.
+
+### The twenty lines to check first
+
+Each language has 268 lines in all, and nobody reviews that before a deadline. The review
+sheet picks the twenty where being wrong costs the most and writes something a speaker can
+fill in on paper or on a phone:
+
+```bash
+node tools/review-sheet.js ewo            # -> lexicon/review-ewo.md
+```
+
+It takes turns between the kinds of line rather than filling the sheet with one kind, so it
+covers the whole journey: what the app says about a PIN, its security warnings, confirming and
+cancelling, the amounts, who the money goes to, the transfer, and errors. A draft the model
+marked unsure outranks a confident one, and a line with nothing proposed is left out, because
+a line with no draft shows nothing on screen anyway. Each entry carries the bank's own French,
+the reviewed Pidgin, the proposed translation and the model's own doubt, so a reviewer can see
+what the line is meant to mean before judging it.
+
+Corrections go back in with the normal `merge`, and a line only appears once someone sets
+`reviewed: true` with their name.
+
 ### Recorded voice, in Pidgin and in the local languages
 
 Chrome's English voice reads Pidgin *spelling*, which is only close enough. For Ewondo,

@@ -139,12 +139,48 @@ function cmdPrompt(lang, chunk) {
   console.log(`${L.name} (${lang}): lexicon/replies/prompts/${names.join(', ')}  (${all.length} lines)`);
 }
 
+/**
+ * Some of the assistant's sentences are word for word a line of the bank's page, which the
+ * page lexicon already has a translation for. Reuse those rather than asking for them twice.
+ * They arrive as drafts like everything else: the same model wrote them, so they carry the
+ * same doubt and still need a speaker.
+ */
+function cmdFromPage(lang) {
+  const d = read(lang);
+  if (!d) { console.error(`no file for ${lang}; run stub first`); process.exit(2); }
+  const pageFile = path.join(EXT, 'lexicon', lang + '.json');
+  if (!fs.existsSync(pageFile)) { console.error(`no page lexicon for ${lang}`); process.exit(2); }
+  const norm = (x) => CV.norm(String(x).replace(/\{\d*\}/g, ' '));
+  const byPidgin = new Map();
+  for (const e of JSON.parse(fs.readFileSync(pageFile, 'utf8')).entries) {
+    if (e.out) byPidgin.set(norm(e.pidgin), e);
+  }
+  let added = 0, kept = 0, refused = 0;
+  for (const e of d.entries) {
+    if (e.out) { kept++; continue; }
+    const hit = byPidgin.get(norm(e.pidgin));
+    if (!hit) continue;
+    const errs = LEX.problems(e.pidgin, hit.out);
+    if (errs.length) { refused++; continue; }
+    e.out = hit.out;
+    e.reviewed = false;
+    e.by = '';
+    e.aiSure = hit.aiSure !== false;
+    e.aiNote = (hit.aiNote ? hit.aiNote + ' ' : '') + '(taken from the same line on the bank page)';
+    added++;
+  }
+  write(lang, d);
+  console.log(`${CV.VOICES[lang].name}: ${added} taken from the page lexicon, ${kept} already had one`
+    + (refused ? `, ${refused} refused` : '') + `, ${d.entries.filter((x) => !x.out).length} still to translate`);
+}
+
 const cmd = process.argv[2];
 const args = process.argv.slice(3);
 const targets = args.includes('--all') ? LOCALS : args.filter((a) => CV.VOICES[a]);
 const list = targets.length ? targets : LOCALS;
 if (cmd === 'merge') { if (!CV.VOICES[args[0]] || !args[1]) { console.error('usage: merge <lang> <file.json>'); process.exit(2); } cmdMerge(args[0], args[1]); }
 else if (cmd === 'stub') list.forEach(cmdStub);
+else if (cmd === 'from-page') list.forEach(cmdFromPage);
 else if (cmd === 'check') { let b = 0; list.forEach((l) => { b += cmdCheck(l); }); process.exit(b ? 1 : 0); }
 else if (cmd === 'prompt') { const ci = process.argv.indexOf('--chunk'); list.forEach((l) => cmdPrompt(l, ci > 0 ? Number(process.argv[ci + 1]) : 0)); }
-else { console.error('usage: build-replies.js stub|check|prompt <lang|--all> | merge <lang> <file.json>'); process.exit(2); }
+else { console.error('usage: build-replies.js stub|check|prompt|from-page <lang|--all> | merge <lang> <file.json>'); process.exit(2); }

@@ -222,17 +222,17 @@ if no, it should be: ________________________________________
 
 ### 13. the transfer itself
 
-**The bank says:** Votre compte
+**In Pidgin:** how much you wan send
 
-**In Pidgin:** Your account
+**Proposed Fulfulde:** Ceede ɗe ngiɗɗaa neldugo
 
-**Proposed Fulfulde:** Compte maaɗa
+*The machine was unsure: (taken from the same line on the bank page)*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
 if no, it should be: ________________________________________
 
-<small>page line 23</small>
+<small>reply line 22</small>
 
 ---
 
@@ -338,19 +338,19 @@ if no, it should be: ________________________________________
 
 ### 20. the transfer itself
 
-**The bank says:** Compte courant
+**In Pidgin:** kind of transfer
 
-**In Pidgin:** Everyday account
+**Proposed Fulfulde:** Iri neldal ceede
 
-**Proposed Fulfulde:** Compte courant
+*The machine was unsure: (taken from the same line on the bank page)*
 
 correct? ☐ yes  ☐ no  ☐ not sure
 
 if no, it should be: ________________________________________
 
-<small>page line 31</small>
+<small>reply line 43</small>
 
 ---
 
-_87 of the 268 lines have no proposed Fulfulde yet and are left out of this sheet._
+_80 of the 268 lines have no proposed Fulfulde yet and are left out of this sheet._
 

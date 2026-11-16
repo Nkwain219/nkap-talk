@@ -34,9 +34,11 @@
     },
     {
       "pidgin": "another bank",
-      "out": "",
+      "out": "Banki feere",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true,
+      "aiNote": "(taken from the same line on the bank page)"
     },
     {
       "pidgin": "balance after go be",
@@ -58,9 +60,11 @@
     },
     {
       "pidgin": "di amount must pass zero",
-      "out": "",
+      "out": "Ceede ɗen haani ɓura zéro.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true,
+      "aiNote": "(taken from the same line on the bank page)"
     },
     {
       "pidgin": "di button dem na",
@@ -130,9 +134,11 @@
     },
     {
       "pidgin": "how much you wan send",
-      "out": "",
+      "out": "Ceede ɗe ngiɗɗaa neldugo",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true,
+      "aiNote": "(taken from the same line on the bank page)"
     },
     {
       "pidgin": "how you dey",
@@ -256,9 +262,11 @@
     },
     {
       "pidgin": "kind of transfer",
-      "out": "",
+      "out": "Iri neldal ceede",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true,
+      "aiNote": "(taken from the same line on the bank page)"
     },
     {
       "pidgin": "kind of transfer na",
@@ -286,9 +294,11 @@
     },
     {
       "pidgin": "mobile money",
-      "out": "",
+      "out": "Mobile Money",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true,
+      "aiNote": "(taken from the same line on the bank page)"
     },
     {
       "pidgin": "moni wey dey your account na",
@@ -460,9 +470,11 @@
     },
     {
       "pidgin": "transfer don go",
-      "out": "",
+      "out": "Ceede neldaama",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true,
+      "aiNote": "(taken from the same line on the bank page)"
     },
     {
       "pidgin": "translate off",
@@ -502,9 +514,11 @@
     },
     {
       "pidgin": "why you di send di moni",
-      "out": "",
+      "out": "Ngam ɗume a ɗon nelda ceede",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true,
+      "aiNote": "(taken from the same line on the bank page)"
     },
     {
       "pidgin": "you fit tell me how much moni dey my account wetin be di charge i wan send 5000 give ngwa paul wetin dey for screen or say am again",

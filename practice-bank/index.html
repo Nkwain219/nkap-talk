@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Practice copy — Safinum Pay test environment (offline)</title>
+<style>
+  body { margin: 0; font-family: system-ui, sans-serif; background: #0A0A0A; color: #fff; }
+  .banner { background: #FFEB3B; color: #0A0A0A; font-size: 12px; font-weight: 600; text-align: center; padding: 8px; display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+  .banner a { color: inherit; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 24px; }
+  header { display: flex; justify-content: space-between; align-items: center; border: 1px solid #222; border-radius: 24px; padding: 14px 20px; margin-bottom: 20px; }
+  header .brand p { margin: 0; } header .brand p:first-child { font-weight: 800; font-size: 18px; } header .brand p:last-child { font-size: 12px; color: #888; }
+  header .right { display: flex; gap: 10px; align-items: center; }
+  header button { background: none; color: #ccc; border: 1px solid #333; border-radius: 999px; padding: 6px 12px; font-weight: 700; cursor: pointer; }
+  .who { display: flex; gap: 8px; align-items: center; border: 1px solid #333; border-radius: 999px; padding: 4px 12px; font-size: 13px; }
+  .who div:first-child { background: #2D1B69; border-radius: 50%; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; }
+  ol { display: flex; gap: 14px; list-style: none; padding: 0; font-size: 12px; font-weight: 600; color: #888; }
+  ol li span:first-child { display: inline-block; width: 20px; height: 20px; border-radius: 50%; background: #222; text-align: center; margin-right: 6px; }
+  ol li.on { color: #fff; } ol li.on span:first-child { background: #00BFFF; color: #000; }
+  .grid { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; }
+  .card { border: 1px solid #222; border-radius: 24px; padding: 24px; background: #111; }
+  .card > p:first-child { color: #00BFFF; font-size: 12px; font-weight: 700; text-transform: uppercase; }
+  h1, h2 { margin: 6px 0; } h2 { font-size: 18px; }
+  .bal { background: linear-gradient(120deg,#1b1240,#2D1B69); border-radius: 18px; padding: 18px; margin: 18px 0; }
+  .bal p:first-child { font-size: 11px; text-transform: uppercase; color: #aaa; margin: 0; } .bal p:nth-child(2) { font-size: 30px; font-weight: 800; margin: 6px 0; }
+  .bal span { font-size: 12px; color: #bbb; margin-right: 10px; }
+  .btns { display: flex; gap: 10px; margin: 16px 0; }
+  .btns button, .primary { background: #FFEB3B; color: #000; border: none; border-radius: 999px; padding: 10px 18px; font-weight: 700; cursor: pointer; }
+  .btns button + button, .ghost { background: none; color: #fff; border: 1px solid #444; border-radius: 999px; padding: 10px 18px; font-weight: 700; cursor: pointer; }
+  .tx > div { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #1d1d1d; }
+  .tx p { margin: 0; } .tx p + p { font-size: 12px; color: #888; }
+  label { display: block; font-size: 11px; text-transform: uppercase; color: #aaa; margin: 14px 0 6px; font-weight: 700; }
+  input, select, textarea { background: #0A0A0A; color: #fff; border: 1px solid #333; border-radius: 12px; padding: 10px; width: 100%; box-sizing: border-box; font-size: 15px; }
+  input[type=checkbox] { width: auto; }
+  .rows > div { display: flex; justify-content: space-between; padding: 8px 0; }
+  .alert { border: 1px solid #c62828; background: #2a0d0d; border-radius: 14px; padding: 12px; margin-bottom: 14px; }
+  .alert p { margin: 2px 0; } .alert p:last-child { font-size: 11px; color: #f88; }
+  .warnbox { border: 1px solid #b58900; background: #2a2205; border-radius: 12px; padding: 10px; font-size: 13px; }
+  dl div { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #1d1d1d; } dt { color: #aaa; } dd { margin: 0; font-weight: 700; }
+  .actions { display: flex; justify-content: space-between; margin-top: 18px; }
+  .side p { margin: 4px 0; }
+  #jury { border-top: 1px dashed #333; margin-top: 30px; padding-top: 12px; font-size: 12px; color: #888; }
+  #jury input { width: 70%; display: inline-block; }
+</style>
+</head>
+<body>
+<div id="app"></div>
+<div class="wrap" id="jury" translate="no">
+  Practice tool (not part of the bank page): add a new message like the jury would
+  <input id="juryText" value="Attention : ne communiquez jamais votre code PIN, même à un agent Safinum.">
+  <button id="juryBtn" class="ghost">Inject</button>
+</div>
+<script>
+// Offline practice copy of https://safinum.cm/hackathon-test (structure, texts, fees and errors as observed on Nov 14, 2026).
+const T = {
+  fr: { banner: 'Environnement de test — données fictives, aucune transaction réelle.', proto: 'Protocole de test', back2: 'Retour au hackathon', online: 'Banque en ligne', other: 'EN',
+    steps: ['Solde', 'Frais', 'Bénéficiaire', 'Récapitulatif', 'Confirmation'], acc: 'Votre compte', hello: 'Bonjour, Amina', intro: 'Consultez votre solde et lancez un transfert en toute sécurité.',
+    avail: 'Solde disponible', accno: 'Numéro de compte : ', cur: 'Compte courant', make: 'Effectuer un transfert', view: 'Consulter les frais', recent: 'Transactions récentes',
+    tx: [['Paiement marchand', '05 nov. 2026', -12500], ['Salaire reçu', '04 nov. 2026', 180000], ['Transfert reçu', '02 nov. 2026', 50000], ['Facture électricité', '31 oct. 2026', -7500]],
+    sec: 'Sécurité', secTxt: 'Vérifiez toujours le nom et le numéro du bénéficiaire avant de confirmer un transfert.', conn: 'Connexion sécurisée', foot: 'Safinum Pay — environnement de démonstration. Ne saisissez aucune donnée personnelle réelle.',
+    feesT: 'Frais de transfert', feesIntro: 'Choisissez le type de transfert et le montant. Les frais sont calculés automatiquement.', opType: "Type d'opération",
+    types: { safinum: 'Compte Safinum', mobile_money: 'Mobile Money', other_bank: 'Autre banque' }, free: 'Transfert instantané et gratuit',
+    rule: (p, a, b) => `Frais de ${p} % (min. ${a}, max. ${b})`, amt: 'Montant à envoyer', fee: 'Frais', gratuit: 'Gratuit', total: 'Total à débiter', after: 'Solde après opération', back: 'Retour', cont: 'Continuer',
+    err: 'Une erreur est survenue', e1: 'Le montant doit être supérieur à zéro.', e2: 'Solde insuffisant pour effectuer ce transfert.', e3: 'Vous devez confirmer les informations avant de valider le transfert.',
+    benT: 'Bénéficiaire', benIntro: 'Renseignez les informations du destinataire. Vérifiez toujours le numéro avant de valider.', newBen: "Ce bénéficiaire n'a jamais été utilisé sur ce compte. Vérifiez le numéro avant de continuer.",
+    name: 'Nom du bénéficiaire', phone: 'Numéro de téléphone', motif: 'Motif du transfert', note: 'Note (optionnel)', verified: "J'ai vérifié le nom et le numéro du bénéficiaire.",
+    secT: 'Alerte de sécurité', secMsg: 'Alerte de sécurité : vérifiez le numéro du bénéficiaire avant de continuer.',
+    sumT: 'Récapitulatif', sumIntro: 'Vérifiez les informations avant de confirmer le transfert.', sAmt: 'Montant', sTot: 'Total débité', sBen: 'Bénéficiaire', sTel: 'Téléphone', sRef: 'Référence', sOp: 'Opération',
+    confirmBox: 'Je confirme que les informations ci-dessus sont correctes.', edit: 'Modifier', confirm: 'Confirmer le transfert',
+    done: 'Transfert effectué', doneMsg: 'Votre transfert a été envoyé avec succès.', status: 'Statut', ok: 'Succès', again: 'Nouveau transfert', locale: 'fr-FR' },
+  en: { banner: 'Test environment — fictional data, no real transaction.', proto: 'Test protocol', back2: 'Back to hackathon', online: 'Online banking', other: 'FR',
+    steps: ['Balance', 'Fees', 'Beneficiary', 'Summary', 'Confirmation'], acc: 'Your account', hello: 'Hello, Amina', intro: 'Check your balance and start a secure transfer.',
+    avail: 'Available balance', accno: 'Account number : ', cur: 'Current account', make: 'Make a transfer', view: 'View fees', recent: 'Recent transactions',
+    tx: [['Merchant payment', 'Nov 5, 2026', -12500], ['Salary received', 'Nov 4, 2026', 180000], ['Transfer received', 'Nov 2, 2026', 50000], ['Electricity bill', 'Oct 31, 2026', -7500]],
+    sec: 'Security', secTxt: 'Always verify the beneficiary name and number before confirming a transfer.', conn: 'Secure connection', foot: 'Safinum Pay — demonstration environment. Do not enter real personal data.',
+    feesT: 'Transfer fees', feesIntro: 'Choose the transfer type and amount. Fees are calculated automatically.', opType: 'Operation type',
+    types: { safinum: 'Safinum account', mobile_money: 'Mobile Money', other_bank: 'Other bank' }, free: 'Instant, free transfer',
+    rule: (p, a, b) => `${p}% fee (min. ${a}, max. ${b})`, amt: 'Amount to send', fee: 'Fee', gratuit: 'Free', total: 'Total to debit', after: 'Balance after transfer', back: 'Back', cont: 'Continue',
+    err: 'An error occurred', e1: 'The amount must be greater than zero.', e2: 'Insufficient balance for this transfer.', e3: 'You must confirm the details before validating the transfer.',
+    benT: 'Beneficiary', benIntro: 'Enter the recipient details. Always verify the number before confirming.', newBen: 'This beneficiary has never been used on this account. Verify the number before continuing.',
+    name: 'Beneficiary name', phone: 'Phone number', motif: 'Transfer reason', note: 'Note (optional)', verified: 'I have verified the beneficiary name and phone number.',
+    secT: 'Security warning', secMsg: 'Security warning: verify the beneficiary phone number before continuing.',
+    sumT: 'Summary', sumIntro: 'Check the details before confirming the transfer.', sAmt: 'Amount', sTot: 'Total debited', sBen: 'Beneficiary', sTel: 'Phone', sRef: 'Reference', sOp: 'Operation',
+    confirmBox: 'I confirm the information above is correct.', edit: 'Edit', confirm: 'Confirm transfer',
+    done: 'Transfer completed', doneMsg: 'Your transfer has been sent successfully.', status: 'Status', ok: 'Success', again: 'New transfer', locale: 'en-US' },
+};
+const BAL = 250000;
+const st = { lang: 'fr', step: 0, type: 'safinum', amount: 25000, name: 'Jean-Paul Mbarga', phone: '+237 6 99 12 34 56', motif: 'Paiement de services', note: '', verified: false, confirmed: false, error: null, ref: '' };
+const L = () => T[st.lang];
+const money = (n) => `${new Intl.NumberFormat(L().locale).format(n)} FCFA`;
+const signed = (n) => (n > 0 ? '+' : '-') + money(Math.abs(n));
+function fee() {
+  const a = Number(st.amount) || 0;
+  if (st.type === 'mobile_money') return Math.min(2500, Math.max(100, Math.round(a * 0.015)));
+  if (st.type === 'other_bank') return Math.min(5000, Math.max(200, Math.round(a * 0.02)));
+  return 0;
+}
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+function ruleText() {
+  const l = L();
+  if (st.type === 'mobile_money') return l.rule(st.lang === 'fr' ? '1,5' : '1.5', money(100), money(2500));
+  if (st.type === 'other_bank') return l.rule('2', money(200), money(5000));
+  return l.free;
+}
+function alertHtml() {
+  if (!st.error) return '';
+  const [title, msg, code] = st.error;
+  return `<div class="alert" role="alert"><p><strong>${esc(title)}</strong></p><p>${esc(msg)}</p><p>${code}</p></div>`;
+}
+function main() {
+  const l = L();
+  if (st.step === 0) return `<div class="card"><div><div><p>${l.acc}</p><h1>${l.hello}</h1><p>${l.intro}</p></div></div>
+    <div class="bal"><p>${l.avail}</p><p>${money(BAL)}</p><div><span>${l.accno}CM 001 2345 6789 01</span><span>${l.cur}</span></div></div>
+    <div class="btns"><button type="button" data-a="make">${l.make}</button><button type="button" data-a="fees">${l.view}</button></div>
+    <div><h2>${l.recent}</h2><div class="tx">${l.tx.map(([t, d, a]) => `<div><div><div><p>${t}</p><p>${d}</p></div></div><p>${signed(a)}</p></div>`).join('')}</div></div></div>`;
+  if (st.step === 1) {
+    const f = fee(); const tot = (Number(st.amount) || 0) + f;
+    return `<div class="card"><p>${l.feesT}</p><h2>${l.feesIntro}</h2>${alertHtml()}<div><div><label>${l.opType}</label><select data-f="type">${Object.entries(l.types).map(([v, t]) => `<option value="${v}"${v === st.type ? ' selected' : ''}>${t}</option>`).join('')}</select><p data-live="rule">${ruleText()}</p></div>
+      <div><label>${l.amt}</label><div><input type="number" min="0" step="500" data-f="amount" value="${esc(st.amount)}"><span>FCFA</span></div></div>
+      <div class="rows"><div><span>${l.fee} ${f === 0 ? `<span>${l.gratuit}</span>` : ''}</span><span data-live="fee">${money(f)}</span></div><div><span>${l.total}</span><span data-live="tot">${money(tot)}</span></div><div><span>${l.after}</span><span data-live="after">${(BAL - tot) < 0 ? '-' + money(tot - BAL) : money(BAL - tot)}</span></div></div></div>
+      <div class="actions"><button type="button" class="ghost" data-a="back">${l.back}</button><button type="button" class="primary" data-a="next">${l.cont}</button></div></div>`;
+  }
+  if (st.step === 2) return `<div class="card"><p>${l.benT}</p><h2>${l.benIntro}</h2>${alertHtml()}<p class="warnbox">${l.newBen}</p>
+    <div><div><label>${l.name}</label><div><input type="text" data-f="name" value="${esc(st.name)}"></div></div><div><label>${l.phone}</label><div><input type="tel" data-f="phone" value="${esc(st.phone)}"></div></div>
+    <div><label>${l.motif}</label><input type="text" data-f="motif" value="${esc(st.motif)}"></div><div><label>${l.note}</label><textarea rows="2" data-f="note">${esc(st.note)}</textarea></div>
+    <label><input type="checkbox" data-f="verified"${st.verified ? ' checked' : ''}><span>${l.verified}</span></label></div>
+    <div class="actions"><button type="button" class="ghost" data-a="back">${l.back}</button><button type="button" class="primary" data-a="next">${l.cont}</button></div></div>`;
+  const f = fee(); const tot = Number(st.amount) + f;
+  if (st.step === 3) return `<div class="card"><p>${l.sumT}</p><h2>${l.sumIntro}</h2>${alertHtml()}<dl><div><dt>${l.sAmt}</dt><dd>${money(st.amount)}</dd></div><div><dt>${l.fee === 'Fee' ? 'Fee' : 'Frais'}</dt><dd>${money(f)}</dd></div><div><dt>${l.sTot}</dt><dd>${money(tot)}</dd></div>
+    <div><dt>${l.sBen}</dt><dd>${esc(st.name)}</dd></div><div><dt>${l.sTel}</dt><dd>${esc(st.phone)}</dd></div><div><dt>${l.sRef}</dt><dd>${st.ref}</dd></div><div><dt>${l.sOp}</dt><dd>${l.types[st.type]}</dd></div></dl>
+    <label><input type="checkbox" data-f="confirmed"${st.confirmed ? ' checked' : ''}><span>${l.confirmBox}</span></label>
+    <div class="actions"><button type="button" class="ghost" data-a="edit">${l.edit}</button><button type="button" class="primary" data-a="confirm">${l.confirm}</button></div></div>`;
+  return `<div class="card"><div><div>✓</div><h2>${l.done}</h2><p>${l.doneMsg}</p></div><dl><div><dt>${l.sRef}</dt><dd>${st.ref}</dd></div><div><dt>${l.sAmt}</dt><dd>${money(st.amount)}</dd></div><div><dt>${l.fee === 'Fee' ? 'Fee' : 'Frais'}</dt><dd>${money(f)}</dd></div><div><dt>${l.sTot}</dt><dd>${money(tot)}</dd></div><div><dt>${l.sBen}</dt><dd>${esc(st.name)}</dd></div><div><dt>${l.status}</dt><dd>${l.ok}</dd></div></dl>
+    <div class="actions"><span></span><button type="button" class="primary" data-a="again">${l.again}</button></div></div>`;
+}
+function render() {
+  const l = L();
+  document.documentElement.lang = st.lang;
+  document.getElementById('app').innerHTML = `<div class="banner"><span>${l.banner}</span><a href="#">${l.proto}</a><a href="#">${l.back2}</a></div>
+  <div class="wrap"><header><div class="brand"><p>Safinum Pay</p><p>${l.online}</p></div><div class="right"><button type="button" data-a="lang">${l.other}</button><div class="who"><div>AN</div><div>Amina Ngo Bell</div></div></div></header>
+  <ol>${l.steps.map((s, i) => `<li class="${i <= st.step ? 'on' : ''}"><span>${i + 1}</span><span>${s}</span></li>`).join('')}</ol>
+  <div class="grid"><div id="main">${main()}</div><aside class="card side"><p>${l.acc}</p><div class="who"><div>AN</div><div><p>Amina Ngo Bell</p><p>${l.cur}</p></div></div><div class="bal"><p>${l.avail}</p><p>${money(BAL)}</p><p>CM 001 2345 6789 01</p></div><div><p><strong>${l.sec}</strong></p><p>${l.secTxt}</p><p>${l.conn}</p></div></aside></div>
+  <p style="font-size:12px;color:#777">${l.foot}</p></div>`;
+}
+// live fee update like the real page: change only the text of the value spans
+function liveFees() {
+  const f = fee(); const tot = (Number(st.amount) || 0) + f;
+  const set = (k, v) => { const e = document.querySelector(`[data-live="${k}"]`); if (e && e.firstChild) e.firstChild.nodeValue = v; };
+  set('rule', ruleText()); set('fee', money(f)); set('tot', money(tot)); set('after', (BAL - tot) < 0 ? '-' + money(tot - BAL) : money(BAL - tot));
+}
+const ref = () => 'SAF-2026-' + Math.random().toString(36).slice(2, 8).toUpperCase();
+document.addEventListener('input', (e) => {
+  const k = e.target.dataset.f; if (!k) return;
+  if (e.target.type === 'checkbox') st[k] = e.target.checked; else st[k] = e.target.value;
+  if (st.step === 1 && (k === 'amount')) liveFees();
+});
+document.addEventListener('change', (e) => {
+  const k = e.target.dataset.f; if (!k) return;
+  if (e.target.type === 'checkbox') st[k] = e.target.checked; else st[k] = e.target.value;
+  if (k === 'type') render();
+});
+document.addEventListener('click', (e) => {
+  const b = e.target.closest('[data-a]'); if (!b) return;
+  const a = b.dataset.a; const l = L();
+  if (a === 'lang') { st.lang = st.lang === 'fr' ? 'en' : 'fr'; return render(); }
+  if (a === 'make' || a === 'fees' || a === 'again') { Object.assign(st, { step: 1, error: null, verified: false, confirmed: false }); return render(); }
+  if (a === 'back') { st.error = null; st.step = Math.max(0, st.step - 1); return render(); }
+  if (a === 'edit') { st.error = null; st.step = 2; return render(); }
+  if (a === 'next' && st.step === 1) {
+    const amt = Number(st.amount) || 0;
+    if (amt <= 0) { st.error = [l.err, l.e1, 'AMOUNT_001']; return render(); }
+    if (amt + fee() > BAL) { st.error = [l.err, l.e2, 'AMOUNT_002']; return render(); }
+    Object.assign(st, { step: 2, error: null }); return render();
+  }
+  if (a === 'next' && st.step === 2) {
+    if (!st.verified) { st.error = [l.secT, l.secMsg, 'SECURITY_001']; return render(); }
+    Object.assign(st, { step: 3, error: null, ref: ref() }); return render();
+  }
+  if (a === 'confirm') {
+    if (!st.confirmed) { st.error = [l.err, l.e3, 'CONFIRM_001']; return render(); }
+    Object.assign(st, { step: 4, error: null }); return render();
+  }
+});
+document.getElementById('juryBtn').addEventListener('click', () => {
+  const box = document.createElement('div');
+  box.className = 'warnbox';
+  box.innerHTML = `<p>${esc(document.getElementById('juryText').value)}</p>`;
+  document.getElementById('main').prepend(box);
+});
+window.__state = st;
+render();
+</script>
+</body>
+</html>

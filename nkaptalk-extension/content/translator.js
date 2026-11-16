@@ -1,0 +1,271 @@
+/*
+ * NkapTalk — page translator.
+ * Translates the page's text into Pidgin in place, without touching the page's code,
+ * form fields or values. Watches the page so new or changed text is translated at once.
+ *
+ * Order of trust for each text:
+ *   1. Pidgin phrasebook (offline, reviewed)          -> "phrasebook"
+ *   2. Gemini, with every value masked out (optional)  -> "ai"
+ *   3. Security/error text with no translation         -> Pidgin warning + original text kept
+ *   4. Anything else unknown                           -> original text kept
+ * Every result must carry exactly the same values as the source, or the original stays.
+ */
+(function () {
+  const P = (globalThis.NkapTalk = globalThis.NkapTalk || {});
+  const V = () => P.values;
+
+  const SKIP_TAGS = new Set(['SCRIPT', 'STYLE', 'NOSCRIPT', 'TEXTAREA', 'INPUT', 'CODE', 'PRE', 'TEMPLATE', 'IFRAME', 'TITLE']);
+  const WARNING_RE = /(sécurité|securite|security|alerte|alert|attention|warning|avertissement|erreur|error|danger|fraude|fraud|jamais|never|ne (?:partagez|communiquez|donnez|divulguez)|do not share|don't share|\bpin\b|mot de passe|password|\botp\b|bloqu|blocked|suspendu|suspended|expir)/i;
+  const WARN_PREFIX = '⚠ Warning — read dis one well:';
+
+  const recs = new Map(); // text node -> { orig, out, how }
+  const cache = new Map(); // masked source -> masked Pidgin (from AI); holds no values
+  const pending = new Map(); // masked source -> [{ node, orig, tokens }]
+  let on = false;
+  let observer = null;
+  let flushTimer = null;
+  let initialScanDone = false;
+  const stats = { phrasebook: 0, pattern: 0, ai: 0, warning: 0, untranslated: new Set() };
+
+  function isOurs(el) {
+    return !!(el && el.closest && el.closest('#nkaptalk-root'));
+  }
+
+  function skippable(el) {
+    for (let e = el; e && e.nodeType === 1; e = e.parentElement) {
+      if (SKIP_TAGS.has(e.tagName)) return true;
+      if (e.id === 'nkaptalk-root') return true;
+      if (e.isContentEditable) return true;
+      if (e.getAttribute && (e.getAttribute('translate') === 'no' || e.classList.contains('notranslate'))) return true;
+      if (e.namespaceURI === 'http://www.w3.org/2000/svg') return true;
+    }
+    return false;
+  }
+
+  function originalOf(node) {
+    const r = recs.get(node);
+    return r && node.nodeValue === r.out ? r.orig : node.nodeValue;
+  }
+
+  /** Text of an element as the page wrote it (before NkapTalk translated it). */
+  function origText(el) {
+    if (!el) return '';
+    if (el.nodeType === 3) return originalOf(el);
+    const parts = [];
+    const w = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+    let n;
+    while ((n = w.nextNode())) {
+      if (n.parentElement && (SKIP_TAGS.has(n.parentElement.tagName) || isOurs(n.parentElement))) continue;
+      parts.push(originalOf(n));
+    }
+    return parts.join(' ').replace(/[\s ]+/g, ' ').trim();
+  }
+
+  /** Synchronous translation of one string, or null. */
+  function translateSync(core) {
+    if (!V().hasWords(core) || V().isLikelyName(core)) return null;
+    const r = P.phrasebook.lookup(core);
+    if (r && V().sameValues(core, r.text)) return r;
+    const { masked, tokens } = V().mask(core);
+    if (cache.has(masked)) {
+      const out = V().unmask(cache.get(masked), tokens);
+      if (V().sameValues(core, out)) return { text: out, how: 'ai' };
+    }
+    return null;
+  }
+
+  function write(node, rec) {
+    recs.set(node, rec);
+    if (node.nodeValue !== rec.out) node.nodeValue = rec.out;
+  }
+
+  function wrapSpaces(orig, core) {
+    const lead = orig.match(/^\s*/)[0];
+    const trail = orig.match(/\s*$/)[0];
+    return lead + core + trail;
+  }
+
+  /** Returns a record describing what happened to this node (for announcements). */
+  function processNode(node, fromObserver) {
+    if (!node.parentElement || skippable(node.parentElement)) return null;
+    const cur = node.nodeValue;
+    const old = recs.get(node);
+    if (old && cur === old.out) return null; // our own text
+    const orig = cur;
+    const core = orig.trim();
+    if (!core) { recs.delete(node); return null; }
+    if (!V().hasWords(core) || V().isLikelyName(core)) { recs.delete(node); return { orig: core, how: 'value', node }; }
+
+    const res = translateSync(core);
+    if (res) {
+      if (on) write(node, { orig, out: wrapSpaces(orig, res.text), how: res.how });
+      stats[res.how] = (stats[res.how] || 0) + 1;
+      return { orig: core, out: res.text, how: res.how, node };
+    }
+    // Unknown text
+    const { masked, tokens } = V().mask(core);
+    const useAI = P.env.online() && P.env.settings.useGeminiTranslate;
+    if (useAI) {
+      if (!pending.has(masked)) pending.set(masked, []);
+      pending.get(masked).push({ node, orig, tokens });
+      scheduleFlush();
+    }
+    const warn = WARNING_RE.test(core);
+    if (warn && on) {
+      // Never leave a warning unexplained: Pidgin prefix + the exact original words.
+      write(node, { orig, out: wrapSpaces(orig, `${WARN_PREFIX} ${core}`), how: 'warning' });
+      stats.warning++;
+    }
+    stats.untranslated.add(core);
+    return { orig: core, out: warn ? `${WARN_PREFIX} ${core}` : null, how: warn ? 'warning' : 'unknown', node, waitingAI: useAI };
+  }
+
+  function scheduleFlush() {
+    clearTimeout(flushTimer);
+    flushTimer = setTimeout(flushAI, 350);
+  }
+
+  async function flushAI() {
+    if (!pending.size) return;
+    const batch = new Map(pending);
+    pending.clear();
+    const items = [...batch.keys()];
+    const res = await P.env.send({
+      type: 'translate',
+      items,
+      glossary: P.phrasebook.GLOSSARY,
+      examples: P.phrasebook.ENTRIES.filter((e) => !e[0].includes('{}')).slice(0, 40),
+    });
+    if (!res || !res.ok || !Array.isArray(res.translations)) {
+      console.warn('[NkapTalk] AI translation unavailable:', res && res.error);
+      return;
+    }
+    const done = [];
+    items.forEach((masked, i) => {
+      const out = res.translations[i];
+      if (typeof out !== 'string' || !out.trim()) return;
+      if (!V().placeholdersMatch(masked, out)) {
+        console.warn('[NkapTalk] AI changed a value placeholder, rejected:', masked, '->', out);
+        return;
+      }
+      cache.set(masked, out.trim());
+      for (const { node, orig, tokens } of batch.get(masked)) {
+        if (!node.isConnected || originalOf(node) !== orig) continue;
+        const text = V().unmask(out.trim(), tokens);
+        if (!V().sameValues(orig.trim(), text)) continue; // final guard
+        stats.untranslated.delete(orig.trim());
+        stats.ai++;
+        if (on) write(node, { orig, out: wrapSpaces(orig, text), how: 'ai' });
+        done.push({ orig: orig.trim(), out: text, how: 'ai', node });
+      }
+    });
+    if (done.length) P.env.emit('translated-late', done);
+  }
+
+  function collectInputs(root) {
+    (root || document).querySelectorAll('input, textarea').forEach((i) => {
+      const t = (i.type || '').toLowerCase();
+      if (['password', 'hidden', 'checkbox', 'radio', 'number', 'submit', 'button'].includes(t)) return;
+      if (/pin|otp|password|code/i.test(i.name + i.id + i.autocomplete)) return;
+      V().addUserValue(i.value);
+    });
+  }
+
+  function walk(root, fromObserver, results) {
+    if (root.nodeType === 3) {
+      const r = processNode(root, fromObserver);
+      if (r) results.push(r);
+      return;
+    }
+    if (root.nodeType !== 1 || skippable(root)) return;
+    const w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    let n;
+    while ((n = w.nextNode())) nodes.push(n);
+    nodes.forEach((t) => {
+      const r = processNode(t, fromObserver);
+      if (r) results.push(r);
+    });
+  }
+
+  function scan() {
+    collectInputs();
+    const results = [];
+    walk(document.body, false, results);
+    initialScanDone = true;
+    return results;
+  }
+
+  function onMutations(records) {
+    collectInputs();
+    const results = [];
+    const seen = new Set();
+    for (const r of records) {
+      if (r.type === 'characterData') {
+        if (seen.has(r.target)) continue;
+        seen.add(r.target);
+        if (isOurs(r.target.parentElement)) continue;
+        const x = processNode(r.target, true);
+        if (x) results.push(x);
+      } else {
+        r.addedNodes.forEach((n) => {
+          if (seen.has(n) || (n.nodeType === 1 && isOurs(n))) return;
+          seen.add(n);
+          walk(n, true, results);
+        });
+      }
+    }
+    if (results.length) P.env.emit('new-text', results);
+  }
+
+  function start() {
+    if (observer) return;
+    document.addEventListener('change', (e) => {
+      const t = e.target;
+      if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA') && !/password|hidden/i.test(t.type)) V().addUserValue(t.value);
+    }, true);
+    observer = new MutationObserver(onMutations);
+    observer.observe(document.body, { childList: true, characterData: true, subtree: true });
+    scan();
+  }
+
+  function setOn(v) {
+    on = !!v;
+    if (on) {
+      scan();
+    } else {
+      for (const [node, r] of recs) if (node.isConnected && node.nodeValue === r.out) node.nodeValue = r.orig;
+      recs.clear();
+    }
+    P.env.emit('translate-mode', on);
+  }
+
+  /** Re-checks every translated text: values must be identical to the page's own. */
+  function audit() {
+    let texts = 0, values = 0;
+    const broken = [];
+    for (const [node, r] of recs) {
+      if (!node.isConnected) { recs.delete(node); continue; }
+      if (node.nodeValue !== r.out) continue;
+      texts++;
+      if (!V().sameValues(r.orig, r.out)) broken.push(r.orig);
+    }
+    // every value shown on the page: in translated sentences or standing alone (never touched)
+    const w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    let n;
+    while ((n = w.nextNode())) {
+      if (!n.parentElement || skippable(n.parentElement)) continue;
+      values += V().values(originalOf(n)).length;
+    }
+    return { texts, values, broken, untranslated: [...stats.untranslated] };
+  }
+
+  P.translator = {
+    start, setOn, scan, audit, origText, originalOf, translateSync,
+    get on() { return on; },
+    get stats() { return stats; },
+    isWarning: (t) => WARNING_RE.test(t),
+    WARN_PREFIX,
+    flushAI,
+  };
+})();

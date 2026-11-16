@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>NkapTalk settings</title>
+<style>
+  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 640px; margin: 32px auto; padding: 0 20px; color: #111; line-height: 1.5; }
+  h1 { color: #0B7A3B; margin-bottom: 4px; }
+  .sub { color: #555; margin-top: 0; }
+  fieldset { border: 1px solid #d0d5dd; border-radius: 12px; padding: 16px 18px; margin: 18px 0; }
+  legend { font-weight: 700; padding: 0 6px; }
+  label { display: block; margin: 10px 0 4px; font-weight: 600; }
+  input[type=text], input[type=password], select { width: 100%; padding: 10px; border: 1px solid #c4cad3; border-radius: 8px; font-size: 15px; box-sizing: border-box; }
+  .check { display: flex; gap: 10px; align-items: flex-start; font-weight: 400; margin: 12px 0; }
+  .check input { margin-top: 4px; width: 18px; height: 18px; }
+  .note { font-size: 13px; color: #555; }
+  .warn { font-size: 13px; color: #7A3B00; background: #FFF4E5; padding: 8px 10px; border-radius: 8px; }
+  button { background: #0B7A3B; color: #fff; border: none; border-radius: 10px; padding: 12px 18px; font-size: 15px; font-weight: 700; cursor: pointer; }
+  button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid #FFD100; outline-offset: 2px; }
+  #saved { margin-left: 12px; color: #0B7A3B; font-weight: 600; }
+  input[type=range] { width: 100%; }
+</style>
+</head>
+<body>
+  <h1>NkapTalk settings</h1>
+  <p class="sub">Pidgin voice assistant for digital banking.</p>
+
+  <fieldset>
+    <legend>Gemini (optional)</legend>
+    <p class="note">Without a key, NkapTalk still works: the page is translated from its built-in Pidgin phrasebook, and you can talk with the browser's speech recognition or type. Nothing is sent anywhere.</p>
+    <label for="apiKey">Gemini API key</label>
+    <input id="apiKey" type="password" autocomplete="off" placeholder="Paste your key from Google AI Studio">
+    <label for="model">Model for understanding and new text</label>
+    <input id="model" type="text">
+    <label class="check"><input id="useGeminiNLU" type="checkbox"> <span>Understand my voice with Gemini <span class="note">(sends only your voice or typed words, never the screen)</span></span></label>
+    <label class="check"><input id="useGeminiTranslate" type="checkbox"> <span>Translate new text with Gemini <span class="note">(amounts, names, phone numbers, references and account numbers are removed before sending)</span></span></label>
+    <label class="check"><input id="useGeminiTTS" type="checkbox"> <span>Use Gemini's voice for replies</span></label>
+    <p class="warn">Gemini's voice receives the reply text, which includes values such as amounts. Leave it off when the bank's rules forbid sending displayed data.</p>
+    <label for="ttsModel">Gemini voice model</label>
+    <input id="ttsModel" type="text">
+  </fieldset>
+
+  <fieldset>
+    <legend>Page and voice</legend>
+    <label class="check"><input id="autoTranslate" type="checkbox"> <span>Translate the page into Pidgin as soon as it opens</span></label>
+    <label for="voiceName">Browser voice</label>
+    <select id="voiceName"><option value="">Automatic (device voice first)</option></select>
+    <label for="rate">Speaking speed: <span id="rateVal"></span></label>
+    <input id="rate" type="range" min="0.6" max="1.3" step="0.05">
+  </fieldset>
+
+  <button id="save">Save</button><span id="saved" role="status"></span>
+  <script src="options.js"></script>
+</body>
+</html>

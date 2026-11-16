@@ -48,6 +48,7 @@
         "content/speech.js",
         "content/nlu.js",
         "content/screen.js",
+        "content/replybook.js",
         "content/assistant.js",
         "content/ui.js",
         "content/main.js"
@@ -59,7 +60,8 @@
     {
       "resources": [
         "audio/*/*",
-        "lexicon/*"
+        "lexicon/*",
+        "lexicon/replies/*"
       ],
       "matches": [
         "https://safinum.cm/*",

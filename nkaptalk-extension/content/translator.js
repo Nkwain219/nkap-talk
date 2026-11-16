@@ -106,6 +106,7 @@
   async function loadLanguage(code) {
     lang = code && L() && L().LANGUAGES[code] ? code : 'pcm';
     if (P.localbook && !isLocal()) await P.localbook.load('pcm');
+    if (P.replybook && !isLocal()) await P.replybook.load('pcm');
     localCache.clear();
     localPending.clear();
     fixes = new Map();
@@ -114,6 +115,7 @@
     const got = await P.env.getLocal({ [key]: '' });
     fixes = L().parseFixes(got[key]).table;
     if (P.localbook) await P.localbook.load(lang);
+    if (P.replybook) await P.replybook.load(lang);
     const res = await P.env.send({ type: 'local-cache', lang });
     if (res && res.ok && res.cache) for (const [k, v] of Object.entries(res.cache)) if (typeof v === 'string') localCache.set(k, v);
   }

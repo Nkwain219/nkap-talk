@@ -43,7 +43,18 @@
 
   function say(text, opts = {}) {
     S.last = text;
-    P.ui && P.ui.addMessage('nkaptalk', text);
+    // Shown in the chosen language when every piece of the reply has been translated, and in
+    // Pidgin otherwise. What is SPOKEN stays Pidgin: a browser voice cannot read these
+    // languages, and the recordings are keyed by the Pidgin piece, so speech.js wants Pidgin
+    // either way and plays the local recording when one exists.
+    let shown = text;
+    if (P.replybook) {
+      try {
+        const local = P.replybook.localize(text, !!P.env.settings.showDrafts);
+        if (local) shown = local;
+      } catch (e) { shown = text; }
+    }
+    P.ui && P.ui.addMessage('nkaptalk', shown);
     return P.speech.speak(text, { slow: S.slow || opts.slow });
   }
 

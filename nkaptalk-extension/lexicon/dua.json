@@ -5,1269 +5,1513 @@
     {
       "src": "Environnement de test — données fictives, aucune transaction réelle.",
       "pidgin": "Na test place dis — all di data na fake, no real moni di move.",
-      "out": "",
+      "out": "Wuma la makɛkɛ — myambo ma mpoŋ, to moni ma mbale ma si maala.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "'place of trials' and 'false information'."
     },
     {
       "src": "Test environment — fictional data, no real transaction.",
       "pidgin": "Na test place dis — all di data na fake, no real moni di move.",
-      "out": "",
+      "out": "Wuma la makɛkɛ — myambo ma mpoŋ, to moni ma mbale ma si maala.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Same as 1."
     },
     {
       "src": "Protocole de test",
       "pidgin": "Rule dem for di test",
-      "out": "",
+      "out": "Mambenda ma makɛkɛ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "'Mambenda' laws/rules; 'makɛkɛ' tests."
     },
     {
       "src": "Test protocol",
       "pidgin": "Rule dem for di test",
-      "out": "",
+      "out": "Mambenda ma makɛkɛ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Same as 3."
     },
     {
       "src": "Retour au hackathon",
       "pidgin": "Go back for hackathon",
-      "out": "",
+      "out": "Timba o hackathon",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Back to hackathon",
       "pidgin": "Go back for hackathon",
-      "out": "",
+      "out": "Timba o hackathon",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Banque en ligne",
       "pidgin": "Bank for internet",
-      "out": "",
+      "out": "Banki o internet",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Kept 'Banki' and 'internet' as used in Douala."
     },
     {
       "src": "Online banking",
       "pidgin": "Bank for internet",
-      "out": "",
+      "out": "Banki o internet",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Same as 7."
     },
     {
       "src": "Connexion sécurisée",
       "pidgin": "Connection dey safe",
-      "out": "",
+      "out": "Connexion e teŋgɛn",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "'e teŋgɛn' conveys safety/stability."
     },
     {
       "src": "Secure connection",
       "pidgin": "Connection dey safe",
-      "out": "",
+      "out": "Connexion e teŋgɛn",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Same as 9."
     },
     {
       "src": "{} — environnement de démonstration. Ne saisissez aucune donnée personnelle réelle.",
       "pidgin": "{1} — na demo place. No put your real personal information here.",
-      "out": "",
+      "out": "{1} — wuma la makɛkɛ. O si tila myambo mɔŋ ma mbale wan.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "'personal data' as 'your true affairs'."
     },
     {
       "src": "{} — demonstration environment. Do not enter real personal data.",
       "pidgin": "{1} — na demo place. No put your real personal information here.",
-      "out": "",
+      "out": "{1} — wuma la makɛkɛ. O si tila myambo mɔŋ ma mbale wan.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Same as 11."
     },
     {
       "src": "Solde",
       "pidgin": "Balance",
-      "out": "",
+      "out": "Solde",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Balance",
       "pidgin": "Balance",
-      "out": "",
+      "out": "Solde",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Frais",
       "pidgin": "Charge",
-      "out": "",
+      "out": "Frais",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Fees",
       "pidgin": "Charge",
-      "out": "",
+      "out": "Frais",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Fee",
       "pidgin": "Charge",
-      "out": "",
+      "out": "Frais",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Bénéficiaire",
       "pidgin": "Who go collect",
-      "out": "",
+      "out": "Nukusan",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "From 'kusa' (receive); speakers often use 'bénéficiaire' or 'nu ma kusa'."
     },
     {
       "src": "Beneficiary",
       "pidgin": "Who go collect",
-      "out": "",
+      "out": "Nukusan",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Same as 18."
     },
     {
       "src": "Récapitulatif",
       "pidgin": "Check am again",
-      "out": "",
+      "out": "Bɛbɛlɛ pɛtɛ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "'look/check again'; unsure of a shorter UI term."
     },
     {
       "src": "Summary",
       "pidgin": "Check am again",
-      "out": "",
+      "out": "Bɛbɛlɛ pɛtɛ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Same as 20."
     },
     {
       "src": "Confirmation",
       "pidgin": "Confirm",
-      "out": "",
+      "out": "Emɛbɛ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "accept/agree/confirm; 'confirmer' also widely used."
     },
     {
       "src": "Votre compte",
       "pidgin": "Your account",
-      "out": "",
+      "out": "Compte ɔŋ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Your account",
       "pidgin": "Your account",
-      "out": "",
+      "out": "Compte ɔŋ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Consultez votre solde et lancez un transfert en toute sécurité.",
       "pidgin": "Look your balance, and send moni safe safe.",
-      "out": "",
+      "out": "Bɛbɛlɛ solde ɔŋ, o loma pɛ moni na mbaki.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "'na mbaki' for 'in all security'."
     },
     {
       "src": "Check your balance and start a secure transfer.",
       "pidgin": "Look your balance, and send moni safe safe.",
-      "out": "",
+      "out": "Bɛbɛlɛ solde ɔŋ, o loma pɛ moni na mbaki.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Same as 25."
     },
     {
       "src": "Solde disponible",
       "pidgin": "Moni wey dey your account",
-      "out": "",
+      "out": "Moni mi ne o compte ɔŋ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Available balance",
       "pidgin": "Moni wey dey your account",
-      "out": "",
+      "out": "Moni mi ne o compte ɔŋ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Numéro de compte : {}",
       "pidgin": "Account number : {1}",
-      "out": "",
+      "out": "Numéro ma compte : {1}",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Account number : {}",
       "pidgin": "Account number : {1}",
-      "out": "",
+      "out": "Numéro ma compte : {1}",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Compte courant",
       "pidgin": "Everyday account",
-      "out": "",
+      "out": "Compte courant",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Current account",
       "pidgin": "Everyday account",
-      "out": "",
+      "out": "Compte courant",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Effectuer un transfert",
       "pidgin": "Send moni",
-      "out": "",
+      "out": "Loma moni",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Make a transfer",
       "pidgin": "Send moni",
-      "out": "",
+      "out": "Loma moni",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Consulter les frais",
       "pidgin": "Look di charge",
-      "out": "",
+      "out": "Bɛbɛlɛ frais",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "View fees",
       "pidgin": "Look di charge",
-      "out": "",
+      "out": "Bɛbɛlɛ frais",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Transactions récentes",
       "pidgin": "Moni wey move last time",
-      "out": "",
+      "out": "Moni mi alɛ tɛgɛ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "'money that moved recently'."
     },
     {
       "src": "Recent transactions",
       "pidgin": "Moni wey move last time",
-      "out": "",
+      "out": "Moni mi alɛ tɛgɛ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Same as 37."
     },
     {
       "src": "Paiement marchand",
       "pidgin": "You pay for shop",
-      "out": "",
+      "out": "Sawɛ o mbasan",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "'Sawɛ' pay, 'mbasan' shop."
     },
     {
       "src": "Merchant payment",
       "pidgin": "You pay for shop",
-      "out": "",
+      "out": "Sawɛ o mbasan",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Same as 39."
     },
     {
       "src": "Salaire reçu",
       "pidgin": "Salary don enter",
-      "out": "",
+      "out": "Musɔdi mu ingedi",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Salary received",
       "pidgin": "Salary don enter",
-      "out": "",
+      "out": "Musɔdi mu ingedi",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Transfert reçu",
       "pidgin": "Moni wey dem send you",
-      "out": "",
+      "out": "Moni ba lomedi wa",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Transfer received",
       "pidgin": "Moni wey dem send you",
-      "out": "",
+      "out": "Moni ba lomedi wa",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Facture électricité",
       "pidgin": "Light bill",
-      "out": "",
+      "out": "Facture ma courant",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Electricity bill",
       "pidgin": "Light bill",
-      "out": "",
+      "out": "Facture ma courant",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Sécurité",
       "pidgin": "Make you careful",
-      "out": "",
+      "out": "Tatamɛ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "be careful/watch out; 'sécurité' also common in Douala."
     },
     {
       "src": "Security",
       "pidgin": "Make you careful",
-      "out": "",
+      "out": "Tatamɛ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Same as 47."
     },
     {
       "src": "Vérifiez toujours le nom et le numéro du bénéficiaire avant de confirmer un transfert.",
       "pidgin": "Every time, check di name and di number of di pesin wey go collect, before you confirm any transfer.",
-      "out": "",
+      "out": "Ponda yɛsɛ, bɛbɛlɛ dina na numéro ba nu ma kusa oboso na o ma emɛbɛ loma la moni.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Check agreement of 'ba' and flow for 'before confirming'."
     },
     {
       "src": "Always verify the beneficiary name and number before confirming a transfer.",
       "pidgin": "Every time, check di name and di number of di pesin wey go collect, before you confirm any transfer.",
-      "out": "",
+      "out": "Ponda yɛsɛ, bɛbɛlɛ dina na numéro ba nu ma kusa oboso na o ma emɛbɛ loma la moni.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Same as 49."
     },
     {
       "src": "Frais de transfert",
       "pidgin": "Charge for send moni",
-      "out": "",
+      "out": "Frais ma loma la moni",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Transfer fees",
       "pidgin": "Charge for send moni",
-      "out": "",
+      "out": "Frais ma loma la moni",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Choisissez le type de transfert et le montant. Les frais sont calculés automatiquement.",
       "pidgin": "Choose which kind transfer and how much. Di charge go calculate by e self.",
-      "out": "",
+      "out": "Pɔsɔ nja mbad'a loma la moni na ninka moni. Frais mi ma sɔŋgɔlɛ mɔmɛnɛ.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Verify 'sɔŋgɔlɛ mɔmɛnɛ' (calculates itself) and class agreement."
     },
     {
       "src": "Choose the transfer type and amount. Fees are calculated automatically.",
       "pidgin": "Choose which kind transfer and how much. Di charge go calculate by e self.",
-      "out": "",
+      "out": "Pɔsɔ nja mbad'a loma la moni na ninka moni. Frais mi ma sɔŋgɔlɛ mɔmɛnɛ.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Same as 53."
     },
     {
       "src": "Type d'opération",
       "pidgin": "Which kind transfer",
-      "out": "",
+      "out": "Mbad'a loma la moni",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Operation type",
       "pidgin": "Which kind transfer",
-      "out": "",
+      "out": "Mbad'a loma la moni",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Compte {}",
       "pidgin": "{1} account",
-      "out": "",
+      "out": "Compte {1}",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "{} account",
       "pidgin": "{1} account",
-      "out": "",
+      "out": "Compte {1}",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Mobile Money",
       "pidgin": "Mobile Money",
-      "out": "",
+      "out": "Mobile Money",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Autre banque",
       "pidgin": "Another bank",
-      "out": "",
+      "out": "Banki epɛpɛ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Other bank",
       "pidgin": "Another bank",
-      "out": "",
+      "out": "Banki epɛpɛ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Transfert instantané et gratuit",
       "pidgin": "E go reach one time, and e free",
-      "out": "",
+      "out": "Moni mu ma pɔ dibokimɛnɛ, mu si ma sawɛ.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "'dibokimɛnɛ' immediately; 'mu si ma sawɛ' does not cost."
     },
     {
       "src": "Instant, free transfer",
       "pidgin": "E go reach one time, and e free",
-      "out": "",
+      "out": "Moni mu ma pɔ dibokimɛnɛ, mu si ma sawɛ.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Same as 62."
     },
     {
       "src": "Frais de {} (min. {}, max. {})",
       "pidgin": "Charge na {1} (e no fit go under {2}, e no fit pass {3})",
-      "out": "",
+      "out": "Frais ma {1} (mu si ma siba {2}, mu si ma buka {3})",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "'siba' go under, 'buka' exceed; verify UI conciseness."
     },
     {
       "src": "{} fee (min. {}, max. {})",
       "pidgin": "Charge na {1} (e no fit go under {2}, e no fit pass {3})",
-      "out": "",
+      "out": "Frais ma {1} (mu si ma siba {2}, mu si ma buka {3})",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Same as 64."
     },
     {
       "src": "Montant à envoyer",
       "pidgin": "How much you wan send",
-      "out": "",
+      "out": "Ninka moni o ma loma",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Amount to send",
       "pidgin": "How much you wan send",
-      "out": "",
+      "out": "Ninka moni o ma loma",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Gratuit",
       "pidgin": "Free",
-      "out": "",
+      "out": "E si ma sawɛ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "'it does not cost'; speakers also use 'gratuit' or 'mpɛpɛ'."
     },
     {
       "src": "Free",
       "pidgin": "Free",
-      "out": "",
+      "out": "E si ma sawɛ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Same as 68."
     },
     {
       "src": "Total à débiter",
       "pidgin": "Total wey dem go comot for your account",
-      "out": "",
+      "out": "Moni mɛsɛ ba ma busa o compte ɔŋ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Total to debit",
       "pidgin": "Total wey dem go comot for your account",
-      "out": "",
+      "out": "Moni mɛsɛ ba ma busa o compte ɔŋ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Solde après opération",
       "pidgin": "Balance after di transfer",
-      "out": "",
+      "out": "Solde ombusa loma la moni",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Balance after transfer",
       "pidgin": "Balance after di transfer",
-      "out": "",
+      "out": "Solde ombusa loma la moni",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Retour",
       "pidgin": "Go back",
-      "out": "",
+      "out": "Timba",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Back",
       "pidgin": "Go back",
-      "out": "",
+      "out": "Timba",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Continuer",
       "pidgin": "Continue",
-      "out": "",
+      "out": "Bɛndɛ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "continue/go on; verify vs 'kɛ oboso'."
     },
     {
       "src": "Continue",
       "pidgin": "Continue",
-      "out": "",
+      "out": "Bɛndɛ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Same as 76."
     },
     {
       "src": "Une erreur est survenue",
       "pidgin": "Something no work well",
-      "out": "",
+      "out": "Jambo di si bolɛ bwam",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "An error occurred",
       "pidgin": "Something no work well",
-      "out": "",
+      "out": "Jambo di si bolɛ bwam",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Solde insuffisant pour effectuer ce transfert.",
       "pidgin": "Your moni no reach for dis transfer.",
-      "out": "",
+      "out": "Moni mɔŋ mu si puli na o loma min moni.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Insufficient balance for this transfer.",
       "pidgin": "Your moni no reach for dis transfer.",
-      "out": "",
+      "out": "Moni mɔŋ mu si puli na o loma min moni.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Le montant doit être supérieur à zéro.",
       "pidgin": "Di amount must pass zero.",
-      "out": "",
+      "out": "Moni mu angamɛn buka zéro.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "The amount must be greater than zero.",
       "pidgin": "Di amount must pass zero.",
-      "out": "",
+      "out": "Moni mu angamɛn buka zéro.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Vous devez confirmer les informations avant de valider le transfert.",
       "pidgin": "You must confirm di information first, before di transfer fit go.",
-      "out": "",
+      "out": "O angamɛn emɛbɛ myambo oboso na o ma loma moni.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "You must confirm the details before validating the transfer.",
       "pidgin": "You must confirm di information first, before di transfer fit go.",
-      "out": "",
+      "out": "O angamɛn emɛbɛ myambo oboso na o ma loma moni.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Renseignez les informations du destinataire. Vérifiez toujours le numéro avant de valider.",
       "pidgin": "Put di information of di pesin wey go collect. Always check di number before you confirm.",
-      "out": "",
+      "out": "Tila myambo ma nu ma kusa. Bɛbɛlɛ numéro ponda yɛsɛ oboso na o ma emɛbɛ.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Enter the recipient details. Always verify the number before confirming.",
       "pidgin": "Put di information of di pesin wey go collect. Always check di number before you confirm.",
-      "out": "",
+      "out": "Tila myambo ma nu ma kusa. Bɛbɛlɛ numéro ponda yɛsɛ oboso na o ma emɛbɛ.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Ce bénéficiaire n'a jamais été utilisé sur ce compte. Vérifiez le numéro avant de continuer.",
       "pidgin": "You never send moni give dis pesin for dis account before. Check di number before you continue.",
-      "out": "",
+      "out": "O si ta o lomɛ nun moto moni o nin compte. Bɛbɛlɛ numéro oboso na o ma bɛndɛ.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Check aspect 'o si ta o lomɛ' for 'you have never sent'."
     },
     {
       "src": "This beneficiary has never been used on this account. Verify the number before continuing.",
       "pidgin": "You never send moni give dis pesin for dis account before. Check di number before you continue.",
-      "out": "",
+      "out": "O si ta o lomɛ nun moto moni o nin compte. Bɛbɛlɛ numéro oboso na o ma bɛndɛ.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Same as 88."
     },
     {
       "src": "Nom du bénéficiaire",
       "pidgin": "Name of di pesin wey go collect",
-      "out": "",
+      "out": "Dina la nu ma kusa",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Beneficiary name",
       "pidgin": "Name of di pesin wey go collect",
-      "out": "",
+      "out": "Dina la nu ma kusa",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Numéro de téléphone",
       "pidgin": "Phone number",
-      "out": "",
+      "out": "Numéro ma téléphone",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Phone number",
       "pidgin": "Phone number",
-      "out": "",
+      "out": "Numéro ma téléphone",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Motif du transfert",
       "pidgin": "Why you di send di moni",
-      "out": "",
+      "out": "Nja njom o ma loma moni",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Transfer reason",
       "pidgin": "Why you di send di moni",
-      "out": "",
+      "out": "Nja njom o ma loma moni",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Note (optionnel)",
       "pidgin": "Note (if you want)",
-      "out": "",
+      "out": "Matila (nga o puli)",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "'Matila' writing/note; speakers often keep French 'Note'."
     },
     {
       "src": "Note (optional)",
       "pidgin": "Note (if you want)",
-      "out": "",
+      "out": "Matila (nga o puli)",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Same as 96."
     },
     {
       "src": "J'ai vérifié le nom et le numéro du bénéficiaire.",
       "pidgin": "I don check di name and di phone number of di pesin wey go collect.",
-      "out": "",
+      "out": "Na ma bɛbɛlɛ dina na numéro ma téléphone ma nu ma kusa.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "I have verified the beneficiary name and phone number.",
       "pidgin": "I don check di name and di phone number of di pesin wey go collect.",
-      "out": "",
+      "out": "Na ma bɛbɛlɛ dina na numéro ma téléphone ma nu ma kusa.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Alerte de sécurité",
       "pidgin": "Security warning",
-      "out": "",
+      "out": "Mbela ma tatamɛ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "'call to be careful'; verify vs 'Alerte de sécurité'."
     },
     {
       "src": "Security warning",
       "pidgin": "Security warning",
-      "out": "",
+      "out": "Mbela ma tatamɛ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Same as 100."
     },
     {
       "src": "Alerte de sécurité : vérifiez le numéro du bénéficiaire avant de continuer.",
       "pidgin": "Security warning: check di phone number of di pesin wey go collect before you continue.",
-      "out": "",
+      "out": "Mbela ma tatamɛ : bɛbɛlɛ numéro ma téléphone ma nu ma kusa oboso na o ma bɛndɛ.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Same as 100."
     },
     {
       "src": "Security warning: verify the beneficiary phone number before continuing.",
       "pidgin": "Security warning: check di phone number of di pesin wey go collect before you continue.",
-      "out": "",
+      "out": "Mbela ma tatamɛ : bɛbɛlɛ numéro ma téléphone ma nu ma kusa oboso na o ma bɛndɛ.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Same as 102."
     },
     {
       "src": "Vérifiez les informations avant de confirmer le transfert.",
       "pidgin": "Check all di information before you confirm di transfer.",
-      "out": "",
+      "out": "Bɛbɛlɛ myambo mɛsɛ oboso na o ma emɛbɛ loma la moni.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Check the details before confirming the transfer.",
       "pidgin": "Check all di information before you confirm di transfer.",
-      "out": "",
+      "out": "Bɛbɛlɛ myambo mɛsɛ oboso na o ma emɛbɛ loma la moni.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Montant",
       "pidgin": "Amount",
-      "out": "",
+      "out": "Montant",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Kept French as a label; 'ninka moni' is 'how much money'."
     },
     {
       "src": "Amount",
       "pidgin": "Amount",
-      "out": "",
+      "out": "Montant",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Same as 106."
     },
     {
       "src": "Total débité",
       "pidgin": "Total wey dem comot",
-      "out": "",
+      "out": "Moni mɛsɛ ba busi",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Total debited",
       "pidgin": "Total wey dem comot",
-      "out": "",
+      "out": "Moni mɛsɛ ba busi",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Téléphone",
       "pidgin": "Phone",
-      "out": "",
+      "out": "Téléphone",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Phone",
       "pidgin": "Phone",
-      "out": "",
+      "out": "Téléphone",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Référence",
       "pidgin": "Reference",
-      "out": "",
+      "out": "Référence",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Reference",
       "pidgin": "Reference",
-      "out": "",
+      "out": "Référence",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Opération",
       "pidgin": "Kind of transfer",
-      "out": "",
+      "out": "Mbad'a loma la moni",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Operation",
       "pidgin": "Kind of transfer",
-      "out": "",
+      "out": "Mbad'a loma la moni",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Je confirme que les informations ci-dessus sont correctes.",
       "pidgin": "I confirm say all di information for up dey correct.",
-      "out": "",
+      "out": "Na ma emɛbɛ na myambo mɛsɛ mi ne o mon mi teŋgɛn.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "I confirm the information above is correct.",
       "pidgin": "I confirm say all di information for up dey correct.",
-      "out": "",
+      "out": "Na ma emɛbɛ na myambo mɛsɛ mi ne o mon mi teŋgɛn.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Modifier",
       "pidgin": "Change am",
-      "out": "",
+      "out": "Tukwa",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Edit",
       "pidgin": "Change am",
-      "out": "",
+      "out": "Tukwa",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Confirmer le transfert",
       "pidgin": "Confirm di transfer",
-      "out": "",
+      "out": "Emɛbɛ loma la moni",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Confirm transfer",
       "pidgin": "Confirm di transfer",
-      "out": "",
+      "out": "Emɛbɛ loma la moni",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Transfert effectué",
       "pidgin": "Transfer don go",
-      "out": "",
+      "out": "Moni mu alɛ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Transfer completed",
       "pidgin": "Transfer don go",
-      "out": "",
+      "out": "Moni mu alɛ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Votre transfert a été envoyé avec succès.",
       "pidgin": "Your transfer don go well.",
-      "out": "",
+      "out": "Moni mɔŋ mu alɛ bwam.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Your transfer has been sent successfully.",
       "pidgin": "Your transfer don go well.",
-      "out": "",
+      "out": "Moni mɔŋ mu alɛ bwam.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Statut",
       "pidgin": "Status",
-      "out": "",
+      "out": "Statut",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "No single-word UI equivalent; kept French."
     },
     {
       "src": "Status",
       "pidgin": "Status",
-      "out": "",
+      "out": "Statut",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Same as 126."
     },
     {
       "src": "Succès",
       "pidgin": "E don work",
-      "out": "",
+      "out": "Di boli bwam",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Success",
       "pidgin": "E don work",
-      "out": "",
+      "out": "Di boli bwam",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Nouveau transfert",
       "pidgin": "Send another one",
-      "out": "",
+      "out": "Loma moni mupɛpɛ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "New transfer",
       "pidgin": "Send another one",
-      "out": "",
+      "out": "Loma moni mupɛpɛ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Annuler",
       "pidgin": "Cancel am",
-      "out": "",
+      "out": "Dimisɛ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "extinguish/cancel; 'annuler' also frequent in digital UIs."
     },
     {
       "src": "Cancel",
       "pidgin": "Cancel am",
-      "out": "",
+      "out": "Dimisɛ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Same as 132."
     },
     {
       "src": "Valider",
       "pidgin": "Confirm",
-      "out": "",
+      "out": "Emɛbɛ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Validate",
       "pidgin": "Confirm",
-      "out": "",
+      "out": "Emɛbɛ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Envoyer",
       "pidgin": "Send",
-      "out": "",
+      "out": "Loma",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Send",
       "pidgin": "Send",
-      "out": "",
+      "out": "Loma",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Fermer",
       "pidgin": "Close",
-      "out": "",
+      "out": "Dibɛ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Close",
       "pidgin": "Close",
-      "out": "",
+      "out": "Dibɛ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Oui",
       "pidgin": "Yes",
-      "out": "",
+      "out": "Ee",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Yes",
       "pidgin": "Yes",
-      "out": "",
+      "out": "Ee",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Non",
       "pidgin": "No",
-      "out": "",
+      "out": "Kɛm",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "No",
       "pidgin": "No",
-      "out": "",
+      "out": "Kɛm",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Attention",
       "pidgin": "Take care",
-      "out": "",
+      "out": "Tatamɛ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Warning",
       "pidgin": "Warning",
-      "out": "",
+      "out": "Tatamɛ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Erreur",
       "pidgin": "Error",
-      "out": "",
+      "out": "Nyɔŋgɔn",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "mistake/error; verify vs 'Erreur' for technical errors."
     },
     {
       "src": "Error",
       "pidgin": "Error",
-      "out": "",
+      "out": "Nyɔŋgɔn",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Same as 146."
     },
     {
       "src": "Transfert annulé",
       "pidgin": "Transfer don cancel",
-      "out": "",
+      "out": "Ba dimisɛ loma la moni",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Verify natural passive phrasing."
     },
     {
       "src": "Transfer cancelled",
       "pidgin": "Transfer don cancel",
-      "out": "",
+      "out": "Ba dimisɛ loma la moni",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Same as 148."
     },
     {
       "src": "Transfert en cours",
       "pidgin": "Di transfer still di go",
-      "out": "",
+      "out": "Moni mu dia mu maala",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Transfer in progress",
       "pidgin": "Di transfer still di go",
-      "out": "",
+      "out": "Moni mu dia mu maala",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Transaction en cours de traitement.",
       "pidgin": "Dem still di work on di transaction.",
-      "out": "",
+      "out": "Ba dia ba ma bola o transaction.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "'they are still working on'."
     },
     {
       "src": "Transaction being processed.",
       "pidgin": "Dem still di work on di transaction.",
-      "out": "",
+      "out": "Ba dia ba ma bola o transaction.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Same as 152."
     },
     {
       "src": "Ne communiquez jamais votre code PIN.",
       "pidgin": "No ever give anybody your PIN code.",
-      "out": "",
+      "out": "O si bɔlɛ moto nja ponda code PIN ɔŋ.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Never share your PIN code.",
       "pidgin": "No ever give anybody your PIN code.",
-      "out": "",
+      "out": "O si bɔlɛ moto nja ponda code PIN ɔŋ.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Ne partagez jamais votre code OTP.",
       "pidgin": "No ever give anybody your OTP code.",
-      "out": "",
+      "out": "O si bɔlɛ moto nja ponda code OTP ɔŋ.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Never share your OTP code.",
       "pidgin": "No ever give anybody your OTP code.",
-      "out": "",
+      "out": "O si bɔlɛ moto nja ponda code OTP ɔŋ.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Safinum ne vous demandera jamais votre code PIN.",
       "pidgin": "Safinum no go ever ask you for your PIN code.",
-      "out": "",
+      "out": "Safinum a si ma baise wa code PIN ɔŋ nja ponda.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Safinum will never ask for your PIN code.",
       "pidgin": "Safinum no go ever ask you for your PIN code.",
-      "out": "",
+      "out": "Safinum a si ma baise wa code PIN ɔŋ nja ponda.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Numéro de téléphone invalide.",
       "pidgin": "Dis phone number no correct.",
-      "out": "",
+      "out": "Nin numéro ma téléphone mu si teŋgɛn.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Invalid phone number.",
       "pidgin": "Dis phone number no correct.",
-      "out": "",
+      "out": "Nin numéro ma téléphone mu si teŋgɛn.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Bénéficiaire introuvable.",
       "pidgin": "We no see dis pesin wey go collect.",
-      "out": "",
+      "out": "Di si mɛnɛ nun nu ma kusa.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Beneficiary not found.",
       "pidgin": "We no see dis pesin wey go collect.",
-      "out": "",
+      "out": "Di si mɛnɛ nun nu ma kusa.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Plafond journalier atteint.",
       "pidgin": "You don reach di highest amount for today.",
-      "out": "",
+      "out": "O pɔi o buka la moni la wɛŋgɛ.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "'reached the limit of money for today'; verify phrasing."
     },
     {
       "src": "Daily limit reached.",
       "pidgin": "You don reach di highest amount for today.",
-      "out": "",
+      "out": "O pɔi o buka la moni la wɛŋgɛ.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Same as 164."
     },
     {
       "src": "Montant maximum dépassé.",
       "pidgin": "Di amount don pass di maximum.",
-      "out": "",
+      "out": "Moni mu buki maximum.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Maximum amount exceeded.",
       "pidgin": "Di amount don pass di maximum.",
-      "out": "",
+      "out": "Moni mu buki maximum.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Service temporairement indisponible.",
       "pidgin": "Di service no dey work for now. Try again small time.",
-      "out": "",
+      "out": "Service mu si ma bola tatan. Kɛkɛ pɛtɛ ombusa son a ponda.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Service temporarily unavailable.",
       "pidgin": "Di service no dey work for now. Try again small time.",
-      "out": "",
+      "out": "Service mu si ma bola tatan. Kɛkɛ pɛtɛ ombusa son a ponda.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Votre session va expirer.",
       "pidgin": "Your session go close soon.",
-      "out": "",
+      "out": "Session ɔŋ e ma dibɛ dibokimɛnɛ.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "'will close soon'."
     },
     {
       "src": "Your session will expire.",
       "pidgin": "Your session go close soon.",
-      "out": "",
+      "out": "Session ɔŋ e ma dibɛ dibokimɛnɛ.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Same as 170."
     },
     {
       "src": "Votre session a expiré. Veuillez vous reconnecter.",
       "pidgin": "Your session don close. Abeg, connect again.",
-      "out": "",
+      "out": "Session ɔŋ e dibi. Son, timba connecté.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "'son' please; verify 'log in again'."
     },
     {
       "src": "Your session has expired. Please log in again.",
       "pidgin": "Your session don close. Abeg, connect again.",
-      "out": "",
+      "out": "Session ɔŋ e dibi. Son, timba connecté.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Same as 172."
     },
     {
       "src": "Veuillez réessayer.",
       "pidgin": "Abeg, try am again.",
-      "out": "",
+      "out": "Son, kɛkɛ pɛtɛ.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Please try again.",
       "pidgin": "Abeg, try am again.",
-      "out": "",
+      "out": "Son, kɛkɛ pɛtɛ.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Opération réussie.",
       "pidgin": "E don work.",
-      "out": "",
+      "out": "Di boli bwam.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Operation successful.",
       "pidgin": "E don work.",
-      "out": "",
+      "out": "Di boli bwam.",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "Code de vérification",
       "pidgin": "Code for check",
-      "out": "",
+      "out": "Code ma bɛbɛlɛ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "'code to check'; speakers often say 'code de vérification'."
     },
     {
       "src": "Verification code",
       "pidgin": "Code for check",
-      "out": "",
+      "out": "Code ma bɛbɛlɛ",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": false,
+      "aiNote": "Same as 178."
     },
     {
       "src": "Code PIN",
       "pidgin": "PIN code",
-      "out": "",
+      "out": "Code PIN",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     },
     {
       "src": "PIN code",
       "pidgin": "PIN code",
-      "out": "",
+      "out": "Code PIN",
       "reviewed": false,
-      "by": ""
+      "by": "",
+      "aiSure": true
     }
   ]
 }

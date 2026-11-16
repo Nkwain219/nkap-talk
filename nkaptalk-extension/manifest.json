@@ -42,6 +42,7 @@
         "content/localize.js",
         "content/env.js",
         "content/translator.js",
+        "content/numerals.js",
         "content/clipvoice.js",
         "content/speech.js",
         "content/nlu.js",
@@ -56,7 +57,7 @@
   "web_accessible_resources": [
     {
       "resources": [
-        "audio/pcm/*"
+        "audio/*/*"
       ],
       "matches": [
         "https://safinum.cm/*",

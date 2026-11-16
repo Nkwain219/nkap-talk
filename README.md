@@ -154,51 +154,70 @@ Under **Page language** you can show the page in **Fulfulde, Ewondo, Bulu, Duala
   ```
   Corrections always win over Gemini. Lines with mistakes in the value slots are refused with a message.
 
-### Recorded Pidgin voice
+### Recorded voice, in Pidgin and in the local languages
 
-Chrome's English voice reads Pidgin *spelling*, which is only close enough. A real Pidgin
-speaker reading the same words is better, and for amounts it removes the last doubt about
-what the customer heard. The clips are played from the computer, so nothing leaves it and it
-works offline.
+Chrome's English voice reads Pidgin *spelling*, which is only close enough. For Ewondo,
+Duala, Basaa, Ghomálá', Medumba and Lamnso' there is no usable voice at all, because they are
+tonal: the same syllable at a different pitch is a different word, and no engine today places
+those tones correctly. Fulfulde is not tonal, so it is the easier case. A recording by a
+native speaker has the right tones by definition, so NkapTalk can speak all nine languages
+once it has recordings. The files sit on the computer, so this works offline.
 
-- **The recordings never change what is said.** Text reaching the clip layer has already
-  been through `toSpeech()`, so every amount is words produced by code. The layer only picks
-  which recording says a word that is already decided.
-- **Clips alone cannot carry the whole voice.** NkapTalk reads text off the screen, Gemini
-  translates text the phrasebook does not know, and the jury injects new messages on purpose.
-  So a sentence is played from recordings only if every word in it is recorded. If one word is
-  missing, that whole sentence goes to the browser voice instead.
-- **Clips and the browser voice are never mixed inside one sentence.** Half a sentence in a
-  real voice and half in a robot voice sounds worse than either on its own. This also means a
-  part-finished set of recordings is safe to install: it speaks more of the replies as it grows.
+Tone is not a property of a word on its own: it shifts with the words around it. Cutting a
+tonal language into word-sized pieces and gluing them back together can therefore produce a
+tone, and so a word, that nobody said. Two rules follow, and both are enforced in code:
 
-The recording script is generated from `assistant.js` and `phrasebook.js`, so it stays in step
-with what NkapTalk actually says:
+- **In a tonal language, a whole fragment between two values is one recording.** Fragments are
+  never built up out of word clips. Having every word of a fragment is not enough and is
+  refused. `clipvoice.js` does this with the `whole` option on `plan()`.
+- **Only numbers are spliced in, and they are spoken in French.** Money is counted in French
+  across Cameroon, including by speakers using their own language for everything else, so this
+  is what people actually say. It also means no amount depends on numerals invented in a
+  language we cannot check, and French carries no tone, so a splice can never put a wrong tone
+  on an amount.
+
+Recordings are keyed by the slug of the **Pidgin** fragment, while the audio holds the local
+language. The assistant keeps composing its replies in Pidgin exactly as it does now, and the
+voice needs no local-language text at runtime. Nothing a speaker records is passed through a
+model afterwards.
+
+Amounts are still never produced by a model. `numerals.js` turns an exact value from the page
+into a fixed list of words, in French for the local voices and in English for Pidgin, and
+nothing else decides what those words are.
+
+Anything with no recording falls back to Pidgin, one sentence at a time, so a part-recorded
+language still answers every question. Recordings and the browser voice are never mixed inside
+one sentence.
+
+The recording script for each language is generated from `assistant.js` and `phrasebook.js`,
+so it stays in step with what NkapTalk actually says:
 
 ```bash
-node tools/build-clips.js script   # -> nkaptalk-extension/audio/pcm/SCRIPT.md
+node tools/build-clips.js script --all      # or: script ewo dua
+node tools/build-clips.js index --all       # after adding files; prints coverage
 ```
 
-It comes out in three tiers, 217 clips in all:
+Each language comes out in three tiers. Pidgin needs 217 clips, each local language 212:
 
 | Tier | Clips | Covers |
 |---|---|---|
-| 1 — numbers, units, letters | 63 | Every amount, fee, total, percentage, phone number and reference, for any value up to a billion. This vocabulary is closed, so 63 files cover all of them. |
+| 1 — numbers and letters | 63 Pidgin / 58 local | Every amount, fee, total, percentage, phone number and reference, for any value up to a billion. The vocabulary is closed, so this fixed list covers all of them. |
 | 2 — NkapTalk's own sentences | 87 | Its greeting, questions, confirmations and errors. |
 | 3 — page text read aloud | 67 | The SAFINUM screens as the phrasebook renders them. |
 
-Record Tier 1 first. It is the shortest list, and it is where a mispronounced word would
-matter most in a bank.
+Record Tier 1 and Tier 2 first: together they are enough for NkapTalk to hold a whole
+transfer conversation in the language, and Tier 1 is where a mispronounced word would matter
+most in a bank.
 
-Put the files in `nkaptalk-extension/audio/pcm/`, named with the id from the script
-(`.webm`, `.ogg`, `.mp3`, `.m4a`, `.wav` or `.flac`), then:
+The script for a local language is written in Pidgin, and the speaker says each line in their
+own language. For a tonal language the script tells them to say each line in one go, because
+that is what keeps the tones right.
 
-```bash
-node tools/build-clips.js index    # -> audio/pcm/index.json, and a coverage report
-```
-
-The settings page shows how many recordings are installed, and **Use the recorded Pidgin
-voice** turns them on. With none installed, the voice behaves exactly as before.
+Put the files in `nkaptalk-extension/audio/<language>/`, named with the id from the script
+(`.webm`, `.ogg`, `.mp3`, `.m4a`, `.wav` or `.flac`), then run the `index` command. The
+settings page has **Speak in** for choosing the voice, and shows how many recordings are
+installed and whether amounts are covered yet. With none installed, the voice behaves exactly
+as before.
 
 ## 5. Practise offline
 

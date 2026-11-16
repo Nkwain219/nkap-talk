@@ -162,15 +162,18 @@
     stop();
     const spoken = toSpeech(text);
     const rate = (P.env.settings.rate || 0.95) * (opts.slow ? 0.75 : 1);
-    // Recorded native-speaker Pidgin first: best quality, offline, nothing leaves the
-    // computer. It only plays sentences whose every word is recorded; the rest fall
-    // through to the voices below, so a half-recorded set still speaks every reply.
+    // Recorded native-speaker voice first: best quality, offline, nothing leaves the
+    // computer, and for the tonal local languages it is the only way to get the tones
+    // right. It gets the text with its exact values, because it reads amounts with its own
+    // language's numbers. Sentences it has no recording for fall through to the voices
+    // below, in Pidgin, so a part-recorded language still answers every question.
     let rest = spoken;
     if (P.env.settings.useClipVoice && P.clipvoice && P.clipvoice.speak) {
       try {
-        const missed = await P.clipvoice.speak(spoken, rate);
+        const lang = P.env.settings.voiceLanguage || 'pcm';
+        const missed = await P.clipvoice.speak(text, { lang, rate });
         if (!missed.length) return;
-        rest = missed.map((m) => m.text).join(' ');
+        rest = toSpeech(missed.map((m) => m.text).join(' '));
       } catch (e) { rest = spoken; }
     }
     if (!rest.trim()) return;

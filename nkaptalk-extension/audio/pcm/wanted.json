@@ -161,16 +161,6 @@
   },
   {
     "tier": "numbers",
-    "text": "franc",
-    "id": "franc"
-  },
-  {
-    "tier": "numbers",
-    "text": "percent",
-    "id": "percent"
-  },
-  {
-    "tier": "numbers",
     "text": "point",
     "id": "point"
   },
@@ -183,6 +173,16 @@
     "tier": "numbers",
     "text": "plus",
     "id": "plus"
+  },
+  {
+    "tier": "numbers",
+    "text": "franc",
+    "id": "franc"
+  },
+  {
+    "tier": "numbers",
+    "text": "percent",
+    "id": "percent"
   },
   {
     "tier": "numbers",

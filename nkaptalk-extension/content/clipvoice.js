@@ -1,33 +1,56 @@
 /*
- * NkapTalk — recorded native-speaker Pidgin voice.
+ * NkapTalk — recorded native-speaker voice, for Pidgin and for the local languages.
  *
- * Chrome's English voice reads Pidgin spelling, which is only close enough. A real Pidgin
- * speaker reading the same words is better, and for amounts it removes the last bit of doubt
- * about what the customer heard. The clips sit on the computer, so this works offline.
+ * Chrome's English voice reads Pidgin spelling, which is only close enough. For Ewondo,
+ * Duala, Basaa, Ghomala', Medumba and Lamnso' there is no usable voice at all, because they
+ * are tonal: the same syllable at a different pitch is a different word, and no engine today
+ * places those tones correctly. Fulfulde is not tonal, so it is the easier case.
  *
- * Clips are never a translation layer. Text reaching here has already been through
- * P.speech.toSpeech(), so every amount is words produced by code ("5 100 FCFA" -> "five
- * thousand, one hundred franc"). This file only chooses which recording says a word that is
- * already decided. It can change how a reply sounds, never what it says.
+ * A recording by a native speaker has the right tones by definition. The problem is that
+ * tone is not a property of a word on its own: it shifts with the words around it. So cutting
+ * a tonal language into word-sized pieces and gluing them back together can produce a tone,
+ * and therefore a word, that nobody said. Two rules follow, and they are enforced below:
  *
- * The number vocabulary is closed (see NUMBERS), so 63 clips cover every amount, percentage,
- * phone number and reference. Reply sentences are not closed: the screen can carry text the
- * phrasebook does not know, and the jury injects new messages on purpose. So a sentence plays
- * from clips only if every one of its words is recorded, and otherwise goes to the browser
- * voice whole. Half a sentence in a real voice and half in a robot voice sounds worse than
- * either on its own, so the two are never mixed inside one sentence.
+ *   1. In a tonal language a whole fragment between two values is one recording. Fragments
+ *      are never built up out of word clips. A fragment with no recording is not spoken in
+ *      that language at all: it falls back to Pidgin.
+ *   2. Only numbers are spliced in, and they are spoken in French (see numerals.js), which
+ *      carries no tone. So no splice can ever change a tone, and no amount depends on
+ *      numerals we would have had to invent in a language we cannot check.
+ *
+ * Clips are keyed by the slug of the PIDGIN fragment, while the audio holds the local
+ * language. That way the assistant keeps composing replies in Pidgin exactly as it does now,
+ * and the voice needs no local-language text at runtime.
+ *
+ * What is said is never decided here. Values arrive exact from the page and are turned into
+ * words by code in numerals.js. This file only chooses which recording says an already
+ * decided word, so it can change how a reply sounds, never what it says.
  */
 (function () {
   const P = (globalThis.NkapTalk = globalThis.NkapTalk || {});
 
-  // ---- Closed vocabulary: everything P.speech.toSpeech() can emit for a value.
-  // Kept in step with speech.js by a property test (tests/test-clipvoice.js).
+  /**
+   * Voices NkapTalk can be recorded in. `numerals` is the set that reads amounts aloud;
+   * `tonal` turns on rule 1 above. Pidgin keeps the English number words it uses today.
+   */
+  const VOICES = {
+    pcm: { name: 'Pidgin', numerals: 'en', tonal: false },
+    ff: { name: 'Fulfulde', numerals: 'fr', tonal: false },
+    ewo: { name: 'Ewondo', numerals: 'fr', tonal: true },
+    bum: { name: 'Bulu', numerals: 'fr', tonal: true },
+    dua: { name: 'Duala', numerals: 'fr', tonal: true },
+    bas: { name: 'Basaa', numerals: 'fr', tonal: true },
+    bbj: { name: "Ghomala'", numerals: 'fr', tonal: true },
+    byv: { name: 'Medumba', numerals: 'fr', tonal: true },
+    lns: { name: "Lamnso'", numerals: 'fr', tonal: true },
+  };
+
+  // ---- Closed vocabulary of the Pidgin voice. Kept in step with speech.js by a test.
   const ONES = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen'];
   const TENS = ['twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety'];
   const SCALES = ['hundred', 'thousand', 'million', 'billion'];
   const UNITS = ['franc', 'percent', 'point', 'minus', 'plus'];
   const LETTERS = 'abcdefghijklmnopqrstuvwxyz'.split('');
-
   const NUMBERS = [...ONES, ...TENS, ...SCALES, ...UNITS, ...LETTERS];
 
   function hash32(s) {
@@ -69,17 +92,16 @@
   }
 
   /**
-   * One spoken word -> the word whose clip says it.
-   * speech.js reads phone numbers and references character by character ("plus 2 3 7",
-   * "S A F , 2 0 2 6"), so a bare digit arrives here as "2". The browser voice says that
-   * correctly on its own, but a clip is a file: it needs the name "two". Mapping here means
-   * the same ten number recordings serve both amounts and digit-by-digit reading.
+   * One spoken word -> the word whose clip says it. speech.js reads phone numbers and
+   * references character by character ("plus 2 3 7"), so a bare digit arrives as "2". The
+   * browser voice says that correctly on its own, but a clip is a file and needs the name
+   * "two", so the same ten number recordings serve amounts and digit-by-digit reading.
    */
   function clipWord(w) {
     return /^[0-9]$/.test(w) ? ONES[Number(w)] : w;
   }
 
-  /** Split a reply into sentences, each of which is clip-played or spoken, never both. */
+  /** Split a reply into sentences. A recording never spans a sentence ender. */
   function sentences(text) {
     return String(text)
       .split(/(?<=[.!?])\s+/)
@@ -88,13 +110,19 @@
   }
 
   /**
-   * Tile a sentence with the longest recordings available.
-   * `have` is a Set of slugs that exist. Returns an array of slugs, or null if any
-   * word has no recording (then the caller speaks the sentence with the browser voice).
+   * Tile a fragment with the longest recordings available. `have` is a Set of slugs.
+   * With `whole`, the fragment must be covered by ONE recording or not at all: that is
+   * rule 1, and it is what keeps a tonal language from being glued together word by word.
+   * Returns an array of slugs, or null.
    */
-  function plan(sentence, have, maxWords = 12) {
+  function plan(sentence, have, opts = {}) {
+    const maxWords = opts.maxWords || 12;
     const w = words(sentence).map(clipWord);
     if (!w.length) return null;
+    if (opts.whole) {
+      const s = slug(w.join(' '));
+      return have.has(s) ? [s] : null;
+    }
     const out = [];
     let i = 0;
     while (i < w.length) {
@@ -103,66 +131,154 @@
         const s = slug(w.slice(i, i + n).join(' '));
         if (have.has(s)) { hit = { s, n }; break; }
       }
-      if (!hit) return null; // one missing word disqualifies the sentence
+      if (!hit) return null; // one missing word disqualifies the fragment
       out.push(hit.s);
       i += hit.n;
     }
     return out;
   }
 
-  /** How much of a reply the recordings can carry, per sentence. For the settings page. */
-  function coverage(text, have) {
-    const all = sentences(text);
-    const done = all.filter((s) => plan(s, have));
-    return { total: all.length, clips: done.length, ratio: all.length ? done.length / all.length : 0 };
+  // ---------- Values: exact from the page, turned into words by code ----------
+  /** Letter-by-letter reading of a reference or account number. */
+  function spellIds(raw, num) {
+    const out = [];
+    for (const ch of String(raw).replace(/\s+/g, '')) {
+      if (/[a-z]/i.test(ch)) out.push(ch.toLowerCase());
+      else if (/[0-9]/.test(ch)) out.push(...num.digits(ch));
+      else if (ch === '-' || ch === '_') continue;
+      else return null;
+    }
+    return out;
   }
 
-  P.clipvoice = { NUMBERS, ONES, TENS, SCALES, UNITS, LETTERS, slug, norm, words, clipWord, sentences, plan, coverage };
+  /** One value from the page -> the recordings that say it, or null. */
+  function valueIds(span, num) {
+    const v = span.value;
+    switch (span.kind) {
+      case 'MONEY': {
+        const n = v.replace(/(FCFA|F\s?CFA|XAF|CFA|francs?)/i, '').trim();
+        const w = num.words(n);
+        return w ? [...w, num.currency] : null;
+      }
+      case 'PERCENT': {
+        const w = num.words(v.replace('%', '').trim());
+        return w ? [...w, ...num.percent] : null;
+      }
+      case 'PHONE': return num.digits(v);
+      case 'REF': case 'CODE': case 'ACCOUNT': return spellIds(v, num);
+      case 'NUMBER': return num.words(v);
+      case 'CURRENCY': return /CFA/i.test(v) ? [num.currency] : null;
+      default: return null;
+    }
+  }
 
-  // ---------- Playback (browser only; the logic above stays testable in Node) ----------
+  /**
+   * One sentence of a reply, with its exact values, -> the recordings that say it in `lang`,
+   * or null if the recordings cannot carry it and the browser voice must take the sentence.
+   */
+  function planSentence(sentence, lang, have) {
+    const voice = VOICES[lang] || VOICES.pcm;
+    const num = P.numerals ? P.numerals.get(voice.numerals) : null;
+    if (!num) return null;
+    const spans = (P.values && P.values.findSpans) ? P.values.findSpans(sentence) : [];
+    const ids = [];
+    let pos = 0;
+    const addText = (t) => {
+      if (!norm(t)) return true; // punctuation and spacing make no sound
+      const got = plan(t, have, { whole: voice.tonal });
+      if (!got) return false;
+      ids.push(...got);
+      return true;
+    };
+    for (const s of spans) {
+      if (!addText(sentence.slice(pos, s.start))) return null;
+      const vIds = valueIds(s, num);
+      if (!vIds) return null;
+      for (const id of vIds) {
+        const sl = slug(id);
+        if (!have.has(sl)) return null;
+        ids.push(sl);
+      }
+      pos = s.end;
+    }
+    if (!addText(sentence.slice(pos))) return null;
+    return ids.length ? ids : null;
+  }
+
+  /** Per sentence: the recordings to play, or the text for the browser voice. */
+  function planReply(text, lang, have) {
+    return sentences(text).map((sentence) => {
+      const ids = planSentence(sentence, lang, have);
+      return ids ? { kind: 'clips', ids, text: sentence } : { kind: 'speak', text: sentence };
+    });
+  }
+
+  /** How much of a reply the recordings can carry, per sentence. For the settings page. */
+  function coverage(text, have, lang = 'pcm') {
+    const parts = planReply(text, lang, have);
+    const done = parts.filter((p) => p.kind === 'clips').length;
+    return { total: parts.length, clips: done, ratio: parts.length ? done / parts.length : 0 };
+  }
+
+  /** Every recording a language needs for its numbers: the speaker's Tier 1. */
+  function numberVocabulary(lang) {
+    const voice = VOICES[lang] || VOICES.pcm;
+    const num = P.numerals ? P.numerals.get(voice.numerals) : null;
+    return num ? [...num.vocabulary(), ...LETTERS] : [...NUMBERS];
+  }
+
+  P.clipvoice = {
+    VOICES, NUMBERS, ONES, TENS, SCALES, UNITS, LETTERS,
+    slug, norm, words, clipWord, sentences, plan,
+    valueIds, spellIds, planSentence, planReply, coverage, numberVocabulary,
+  };
+
+  // ---------- Playback (browser only; everything above stays testable in Node) ----------
   if (typeof document === 'undefined') return;
 
-  let index = null;          // { slug: "filename.webm" }
-  let indexTried = false;
+  const indexes = new Map(); // lang -> { slug: filename } | null
   let ctx = null;
-  const buffers = new Map(); // slug -> AudioBuffer
+  const buffers = new Map(); // "lang/slug" -> AudioBuffer
   let playing = [];
   let gen = 0; // bumped by stop(), so an interrupted reply stops scheduling the rest
 
-  const url = (p) =>
+  const url = (lang, p) =>
     (globalThis.chrome && chrome.runtime && chrome.runtime.getURL)
-      ? chrome.runtime.getURL('audio/pcm/' + p)
-      : 'audio/pcm/' + p;
+      ? chrome.runtime.getURL(`audio/${lang}/${p}`)
+      : `audio/${lang}/${p}`;
 
-  /** audio/pcm/index.json maps slug -> real filename, so no format guessing. */
-  async function loadIndex() {
-    if (indexTried) return index;
-    indexTried = true;
+  /** audio/<lang>/index.json maps slug -> real filename, so no format guessing. */
+  async function loadIndex(lang) {
+    if (indexes.has(lang)) return indexes.get(lang);
+    let idx = null;
     try {
-      const res = await fetch(url('index.json'));
-      if (res.ok) index = await res.json();
-    } catch (e) { index = null; }
-    return index;
+      const res = await fetch(url(lang, 'index.json'));
+      if (res.ok) idx = await res.json();
+    } catch (e) { idx = null; }
+    indexes.set(lang, idx);
+    return idx;
   }
 
-  async function have() {
-    const idx = await loadIndex();
+  async function have(lang = 'pcm') {
+    const idx = await loadIndex(lang);
     return new Set(idx ? Object.keys(idx) : []);
   }
 
-  async function buffer(s) {
-    if (buffers.has(s)) return buffers.get(s);
-    const file = index && index[s];
+  async function buffer(lang, s) {
+    const key = lang + '/' + s;
+    if (buffers.has(key)) return buffers.get(key);
+    const idx = indexes.get(lang);
+    const file = idx && idx[s];
     if (!file) return null;
     try {
-      const res = await fetch(url(file));
+      const res = await fetch(url(lang, file));
       if (!res.ok) throw new Error(res.status);
       ctx = ctx || new AudioContext();
       const buf = await ctx.decodeAudioData(await res.arrayBuffer());
-      buffers.set(s, buf);
+      buffers.set(key, buf);
       return buf;
     } catch (e) {
-      buffers.set(s, null); // don't retry a bad file every reply
+      buffers.set(key, null); // don't retry a bad file on every reply
       return null;
     }
   }
@@ -174,26 +290,24 @@
   }
 
   /**
-   * Speak `spoken` (already value-to-words) with recordings where possible.
-   * Returns the sentences it could NOT play, for the browser voice to say.
-   * `rate` stretches playback the way the speaking-speed setting does.
+   * Say `text` (exact values inside) from recordings in `lang` where they exist.
+   * Returns the sentences it could not play, for the browser voice to say in Pidgin.
    */
-  async function speak(spoken, rate = 1) {
+  async function speak(text, { lang = 'pcm', rate = 1 } = {}) {
     const my = ++gen;
-    const hv = await have();
-    if (!hv.size) return [{ text: spoken, reason: 'no-clips' }];
+    const hv = await have(lang);
+    if (!hv.size) return [{ text, reason: 'no-clips' }];
     const missed = [];
-    for (const sentence of sentences(spoken)) {
+    for (const part of planReply(text, lang, hv)) {
       if (my !== gen) return missed; // stop() was called: drop the rest of the reply
-      const ids = plan(sentence, hv);
-      if (!ids) { missed.push({ text: sentence, reason: 'not-recorded' }); continue; }
+      if (part.kind !== 'clips') { missed.push({ text: part.text, reason: 'not-recorded' }); continue; }
       const bufs = [];
-      for (const id of ids) {
-        const b = await buffer(id);
+      for (const id of part.ids) {
+        const b = await buffer(lang, id);
         if (!b) break;
         bufs.push(b);
       }
-      if (bufs.length !== ids.length) { missed.push({ text: sentence, reason: 'load-failed' }); continue; }
+      if (bufs.length !== part.ids.length) { missed.push({ text: part.text, reason: 'load-failed' }); continue; }
       ctx = ctx || new AudioContext();
       if (ctx.state === 'suspended') { try { await ctx.resume(); } catch (e) {} }
       let at = ctx.currentTime + 0.03;
@@ -207,8 +321,7 @@
         playing.push(src);
         at += b.duration / speed;
       }
-      const wait = (at - ctx.currentTime) * 1000;
-      await new Promise((r) => setTimeout(r, Math.max(0, wait)));
+      await new Promise((r) => setTimeout(r, Math.max(0, (at - ctx.currentTime) * 1000)));
     }
     if (my === gen) playing = [];
     return missed;
@@ -217,5 +330,5 @@
   P.clipvoice.speak = speak;
   P.clipvoice.stop = stop;
   P.clipvoice.have = have;
-  P.clipvoice.reload = () => { indexTried = false; index = null; buffers.clear(); };
+  P.clipvoice.reload = () => { indexes.clear(); buffers.clear(); };
 })();

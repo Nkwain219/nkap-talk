@@ -1,6 +1,6 @@
 // Recorded Pidgin voice: ids, sentence splitting, clip tiling, and the number vocabulary.
 const load = require('./load');
-const P = load(['values.js', 'phrasebook.js', 'clipvoice.js', 'speech.js']);
+const P = load(['values.js', 'phrasebook.js', 'numerals.js', 'clipvoice.js', 'speech.js']);
 const C = P.clipvoice;
 const S = P.speech;
 
@@ -95,6 +95,67 @@ if (wanted) {
 } else {
   console.log('note: run `node tools/build-clips.js script` to check the recording script too');
 }
+
+// 10. every language is declared, and the tonal ones are marked
+check(Object.keys(C.VOICES).length === 9, `9 voices, got ${Object.keys(C.VOICES).length}`);
+check(C.VOICES.pcm.numerals === 'en' && !C.VOICES.pcm.tonal, 'Pidgin: English numbers, not tonal');
+check(C.VOICES.ff.numerals === 'fr' && !C.VOICES.ff.tonal, 'Fulfulde: French numbers, not tonal');
+['ewo', 'bum', 'dua', 'bas', 'bbj', 'byv', 'lns'].forEach((l) =>
+  check(C.VOICES[l] && C.VOICES[l].tonal && C.VOICES[l].numerals === 'fr', `${l} is tonal, French numbers`));
+Object.entries(C.VOICES).forEach(([code, v]) => check(v.name, `voice ${code} has a name`));
+
+// 11. THE TONE RULE. In a tonal language a fragment must be one whole recording. Having the
+// individual words is not enough, because gluing words together moves the tones and can say
+// a word nobody recorded. A non-tonal voice may tile from words.
+const wordsOnly = new Set(['moni', 'na', 'five', 'franc'].map(C.slug));
+check(C.plan('Moni na five franc', wordsOnly, { whole: false }) !== null, 'word tiling works when allowed');
+check(C.plan('Moni na five franc', wordsOnly, { whole: true }) === null, 'tonal voice refuses to tile from words');
+const wholeClip = new Set([C.slug('moni na five franc')]);
+check(C.plan('Moni na five franc', wholeClip, { whole: true }) !== null, 'tonal voice accepts one whole recording');
+check(C.plan('Moni na five franc', wholeClip, { whole: false }) !== null, 'the whole recording also satisfies tiling');
+
+// 12. a local-language reply: sentence recorded whole, amount spliced in French
+const frNums = P.numerals.fr.vocabulary().map(C.slug);
+const ewo = new Set([...frNums, C.slug('moni wey dey your account na')]);
+const reply = 'Moni wey dey your account na 5 100 FCFA.';
+const ids = C.planSentence(reply, 'ewo', ewo);
+check(ids !== null, 'Ewondo sentence planned');
+check(ids[0] === C.slug('moni wey dey your account na'), 'opens with the one whole recording');
+check(ids.slice(1).join(' ') === 'cinq mille cent franc', `amount read in French: ${ids.slice(1).join(' ')}`);
+
+// the same reply in Ewondo fails if only the WORDS of the fragment are recorded
+const ewoWords = new Set([...frNums, ...C.words('moni wey dey your account na').map(C.slug)]);
+check(C.planSentence(reply, 'ewo', ewoWords) === null, 'Ewondo refuses a fragment it only has word by word');
+check(C.planSentence(reply, 'ff', ewoWords) !== null, 'Fulfulde, not tonal, may tile the same fragment');
+
+// 13. a missing fragment drops that sentence to Pidgin, and does not poison the rest
+const two = 'Moni wey dey your account na 5 100 FCFA. Something else entirely.';
+const parts = C.planReply(two, 'ewo', ewo);
+check(parts.length === 2, `two sentences, got ${parts.length}`);
+check(parts[0].kind === 'clips', 'first sentence from recordings');
+check(parts[1].kind === 'speak' && /Something else/.test(parts[1].text), 'second falls back with its text');
+
+// 14. each value kind maps to recordings, in French
+const num = P.numerals.fr;
+const kinds = (text) => {
+  const spans = P.values.findSpans(text);
+  return spans.length ? C.valueIds(spans[0], num) : null;
+};
+check((kinds('25 000 FCFA') || []).join(' ') === 'vingt cinq mille franc', `MONEY: ${(kinds('25 000 FCFA') || []).join(' ')}`);
+check((kinds('1,5 %') || []).join(' ') === 'un virgule cinq pour cent', `PERCENT: ${(kinds('1,5 %') || []).join(' ')}`);
+check((kinds('+237 699 00 11 22') || []).length > 0, 'PHONE maps to digits');
+const ref = kinds('SAF-2026-L8NV4F');
+check(ref && ref.includes('s') && ref.includes('deux'), `REF spelled with French digits: ${ref && ref.join(' ')}`);
+check(C.spellIds('AB-12', num).join(' ') === 'a b un deux', C.spellIds('AB-12', num).join(' '));
+
+// 15. the number vocabulary each language has to record
+check(C.numberVocabulary('pcm').length === 63, `Pidgin tier 1 is ${C.numberVocabulary('pcm').length}`);
+check(C.numberVocabulary('ewo').length === 58, `Ewondo tier 1 is ${C.numberVocabulary('ewo').length}`);
+check(C.numberVocabulary('ewo').includes('cinq'), 'Ewondo tier 1 holds the French numbers');
+check(C.numberVocabulary('ewo').includes('z'), 'Ewondo tier 1 holds the letters');
+
+// 16. an unknown language behaves like Pidgin rather than throwing
+check(C.planSentence('Moni na five franc.', 'zzz', wordsOnly) !== null, 'unknown language falls back to Pidgin rules');
 
 console.log(`${checks} checks, failures ${fails}`);
 process.exit(fails ? 1 : 0);

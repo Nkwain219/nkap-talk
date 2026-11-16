@@ -58,7 +58,9 @@
   <fieldset>
     <legend>Page and voice</legend>
     <label class="check"><input id="autoTranslate" type="checkbox"> <span>Translate the page as soon as it opens</span></label>
-    <label class="check"><input id="useClipVoice" type="checkbox"> <span>Use the recorded Pidgin voice <span class="note">(a real Pidgin speaker, read from files on this computer)</span></span></label>
+    <label class="check"><input id="useClipVoice" type="checkbox"> <span>Use the recorded voice <span class="note">(real speakers, read from files on this computer)</span></span></label>
+    <label for="voiceLanguage">Speak in</label>
+    <select id="voiceLanguage"></select>
     <p class="note" id="clipNote" role="status"></p>
     <label for="voiceName">Browser voice</label>
     <select id="voiceName"><option value="">Automatic (device voice first)</option></select>
@@ -70,6 +72,8 @@
   <script src="../content/values.js"></script>
   <script src="../content/phrasebook.js"></script>
   <script src="../content/localize.js"></script>
+  <script src="../content/numerals.js"></script>
+  <script src="../content/clipvoice.js"></script>
   <script src="options.js"></script>
 </body>
 </html>

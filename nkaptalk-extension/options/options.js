@@ -115,16 +115,24 @@ async function showLexicon() {
     const all = data.entries || [];
     const filled = all.filter((e) => e.out).length;
     const reviewed = all.filter((e) => e.out && e.reviewed).length;
-    note.textContent = reviewed
-      ? `${reviewed} of ${all.length} lines checked by a native speaker, so those work with no key and no internet.`
-        + (filled > reviewed ? ` ${filled - reviewed} more are waiting to be checked.` : '')
-      : `No line has been checked by a native speaker yet, so this language still needs a Gemini key.`
-        + (filled ? ` ${filled} drafts are waiting to be checked.` : '');
+    // drafts ship inside the extension, so they need no key; only an empty language does
+    const drafts = $('showDrafts') && $('showDrafts').checked;
+    if (reviewed) {
+      note.textContent = `${reviewed} of ${all.length} lines checked by a native speaker, so those work with no key and no internet.`
+        + (filled > reviewed ? ` ${filled - reviewed} more are waiting to be checked.` : '');
+    } else if (filled) {
+      note.textContent = `No line has been checked by a native speaker yet. ${filled} drafts ship with the extension, so they need no key, `
+        + (drafts ? 'and they are showing because the switch below is on.'
+                  : 'but they stay hidden until the switch below is on; the page shows Pidgin instead.');
+    } else {
+      note.textContent = 'Nothing has been translated into this language yet, so the page shows Pidgin unless Gemini is on.';
+    }
   } catch (e) {
     note.textContent = 'Could not read this language\'s lexicon.';
   }
 }
 $('pageLanguage').addEventListener('change', showLexicon);
+$('showDrafts').addEventListener('change', showLexicon);
 
 /**
  * Pull the translations Gemini has already produced in this browser into a file that

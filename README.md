@@ -183,6 +183,12 @@ The practical route from nothing to a reviewed lexicon:
    Lines the model marked unsure keep their reason in `aiNote`, and the merge says how many
    there are, so review starts where it is most needed. Lines the model left blank are counted
    and skipped, which is a useful answer rather than a failure.
+
+   Ask for one language per conversation. A model asked for several related languages in a row
+   hands back what it wrote last time with a word or two changed, and `merge` refuses an answer
+   that matches another language's wholesale, naming the language and the swapped word. Related
+   languages do share vocabulary, so this only triggers on a whole answer matching, not on
+   individual lines. `--force` overrides it.
 3. A native speaker corrects the lines and sets `reviewed: true` with their name in `by`.
    A line already marked reviewed is never overwritten by a later draft.
 4. Check the file. Value slots that do not line up, and any digit written by hand instead of

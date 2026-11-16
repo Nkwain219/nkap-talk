@@ -118,6 +118,17 @@ function cmdMerge(lang, src) {
   // A model's answer comes back numbered (see the `prompt` command). It is always a draft:
   // nothing a model wrote is ever marked reviewed, whatever the file says.
   if (Array.isArray(raw) && raw.some((r) => r && typeof r.i === 'number')) {
+    const twin = recycled(lang, raw);
+    if (twin && !process.argv.includes('--force')) {
+      console.error(`Refusing to merge: this looks like the ${twin.name} answer, not ${VOICES[lang].name}.`);
+      console.error(`  ${twin.same} of ${twin.total} lines match ${twin.lang} once "${twin.a}" is read as "${twin.b}".`);
+      console.error(`  Related languages share words, but a whole answer matching another one means the`);
+      console.error(`  model reused what it had just written. Ask it again in a fresh session, with no`);
+      console.error(`  other language in the conversation.`);
+      console.error(`  Pass --force if the two really do share this much.`);
+      process.exit(1);
+    }
+
     let added = 0, skipped = 0, refused = 0, blank = 0, flagged = 0, oor = 0;
     for (const r of raw) {
       if (!r || typeof r.i !== 'number') continue;
@@ -172,6 +183,50 @@ function cmdMerge(lang, src) {
   write(lang, data);
   console.log(`${VOICES[lang].name}: ${added} merged, ${skipped} kept (already reviewed), ${refused} refused`
     + (unknown ? `, ${unknown} not on the page and ignored` : ''));
+}
+
+/**
+ * Is this answer just another language's answer with a word swapped?
+ * Models asked for several related languages in one conversation will hand back what they
+ * wrote last time, changed only where a word differs. Related languages do share vocabulary,
+ * so this only reports a whole answer matching, not individual lines.
+ */
+function recycled(lang, raw) {
+  const answers = raw.filter((r) => r && typeof r.i === 'number' && typeof r.out === 'string' && r.out.trim());
+  if (answers.length < 20) return null;
+  let worst = null;
+  for (const other of LOCALS) {
+    if (other === lang) continue;
+    const data = read(other);
+    if (!data) continue;
+    const filled = data.entries.filter((e) => e.out).length;
+    if (filled < answers.length / 2) continue;
+    // the one word that differs most often between the two answers, if any
+    const tally = new Map();
+    let same = 0;
+    for (const r of answers) {
+      const mine = r.out.trim();
+      const theirs = (data.entries[r.i - 1] || {}).out || '';
+      if (!theirs) continue;
+      if (mine === theirs) { same++; continue; }
+      const a = mine.split(/\s+/), b = theirs.split(/\s+/);
+      if (a.length !== b.length) continue;
+      const diff = a.map((w, k) => [w, b[k]]).filter(([x, y]) => x !== y);
+      const pairs = new Set(diff.map(([x, y]) => x.toLowerCase() + '\u0000' + y.toLowerCase()));
+      if (pairs.size === 1) {
+        const key = [...pairs][0];
+        tally.set(key, (tally.get(key) || 0) + 1);
+      }
+    }
+    const best = [...tally.entries()].sort((x, y) => y[1] - x[1])[0];
+    const matched = same + (best ? best[1] : 0);
+    if (matched / answers.length >= 0.9) {
+      const [a, b] = best ? best[0].split('\u0000') : ['', ''];
+      const hit = { lang: other, name: data.name || other, same: matched, total: answers.length, a, b };
+      if (!worst || hit.same > worst.same) worst = hit;
+    }
+  }
+  return worst;
 }
 
 /* ---------- Prompts for drafting a language with Gemini ---------- */
@@ -235,7 +290,7 @@ function cmdPrompt(lang, chunk) {
   console.log(`${L.name} (${lang}): lexicon/prompts/${files.join(', ')}  (${entries.length} lines)`);
 }
 
-module.exports = { problems, slots };
+module.exports = { problems, slots, recycled };
 
 if (require.main !== module) return;
 

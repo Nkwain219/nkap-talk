@@ -97,6 +97,33 @@ fs.writeFileSync(tmp, JSON.stringify(fixture));
     check(bad === 0, `${f}: ${bad} invalid line(s)`);
   }
 
+  // 8. a model handed the same answer twice, with one word swapped
+  const byvPath = path.join(__dirname, '..', 'nkaptalk-extension', 'lexicon', 'byv.json');
+  const byv = fs.existsSync(byvPath) ? JSON.parse(fs.readFileSync(byvPath, 'utf8')) : { entries: [] };
+  const byvFilled = byv.entries.filter((e) => e.out);
+  if (byvFilled.length > 40) {
+    // the Medumba text back again as if it were Ghomala', with its word for money changed
+    const copy = byv.entries
+      .map((e, k) => ({ i: k + 1, out: e.out.replace(/nkàb/g, 'nkàp').replace(/Nkàb/g, 'Nkàp') }))
+      .filter((r) => r.out);
+    const hit = TOOL.recycled('bbj', copy);
+    check(hit !== null, 'a recycled answer is detected');
+    check(hit && hit.lang === 'byv', `names the language it was copied from (got ${hit && hit.lang})`);
+    check(hit && hit.a === 'nkàp' && hit.b === 'nkàb', `names the swapped word (got ${hit && hit.a}/${hit && hit.b})`);
+    check(TOOL.recycled('byv', copy) === null, 'a language is never compared against itself');
+
+    // genuinely different text is not flagged
+    const fresh = byv.entries
+      .map((e, k) => ({ i: k + 1, out: e.out ? 'totally different line ' + k : '' }))
+      .filter((r) => r.out);
+    check(TOOL.recycled('bbj', fresh) === null, 'a genuinely different answer is not flagged');
+
+    // a short answer is not enough to judge
+    check(TOOL.recycled('bbj', copy.slice(0, 10)) === null, 'too few lines to judge -> no verdict');
+  } else {
+    console.log('note: byv lexicon not filled, skipping the recycled-answer checks');
+  }
+
   fs.unlinkSync(tmp);
   console.log(`${checks} checks, failures ${fails}`);
   process.exit(fails ? 1 : 0);

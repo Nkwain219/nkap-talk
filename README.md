@@ -169,21 +169,31 @@ has checked yet** lifts that for testing.
 
 The practical route from nothing to a reviewed lexicon:
 
-1. Open the page in the language with a Gemini key. Translations that pass the value checks
-   are cached in the browser.
-2. In the settings, **Export Gemini drafts for review**. This writes a file of drafts, with
-   `⟦1⟧` turned back into `{}` and `{1}`.
-3. Merge them in. They arrive as drafts, never as reviewed:
+1. Generate a prompt for the language. The whole file is the prompt: select all, paste it into
+   Gemini. Lines are numbered and the model answers by number, so it never echoes a source
+   string back and cannot quietly correct an accent or drop a value slot.
    ```bash
-   node tools/build-lexicon.js merge ewo nkaptalk-drafts-ewo.json
+   node tools/build-lexicon.js prompt --all          # or: prompt ewo --chunk 60
    ```
-4. A native speaker corrects the lines and sets `reviewed: true` with their name in `by`.
+2. Save the model's JSON answer and merge it. Everything arrives as a draft: nothing a model
+   wrote is ever marked reviewed, whatever the file claims.
+   ```bash
+   node tools/build-lexicon.js merge ewo gemini-ewo.json
+   ```
+   Lines the model marked unsure keep their reason in `aiNote`, and the merge says how many
+   there are, so review starts where it is most needed. Lines the model left blank are counted
+   and skipped, which is a useful answer rather than a failure.
+3. A native speaker corrects the lines and sets `reviewed: true` with their name in `by`.
    A line already marked reviewed is never overwritten by a later draft.
-5. Check the file. Value slots that do not line up, and any digit written by hand instead of
+4. Check the file. Value slots that do not line up, and any digit written by hand instead of
    coming from the page, are refused here rather than at runtime:
    ```bash
    node tools/build-lexicon.js check --all
    ```
+
+The browser route works too, if the page has already been opened in that language with a key:
+**Export Gemini drafts for review** in the settings writes out what Gemini has cached, with
+`⟦1⟧` turned back into `{}` and `{1}`, and `merge` accepts that file as well.
 
 Speakers can also skip Gemini entirely and fill the file in directly, or type corrections into
 the settings page, which take effect immediately and win over everything else.

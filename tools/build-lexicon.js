@@ -28,7 +28,7 @@ const ROOT = path.join(__dirname, '..');
 const EXT = path.join(ROOT, 'nkaptalk-extension');
 const DIR = path.join(EXT, 'lexicon');
 
-const NK = require(path.join(ROOT, 'tests', 'load.js'))(['values.js', 'phrasebook.js', 'localbook.js', 'numerals.js', 'clipvoice.js']);
+const NK = require(path.join(ROOT, 'tests', 'load.js'))(['values.js', 'phrasebook.js', 'localize.js', 'localbook.js', 'numerals.js', 'clipvoice.js']);
 const PB = NK.phrasebook;
 const VOICES = NK.clipvoice.VOICES;
 const LOCALS = Object.keys(VOICES).filter((l) => l !== 'pcm');
@@ -77,6 +77,8 @@ function cmdStub(lang) {
       out: (old && old.out) || '',
       reviewed: !!(old && old.reviewed && old.out),
       by: (old && old.by) || '',
+      ...(old && old.aiSure !== undefined ? { aiSure: old.aiSure } : {}),
+      ...(old && old.aiNote ? { aiNote: old.aiNote } : {}),
     });
   }
   const dropped = [...bySrc.keys()].filter((s) => !seen.has(s)).length;
@@ -112,6 +114,37 @@ function cmdMerge(lang, src) {
   const data = read(lang);
   if (!data) { console.error(`no lexicon for ${lang}; run stub first`); process.exit(2); }
   const raw = JSON.parse(fs.readFileSync(src, 'utf8'));
+
+  // A model's answer comes back numbered (see the `prompt` command). It is always a draft:
+  // nothing a model wrote is ever marked reviewed, whatever the file says.
+  if (Array.isArray(raw) && raw.some((r) => r && typeof r.i === 'number')) {
+    let added = 0, skipped = 0, refused = 0, blank = 0, flagged = 0, oor = 0;
+    for (const r of raw) {
+      if (!r || typeof r.i !== 'number') continue;
+      const e = data.entries[r.i - 1];
+      if (!e) { oor++; continue; }
+      const out = typeof r.out === 'string' ? r.out.trim() : '';
+      if (!out) { blank++; continue; }
+      if (e.reviewed) { skipped++; continue; }
+      const errs = problems(e.src, out);
+      if (errs.length) { refused++; console.log(`  refused line ${r.i}: ${errs.join('; ')}\n    src: ${e.src}\n    out: ${out}`); continue; }
+      e.out = out;
+      e.reviewed = false;
+      e.by = '';
+      e.aiSure = r.sure !== false;
+      if (r.note) e.aiNote = String(r.note);
+      if (r.sure === false) flagged++;
+      added++;
+    }
+    write(lang, data);
+    console.log(`${VOICES[lang].name}: ${added} drafts merged, ${skipped} kept (already reviewed), `
+      + `${refused} refused, ${blank} left blank by the model`
+      + (oor ? `, ${oor} line number(s) out of range` : ''));
+    console.log(`  ${flagged} marked unsure by the model: review those first.`);
+    console.log(`  Nothing is marked reviewed. A native speaker sets reviewed:true per line.`);
+    return;
+  }
+
   const incoming = new Map();
   if (Array.isArray(raw)) raw.forEach((r) => r && r.src && incoming.set(r.src, r));
   else Object.entries(raw).forEach(([k, v]) => incoming.set(k, typeof v === 'string' ? { src: k, out: v } : { src: k, ...v }));
@@ -141,6 +174,67 @@ function cmdMerge(lang, src) {
     + (unknown ? `, ${unknown} not on the page and ignored` : ''));
 }
 
+/* ---------- Prompts for drafting a language with Gemini ---------- */
+
+/** Language detail from localize.js, without importing it as a module. */
+function langInfo(lang) {
+  const L = NK.localize && NK.localize.LANGUAGES && NK.localize.LANGUAGES[lang];
+  return L || { name: VOICES[lang].name, full: VOICES[lang].name, where: 'Cameroon' };
+}
+
+/**
+ * Write a paste-ready prompt. The whole file is the prompt: select all, paste into Gemini.
+ * Lines are numbered and the model answers by number, so it never has to echo a source
+ * string back and cannot quietly "correct" an accent or drop a value slot.
+ */
+function cmdPrompt(lang, chunk) {
+  const data = read(lang);
+  if (!data) { console.error(`no lexicon for ${lang}; run stub first`); process.exit(2); }
+  const L = langInfo(lang);
+  const dir = path.join(DIR, 'prompts');
+  fs.mkdirSync(dir, { recursive: true });
+  const entries = data.entries;
+  const size = chunk || entries.length;
+  const files = [];
+
+  for (let start = 0; start < entries.length; start += size) {
+    const slice = entries.slice(start, start + size);
+    const part = Math.floor(start / size) + 1;
+    const parts = Math.ceil(entries.length / size);
+    let md = `You are helping translate the interface of a Cameroonian online bank into ${L.full}, as spoken in ${L.where}.\n\n`;
+    md += `People will use this to move real money. A wrong line here can make someone send money to the wrong person, or miss a security warning. Accuracy matters more than style, and an honest "I am not sure" is better than a guess.\n\n`;
+    md += `Your answer will be checked line by line by native speakers before it is used anywhere, so do not try to polish it. Mark your own uncertainty.\n\n`;
+    md += `## Rules\n\n`;
+    md += `1. \`{}\` in a source line marks a value the bank fills in: an amount, a name, a phone number, a date or a reference. In your translation write \`{1}\` for the first one, \`{2}\` for the second, and so on, in the order they appear in the source. Use each exactly once. A line whose slots do not match is thrown away.\n`;
+    md += `2. Never write a number, in digits or in words. Every number is already inside \`{}\`. If you write a digit anywhere outside a slot, the line is thrown away.\n`;
+    md += `3. Keep the exact meaning. Never add or drop information. Keep the financial words exact: send, confirm, cancel, validate, fee, balance, total.\n`;
+    md += `4. Never soften a warning or a security message. "never", "do not" and "always" must stay just as strong.\n`;
+    md += `5. Write in the standard orthography of the language (General Alphabet of Cameroon Languages), with its special letters and tone marks where they are normally written.\n`;
+    md += `6. If there is no established word for a banking term (account, transfer, PIN, Mobile Money, balance), keep the French or English word the way speakers really say it. Do not invent a word. Code-switching is normal and is preferred over invention.\n`;
+    md += `7. Keep brand names unchanged: Safinum, Safinum Pay, MTN MoMo, Orange Money, NkapTalk.\n`;
+    md += `8. Keep each line short, close to the length of the source. These are buttons, labels and short messages.\n`;
+    md += `9. Money is counted in French across Cameroon, and the app reads amounts aloud in French, so do not translate currency words into ${L.name}.\n\n`;
+    md += `## What each line gives you\n\n`;
+    md += `\`src\` is the bank's own text, in French or English. \`pidgin\` is a reviewed Cameroonian Pidgin version of the same line, there to settle what it means. Translate the meaning, from either one.\n\n`;
+    md += `## Answer format\n\n`;
+    md += `Reply with a JSON array and nothing else. One object per line, answering by number:\n\n`;
+    md += '```json\n';
+    md += '[\n  { "i": 1, "out": "<your translation>", "sure": true },\n';
+    md += '  { "i": 2, "out": "<your translation>", "sure": false, "note": "no settled word for \'transfer\'" }\n]\n';
+    md += '```\n\n';
+    md += `Set \`sure\` to false whenever you are guessing, and say why in \`note\`. Leave \`out\` as an empty string for any line you cannot translate responsibly; that is a useful answer, not a failure. Answer every number from ${start + 1} to ${start + slice.length}, in order.\n\n`;
+    if (parts > 1) md += `This is part ${part} of ${parts}. Answer only the lines below.\n\n`;
+    md += `## Lines to translate\n\n`;
+    md += '```json\n';
+    md += JSON.stringify(slice.map((e, i) => ({ i: start + i + 1, src: e.src, pidgin: e.pidgin })), null, 2);
+    md += '\n```\n';
+    const name = parts > 1 ? `${lang}-${part}.md` : `${lang}.md`;
+    fs.writeFileSync(path.join(dir, name), md);
+    files.push(name);
+  }
+  console.log(`${L.name} (${lang}): lexicon/prompts/${files.join(', ')}  (${entries.length} lines)`);
+}
+
 module.exports = { problems, slots };
 
 if (require.main !== module) return;
@@ -154,12 +248,17 @@ if (cmd === 'merge') {
   const src = args[1];
   if (!VOICES[lang] || !src) { console.error('usage: build-lexicon.js merge <lang> <file.json>'); process.exit(2); }
   cmdMerge(lang, src);
+} else if (cmd === 'prompt') {
+  const list = targets.length ? targets : LOCALS;
+  const ci = process.argv.indexOf('--chunk');
+  const chunk = ci > 0 ? Number(process.argv[ci + 1]) : 0;
+  list.forEach((l) => cmdPrompt(l, chunk));
 } else if (cmd === 'stub' || cmd === 'check') {
   const list = targets.length ? targets : LOCALS;
   let bad = 0;
   list.forEach((l) => { bad += (cmd === 'stub' ? (cmdStub(l), 0) : cmdCheck(l)); });
   process.exit(bad ? 1 : 0);
 } else {
-  console.error('usage: build-lexicon.js stub|check <lang|--all>  |  merge <lang> <file.json>');
+  console.error('usage: build-lexicon.js stub|check|prompt <lang|--all> [--chunk N]  |  merge <lang> <file.json>');
   process.exit(2);
 }

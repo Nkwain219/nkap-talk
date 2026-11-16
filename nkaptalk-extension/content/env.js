@@ -17,6 +17,7 @@
     autoTranslate: true, // translate the page as soon as it loads
     pageLanguage: 'pcm', // what the page shows: Pidgin or a local language
     voiceLanguage: 'pcm', // which recorded voice speaks; falls back to Pidgin per sentence
+    showDrafts: false, // show lexicon lines no native speaker has checked yet
     rate: 0.95,
     voiceName: '',
   };

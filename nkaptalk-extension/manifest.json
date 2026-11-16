@@ -41,6 +41,7 @@
         "content/phrasebook.js",
         "content/localize.js",
         "content/env.js",
+        "content/localbook.js",
         "content/translator.js",
         "content/numerals.js",
         "content/clipvoice.js",
@@ -57,7 +58,8 @@
   "web_accessible_resources": [
     {
       "resources": [
-        "audio/*/*"
+        "audio/*/*",
+        "lexicon/*"
       ],
       "matches": [
         "https://safinum.cm/*",

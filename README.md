@@ -154,6 +154,46 @@ Under **Page language** you can show the page in **Fulfulde, Ewondo, Bulu, Duala
   ```
   Corrections always win over Gemini. Lines with mistakes in the value slots are refused with a message.
 
+### Offline lexicons for the local languages
+
+Pidgin has a reviewed phrasebook built into the extension, so the page works with no key and
+no internet. `lexicon/<language>.json` gives the other eight the same thing: every interface
+string of the SAFINUM test environment, in French and English, with its reviewed Pidgin
+alongside so a reviewer can see what each line means.
+
+The translations are not generated. Every `out` field starts empty and is filled by native
+speakers. Each line carries its own `reviewed` flag and the name of whoever checked it, and
+NkapTalk shows **only reviewed lines** by default: an unreviewed line falls back to Pidgin
+rather than showing an unchecked guess to someone moving money. **Show lines no native speaker
+has checked yet** lifts that for testing.
+
+The practical route from nothing to a reviewed lexicon:
+
+1. Open the page in the language with a Gemini key. Translations that pass the value checks
+   are cached in the browser.
+2. In the settings, **Export Gemini drafts for review**. This writes a file of drafts, with
+   `⟦1⟧` turned back into `{}` and `{1}`.
+3. Merge them in. They arrive as drafts, never as reviewed:
+   ```bash
+   node tools/build-lexicon.js merge ewo nkaptalk-drafts-ewo.json
+   ```
+4. A native speaker corrects the lines and sets `reviewed: true` with their name in `by`.
+   A line already marked reviewed is never overwritten by a later draft.
+5. Check the file. Value slots that do not line up, and any digit written by hand instead of
+   coming from the page, are refused here rather than at runtime:
+   ```bash
+   node tools/build-lexicon.js check --all
+   ```
+
+Speakers can also skip Gemini entirely and fill the file in directly, or type corrections into
+the settings page, which take effect immediately and win over everything else.
+
+`node tools/build-lexicon.js stub --all` refreshes the files when the page's strings change,
+keeping whatever has already been filled in and dropping lines that are no longer on the page.
+
+Once a language has a reviewed lexicon and its recordings, it needs no key and nothing leaves
+the computer, exactly like Pidgin.
+
 ### Recorded voice, in Pidgin and in the local languages
 
 Chrome's English voice reads Pidgin *spelling*, which is only close enough. For Ewondo,

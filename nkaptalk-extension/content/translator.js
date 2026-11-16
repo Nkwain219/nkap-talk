@@ -32,7 +32,7 @@
   let observer = null;
   let flushTimer = null;
   let initialScanDone = false;
-  const stats = { phrasebook: 0, pattern: 0, ai: 0, warning: 0, local: 0, fix: 0, untranslated: new Set() };
+  const stats = { phrasebook: 0, pattern: 0, ai: 0, warning: 0, local: 0, fix: 0, lexicon: 0, draft: 0, untranslated: new Set() };
 
   // ---- display language (the voice is always Pidgin)
   const L = () => P.localize;
@@ -48,6 +48,11 @@
     if (!isLocal()) return null;
     const f = L().lookupFix(fixes, core);
     if (f) return { text: f, how: 'fix' };
+    // reviewed lexicon that ships with the extension: no key, no internet
+    if (P.localbook) {
+      const lx = P.localbook.lookup(core, !!P.env.settings.showDrafts);
+      if (lx) { stats[lx.how] = (stats[lx.how] || 0) + 1; return { text: lx.text, how: lx.how }; }
+    }
     const { masked, tokens } = V().mask(core);
     if (localCache.has(masked)) {
       const t = L().accept(core, masked, localCache.get(masked), tokens);
@@ -100,6 +105,7 @@
 
   async function loadLanguage(code) {
     lang = code && L() && L().LANGUAGES[code] ? code : 'pcm';
+    if (P.localbook && !isLocal()) await P.localbook.load('pcm');
     localCache.clear();
     localPending.clear();
     fixes = new Map();
@@ -107,6 +113,7 @@
     const key = `fix:${lang}`;
     const got = await P.env.getLocal({ [key]: '' });
     fixes = L().parseFixes(got[key]).table;
+    if (P.localbook) await P.localbook.load(lang);
     const res = await P.env.send({ type: 'local-cache', lang });
     if (res && res.ok && res.cache) for (const [k, v] of Object.entries(res.cache)) if (typeof v === 'string') localCache.set(k, v);
   }

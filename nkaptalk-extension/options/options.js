@@ -5,7 +5,7 @@ const DEFAULTS = {
 };
 const LOC = globalThis.NkapTalk.localize;
 const $ = (id) => document.getElementById(id);
-const BOOLS = ['useGeminiNLU', 'useGeminiTranslate', 'useGeminiTTS', 'useClipVoice', 'autoTranslate'];
+const BOOLS = ['useGeminiNLU', 'useGeminiTranslate', 'useGeminiTTS', 'useClipVoice', 'autoTranslate', 'showDrafts'];
 
 const VOICES = globalThis.NkapTalk.clipvoice.VOICES;
 
@@ -103,6 +103,56 @@ function showLanguage(code) {
 $('pageLanguage').addEventListener('change', () => showLanguage($('pageLanguage').value));
 $('voiceLanguage').addEventListener('change', showClipCount);
 
+/** How much of the chosen language a native speaker has already checked. */
+async function showLexicon() {
+  const note = $('lexNote');
+  if (!note) return;
+  const lang = $('pageLanguage').value;
+  if (lang === 'pcm') { note.textContent = 'Pidgin uses its built-in phrasebook, so it needs no key and no internet.'; return; }
+  try {
+    const res = await fetch(chrome.runtime.getURL(`lexicon/${lang}.json`));
+    const data = res.ok ? await res.json() : { entries: [] };
+    const all = data.entries || [];
+    const filled = all.filter((e) => e.out).length;
+    const reviewed = all.filter((e) => e.out && e.reviewed).length;
+    note.textContent = reviewed
+      ? `${reviewed} of ${all.length} lines checked by a native speaker, so those work with no key and no internet.`
+        + (filled > reviewed ? ` ${filled - reviewed} more are waiting to be checked.` : '')
+      : `No line has been checked by a native speaker yet, so this language still needs a Gemini key.`
+        + (filled ? ` ${filled} drafts are waiting to be checked.` : '');
+  } catch (e) {
+    note.textContent = 'Could not read this language\'s lexicon.';
+  }
+}
+$('pageLanguage').addEventListener('change', showLexicon);
+
+/**
+ * Pull the translations Gemini has already produced in this browser into a file that
+ * `node tools/build-lexicon.js merge` understands. They come out as drafts: every line
+ * still has to be checked by a speaker before NkapTalk will show it by default.
+ */
+$('exportDrafts').addEventListener('click', async () => {
+  const lang = $('pageLanguage').value;
+  if (lang === 'pcm') { $('lexNote').textContent = 'Choose a local language first.'; return; }
+  const res = await chrome.runtime.sendMessage({ type: 'local-cache', lang });
+  const cache = (res && res.ok && res.cache) || {};
+  const out = {};
+  for (const [masked, translated] of Object.entries(cache)) {
+    if (typeof translated !== 'string' || !translated.trim()) continue;
+    // ⟦1⟧ marks a value: the source wants {} and the translation wants {1}
+    out[masked.replace(/⟦\d+⟧/g, '{}')] = { out: translated.replace(/⟦(\d+)⟧/g, '{$1}'), reviewed: false };
+  }
+  const n = Object.keys(out).length;
+  if (!n) { $('lexNote').textContent = 'No saved Gemini translations to export yet. Open the page in this language first.'; return; }
+  const url = URL.createObjectURL(new Blob([JSON.stringify(out, null, 2)], { type: 'application/json' }));
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `nkaptalk-drafts-${lang}.json`;
+  a.click();
+  URL.revokeObjectURL(url);
+  $('lexNote').textContent = `${n} drafts exported. Merge them with: node tools/build-lexicon.js merge ${lang} nkaptalk-drafts-${lang}.json`;
+});
+
 $('clearCache').addEventListener('click', () => {
   chrome.storage.local.remove(`lt:${shownLang}`, () => {
     $('saved').textContent = 'Saved translations forgotten';
@@ -121,6 +171,7 @@ $('save').addEventListener('click', () => {
   s.voiceName = $('voiceName').value;
   s.pageLanguage = $('pageLanguage').value;
   s.voiceLanguage = $('voiceLanguage').value;
+  s.showDrafts = $('showDrafts').checked;
   if (s.pageLanguage !== 'pcm') {
     const { errors } = LOC.parseFixes($('fixes').value);
     $('fixErrors').textContent = errors.length ? `Not saved: ${errors.join('; ')}` : '';
@@ -135,3 +186,4 @@ $('save').addEventListener('click', () => {
 
 // show how many recordings are installed next to the toggle
 showClipCount();
+showLexicon();

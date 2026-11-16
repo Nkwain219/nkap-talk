@@ -6,8 +6,15 @@
 
   async function init() {
     await P.env.loadSettings();
-    P.translator.start();
+    await P.translator.start(); // loads the display language first
     if (P.env.settings.autoTranslate) P.translator.setOn(true);
+    // display language changed in settings, or native-speaker corrections edited
+    P.env.on('settings', (s) => {
+      if ((s.pageLanguage || 'pcm') !== P.translator.language) P.translator.setLanguage(s.pageLanguage);
+    });
+    P.env.on('local-store', (changes) => {
+      if (Object.keys(changes).includes(`fix:${P.translator.language}`)) P.translator.setLanguage(P.translator.language);
+    });
     P.env.on('new-text', (r) => P.assistant.onNewText(r));
     P.env.on('translated-late', (r) => P.assistant.onLate(r));
     P.ui.mount();

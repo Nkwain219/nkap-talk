@@ -279,7 +279,7 @@
     if (r.intent === 'SLOW') { S.slow = true; return say(S.last || 'Okay, I go talk slow.'); }
     if (r.intent === 'HELP') return say(HELP);
     if (r.intent === 'TRANSLATE_OFF') { P.translator.setOn(false); return say('Okay, I don show di page for di original language.'); }
-    if (r.intent === 'TRANSLATE_ON') { P.translator.setOn(true); return say('Okay, di page dey for Pidgin now.'); }
+    if (r.intent === 'TRANSLATE_ON') { P.translator.setOn(true); return say(P.translator.language === 'pcm' ? 'Okay, di page dey for Pidgin now.' : `Okay, di page dey for ${P.localize.LANGUAGES[P.translator.language].name} now. I go still talk Pidgin.`); }
 
     if (S.pending) {
       const p = S.pending;

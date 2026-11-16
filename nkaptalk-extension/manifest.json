@@ -2,8 +2,8 @@
   "manifest_version": 3,
   "name": "NkapTalk — Pidgin banking assistant",
   "short_name": "NkapTalk",
-  "version": "0.1.0",
-  "description": "Translates banking pages into Cameroonian Pidgin and lets you use them by voice, without ever changing amounts, names or references.",
+  "version": "0.2.0",
+  "description": "Use your bank in Pidgin by voice, with the page in Pidgin or a Cameroonian language. Amounts, names and references never change.",
   "permissions": ["storage"],
   "host_permissions": ["https://generativelanguage.googleapis.com/*"],
   "background": { "service_worker": "background.js" },
@@ -19,6 +19,7 @@
       "js": [
         "content/values.js",
         "content/phrasebook.js",
+        "content/localize.js",
         "content/env.js",
         "content/translator.js",
         "content/speech.js",

@@ -140,6 +140,20 @@ Other settings:
 - **Use Gemini's voice for replies:** off by default, because it sends the reply text, which includes amounts.
 - **Translate the page as soon as it opens**, **Browser voice** and **Speaking speed**.
 
+### Page in a Cameroonian language
+
+Under **Page language** you can show the page in **Fulfulde, Ewondo, Bulu, Duala, Basaa, Ghomálá', Medumba or Lamnso'** instead of Pidgin. **NkapTalk keeps talking in Pidgin**: browser voices read Pidgin spelling well, but none pronounce the tones of these languages correctly, and a wrongly spoken amount is not acceptable in a bank.
+
+- Translation is done by Gemini (a key is needed), with the **same value locking as Pidgin**: amounts, names, phones, references and account numbers are replaced by ⟦1⟧, ⟦2⟧… before sending, and a translation is shown only if every value comes back exactly. Gemini is also told never to write numbers itself, and any digit it adds gets the line refused.
+- Until a line is translated, if a line is refused, or with no internet, the page shows **Pidgin** for that line.
+- Translations are saved on the computer (without any values) so the page is instant next time and works offline.
+- **Corrections from native speakers:** Gemini's quality in these languages varies and must be checked. Type fixes in the settings, one per line, `page text => translation`, with `{}` for a value in the page text and `{1}`, `{2}`… in the translation:
+  ```
+  Solde disponible => ...
+  Numéro de compte : {} => ... {1}
+  ```
+  Corrections always win over Gemini. Lines with mistakes in the value slots are refused with a message.
+
 ## 5. Practise offline
 
 The `practice-bank` folder holds an offline copy of the SAFINUM test page, with the same structure, texts (French and English), fee rules and errors. It also has a box to **inject a new message** the way the jury will.
@@ -183,9 +197,10 @@ The test rules say an extension must not collect, store or transmit the data dis
 | Microphone, local mode | Your voice only | Google, through Chrome's speech recognition |
 | Gemini voice understanding | Your voice or typed words + NkapTalk's last question. **Never the screen.** | Google Gemini API |
 | Gemini translation of new text | Only unknown text, with **every value replaced by ⟦1⟧, ⟦2⟧…** | Google Gemini API |
+| Gemini translation into a local language | The page's interface text, with **every value replaced by ⟦1⟧, ⟦2⟧…** (greeting names too) | Google Gemini API |
 | Gemini voice (off by default) | The reply text, which contains values | Google Gemini API |
 
-NkapTalk stores nothing. Names you type are kept in memory only (to protect them from translation) and disappear when the page closes. There are no analytics and no NkapTalk server.
+NkapTalk stores no page data. The only things saved are your settings, native-speaker corrections, and local-language translations of interface text with the values already removed. Names you type are kept in memory only (to protect them from translation) and disappear when the page closes. There are no analytics and no NkapTalk server.
 
 ## 8. How it works
 
@@ -230,10 +245,12 @@ nkap-talk/
 # Unit tests (Node.js 18+)
 node tests/test-phrasebook.js   # all 134 test-page strings (FR + EN) translated, 0 values changed
 node tests/test-nlu.js          # 35 Pidgin requests, answers, and value-to-speech checks
+node tests/test-localize.js     # local languages: Gemini output refused if any value is off; corrections
 
 # End-to-end: loads the real extension in Chrome and runs the full journey on the practice page
 pip install playwright
 python3 tests/e2e.py
+python3 tests/e2e-local.py      # page in Ewondo, voice in Pidgin, with a fake Gemini that tries to change values
 ```
 
 The end-to-end test covers: dashboard, balance, off-topic refusal, fees, beneficiary, read-back, "no" cancels, confirm, receipt, insufficient-balance error, jury-injected messages, the English page, and the Pidgin/original toggle. All pass, with 0 values changed.
@@ -263,6 +280,8 @@ Keep `{1}`, `{2}`... exactly as they are in the phrasebook: they stand for amoun
 
 ## 12. Known limitations
 
+- Local-language translations come from Gemini and must be checked by native speakers before real use. Use the corrections box in the settings.
+- Names are locked when NkapTalk can tell they are names (typed in a field, greeting patterns, two capitalised words). A lone first name inside a sentence it doesn't know could still be sent for translation.
 - The Pidgin still needs review by native speakers (see [Improve the Pidgin](#10-improve-the-pidgin)).
 - Voice output uses an English voice reading Pidgin spelling. Recorded native voice clips would be the next step.
 - Offline understanding is rule-based and covers common phrasings, not every way of speaking. Gemini mode handles free speech.

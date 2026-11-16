@@ -82,6 +82,19 @@ fs.writeFileSync(tmp, JSON.stringify(fixture));
   check(TOOL.problems('Frais : {}', '').length === 0, 'not filled in yet is not an error');
   check(TOOL.slots('Frais : {} pour {}') === 2, 'slot counting');
 
+  // a number spelled out is how an invented amount really arrives: no digit to catch
+  check(TOOL.problems('Frais : {}', 'Frais be cinq mille {1}').length === 1, 'spelled-out amount refused');
+  check(TOOL.problems('Montant : {}', 'Montant : {1} mille').length === 1, 'trailing scale word refused');
+  check(TOOL.problems('Montant : {}', 'Montant : {1} thousand').length === 1, 'English scale word refused');
+  check(TOOL.problems('Frais : {}', 'Frais be {1}').length === 0, 'a bare slot is fine');
+  // the same word either side of the accent is not an invented number
+  check(TOOL.problems('The amount must be greater than zero.', 'Nseñ u nlama tagbe zéro.').length === 0,
+    'English "zero" against "zéro" is the same word');
+  check(TOOL.problems('Le montant doit être supérieur à zéro.', 'Nkà tsà zero.').length === 0,
+    'French "zéro" against "zero" is the same word');
+  // a number word in the source may be reused
+  check(TOOL.problems('Cinq transferts', 'Cinq mam').length === 0, 'number word present in the source is allowed');
+
   // 7. every shipped lexicon is valid JSON, covers the page, and invents nothing
   const dir = path.join(__dirname, '..', 'nkaptalk-extension', 'lexicon');
   const files = fs.existsSync(dir) ? fs.readdirSync(dir).filter((f) => f.endsWith('.json')) : [];

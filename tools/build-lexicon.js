@@ -36,6 +36,33 @@ const LOCALS = Object.keys(VOICES).filter((l) => l !== 'pcm');
 const file = (lang) => path.join(DIR, lang + '.json');
 const slots = (src) => src.split('{}').length - 1;
 
+/*
+ * Money is counted in French across Cameroon, so an amount a model invents arrives as a
+ * French or English number word, not as digits: "Frais bé cinq mille" passes a digit check
+ * and shows an amount nobody sent. These are the words that carry a quantity. Bare "un",
+ * "une" and "one" are left out, because French "un" is also an article and would fire on
+ * ordinary loanword phrases; a fabricated amount needs a scale word or a second digit anyway.
+ */
+const MONEY_WORDS = new RegExp('\\b(' + [
+  'z[eé]ro', 'deux', 'trois', 'quatre', 'cinq', 'six', 'sept', 'huit', 'neuf', 'dix',
+  'onze', 'douze', 'treize', 'quatorze', 'quinze', 'seize', 'vingt', 'trente', 'quarante',
+  'cinquante', 'soixante', 'cent', 'cents', 'mille', 'million', 'millions', 'milliard', 'milliards',
+  'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve',
+  'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen',
+  'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety',
+  'hundred', 'thousand', 'billion',
+].join('|') + ')\\b', 'gi');
+
+/**
+ * Number words in a text, with accents folded. Folding matters because the French and
+ * English versions of one line are translated once: an English source saying "zero" against
+ * a translation spelling it "zéro" is the same word, not an invented number.
+ */
+function moneyWords(t) {
+  const flat = String(t).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  return new Set(flat.match(MONEY_WORDS) || []);
+}
+
 /** Problems with one filled-in line, as messages. Empty means it is usable. */
 function problems(src, out) {
   const errs = [];
@@ -48,6 +75,12 @@ function problems(src, out) {
       : 'the source has no value, so the translation must have no {1}');
   }
   if (/\d/.test(out.replace(/\{\d+\}/g, ''))) errs.push('digits must come from the page, use {1}, {2}...');
+  // a number spelled out is still a number, and is how an invented amount actually arrives
+  const bare = out.replace(/\{\d+\}/g, '');
+  const added = [...moneyWords(bare)].filter((w) => !moneyWords(src).has(w));
+  if (added.length) {
+    errs.push(`number word(s) not in the page text: ${added.join(', ')}. Amounts come from the page`);
+  }
   return errs;
 }
 
